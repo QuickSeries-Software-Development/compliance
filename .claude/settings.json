@@ -1,0 +1,55 @@
+{
+  "includeCoAuthoredBy": false,
+  "hooks": {
+    "PostToolUse": [],
+    "PreToolUse": [],
+    "PreCompact": []
+  },
+  "permissions": {
+    "allow": [
+      "Edit:*",
+      "Write:*",
+      "Read:*",
+      "Bash(git status:*)",
+      "Bash(git diff:*)",
+      "Bash(git log:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(git branch:*)",
+      "Bash(git checkout:*)",
+      "Bash(git fetch:*)",
+      "Bash(git pull:*)",
+      "Bash(git stash:*)",
+      "Bash(git merge:*)",
+      "Bash(git rebase:*)",
+      "Bash(git rev-parse:*)",
+      "Bash(git show:*)",
+      "Bash(git remote:*)",
+      "Bash(gh:*)"
+    ],
+    "deny": [
+      "Read(.env*)",
+      "Read(*.key)",
+      "Read(*.pem)",
+      "Read(.aws/*)",
+      "Read(.ssh/*)",
+      "Bash(rm -rf:*)",
+      "Bash(sudo:*)",
+      "Bash(git push --force:*)",
+      "Bash(git push -f:*)",
+      "Bash(git reset --hard:*)",
+      "Bash(git clean -f:*)",
+      "Bash(git clean -fd:*)",
+      "Bash(git checkout .:*)",
+      "Bash(git restore .:*)",
+      "Bash(git branch -D:*)",
+      "Bash(git tag -d:*)",
+      "Bash(npm publish:*)"
+    ]
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "input=$(cat); raw_dir=$(echo \"$input\" | jq -r '.workspace.current_dir'); dir=$(echo \"$raw_dir\" | sed \"s|$HOME|~|\"); model=$(echo \"$input\" | jq -r '.model.display_name'); usage=$(echo \"$input\" | jq '.context_window.current_usage'); if [ \"$usage\" != \"null\" ]; then current=$(echo \"$usage\" | jq '.input_tokens + .cache_creation_input_tokens + .cache_read_input_tokens'); size=$(echo \"$input\" | jq '.context_window.context_window_size'); pct=$((current * 100 / size)); ctx_info=$(printf '%d%%' \"$pct\"); else ctx_info='0%'; fi; branch=$(cd \"$raw_dir\" 2>/dev/null && git rev-parse --abbrev-ref HEAD 2>/dev/null || echo ''); if [ -n \"$branch\" ]; then git_info=$(printf ' \\033[35m%s\\033[0m |' \"$branch\"); else git_info=' |'; fi; printf '\\033[36m%s\\033[0m |%s \\033[33m%s\\033[0m | \\033[32m%s\\033[0m' \"$dir\" \"$git_info\" \"$model\" \"$ctx_info\""
+  }
+}

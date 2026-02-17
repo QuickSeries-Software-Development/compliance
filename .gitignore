@@ -1,0 +1,7 @@
+node_modules/
+.env
+*.log
+.claude/settings.local.json
+webapp/node_modules/
+webapp/.next/
+webapp/dist/
