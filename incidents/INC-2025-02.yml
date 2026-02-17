@@ -1,0 +1,21 @@
+id: INC-2025-02
+title: "Website production environment accidentally deleted"
+date_reported: 2025-08-06
+severity: high
+status: closed
+system: Corporate Website
+type: data-loss
+description: >
+  As we were in the process of replacing our website with new technology
+  (from Beanstalk to EC2/Docker), Justin accidentally deleted the prod
+  Beanstalk environment.
+affected_systems: "quickseries.com website"
+person_responsible: k.piche
+resolution: >
+  Pointed quickseries.com to a different load balancer. Configured the load
+  balancer to show a maintenance page. Worked on getting the new technology
+  replaced for the prod environment. Laecio and Justin worked on reconfiguring
+  the code. Eric and Kyle made sure the infrastructure was setup and secure.
+frameworks:
+  iso27001:
+    controls: [A.5.24, A.5.25, A.5.26, A.8.32]

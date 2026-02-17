@@ -1,0 +1,23 @@
+id: INC-2025-01
+title: "Read.ai data leak during Google Meet"
+date_reported: 2025-04-10
+severity: low
+status: closed
+system: Google Meet
+type: data-leak
+description: >
+  During a confidential company meeting on Google Meet, Jason Perkins invited
+  read.ai to the meeting, and a participant allowed this external participant in.
+  Read.ai is a tool that records a meeting then publishes a summary to all attendees.
+  Unknown what read.ai can do with the captured data. Company information and
+  employee names/emails were exposed.
+affected_systems: "Company information, employee name & email"
+person_responsible: e.stpierre
+resolution: >
+  Blocked read.ai user. Email sent to all employees about the risk.
+  Verification of the Google Meet config. Assisted Jason, Hugh and Shikha
+  in deleting their accounts at read.ai.
+corrective_action_ref: "INCIDENT 2025-01"
+frameworks:
+  iso27001:
+    controls: [A.5.24, A.5.25, A.5.26]

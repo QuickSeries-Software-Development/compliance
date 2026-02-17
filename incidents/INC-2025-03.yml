@@ -1,0 +1,91 @@
+id: INC-2025-03
+title: "Moneta CRM data loss - 457 quotes lost line items"
+date_reported: 2025-09-17
+date_remediated: 2025-10-02
+severity: critical
+status: monitoring
+system: Moneta
+type: data-loss
+description: >
+  AMs reported empty quotes. Investigation revealed that line items for
+  affected quotes were deleted. Sept 29: Identified 457 quotes that had
+  their line items deleted.
+affected_systems: "Moneta CRM"
+person_responsible: e.stpierre
+
+identification:
+  how_found: >
+    Reported by AMs on Sept 17 and Sept 22. Sept 19 2025: Ladan and Eric
+    checked the database and confirmed many quotes without any quote_items
+    records. Sept 29: Identified 457 quotes affected.
+  scope: >
+    Affected quotes spread across a timespan between May 29 2020 (quote #127)
+    and August 19 2025 (quote #1615). A few older quotes exist but are test quotes.
+  analysis: >
+    No trend or correlation between affected quotes: no specific date range,
+    no specific quote type, no specific AM.
+
+containment:
+  actions: >
+    Code change in the save quote function: everything put in a transaction
+    with a rollback in case of error. Manual verification at the beginning
+    of each day to make sure no new cases are showing.
+
+evidence_collected:
+  summary: "457 quotes with missing line items"
+  query: |
+    SELECT q.id, m.name, users.username, q.created_by, q.created_at,
+           q.updated_at, q.updated_by
+    FROM quotes q
+    LEFT JOIN users ON users.id = q.created_by
+    LEFT JOIN contact c ON c.id = q.contact_id
+    LEFT JOIN company m ON c.company_id = m.id
+    WHERE NOT EXISTS (
+      SELECT 1 FROM quote_items qi WHERE qi.quote_id = q.id
+    )
+    ORDER BY q.created_at DESC;
+  findings:
+    - "Backup of Moneta database found dated June 12 2025 - line items existed then"
+    - "Something happened between August 19 2025 and Sep 17 2025"
+    - "Code change on Sept 19 to detect possible bug in save quote function - nothing detected since"
+    - "Searched all code including FileMaker code accessing Moneta table for potential bugs"
+
+eradication:
+  status: "Monitoring - cannot assure 100% the issue was due to human error"
+  actions:
+    - "Daily monitoring of database state for new orphan records"
+    - "Enforce better backup scenarios: 2 weeks daily, 12 months monthly (was only 2 weeks)"
+    - "Continue evaluating current code in Moneta for improvements"
+
+recovery:
+  plan: >
+    Can recover data for quotes up to June 12 2025 from backup. Quotes created
+    after June 12 will need to be deleted and recreated.
+  unrecoverable_quotes:
+    - "1615 - Montgomery County Health Department Connection, JAP"
+    - "1613 - (already deleted by Steve)"
+    - "1611 - US Army Central Command (USARCENT), GXT"
+    - "1605 - Island County Emergency Management, HUF"
+    - "1604 - Talbot County Emergency Management, HUF"
+
+post_mortem:
+  response_quality: >
+    Slow to react: we initially thought it was a one-off case (i.e. only
+    affecting one quote).
+  inhibiting_actions: "Lack of backups"
+  conclusions: >
+    New AWS backup plan for Moneta implemented.
+  new_backup_plan:
+    targets:
+      - "Moneta (EC2)"
+      - "Old Moneta (EC2)"
+      - "MonetaPG13 (RDS)"
+    schedules:
+      - "Daily backups (Retention 10 days) at midnight"
+      - "Weekly backups (Retention 4 weeks) at midnight on Saturday"
+      - "Monthly backups (Retention 3 months) at midnight on the first day"
+  followups_required: "Test backup recovery"
+
+frameworks:
+  iso27001:
+    controls: [A.5.24, A.5.25, A.5.26, A.5.27, A.5.28, A.8.13]
