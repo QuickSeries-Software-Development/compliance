@@ -1,0 +1,28 @@
+{
+  "collected_at": "2026-02-17T15:08:23.656Z",
+  "source": "github",
+  "check": "repo-settings",
+  "org": "QuickSeries-Software-Development",
+  "repos_audited": [
+    "qs-mono"
+  ],
+  "summary": {
+    "total_repos": 1,
+    "public_repos": 0,
+    "private_repos": 1,
+    "public_concerns": false
+  },
+  "data": {
+    "qs-mono": {
+      "visibility": "internal",
+      "private": true,
+      "default_branch": "release/v4.0.0",
+      "has_wiki": true,
+      "has_issues": true,
+      "allow_forking": false,
+      "delete_branch_on_merge": true,
+      "archived": false,
+      "public_concern": false
+    }
+  }
+}

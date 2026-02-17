@@ -1,0 +1,24 @@
+{
+  "collected_at": "2026-02-17T15:08:23.791Z",
+  "source": "github",
+  "check": "dependabot-alerts",
+  "org": "QuickSeries-Software-Development",
+  "repos_audited": [
+    "qs-mono"
+  ],
+  "summary": {
+    "total_open_alerts": 0,
+    "by_severity": {
+      "critical": 0,
+      "high": 0,
+      "medium": 0,
+      "low": 0
+    }
+  },
+  "data": {
+    "qs-mono": {
+      "error": "Dependabot alerts not enabled or insufficient permissions",
+      "status": 403
+    }
+  }
+}

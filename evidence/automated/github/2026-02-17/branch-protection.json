@@ -1,0 +1,22 @@
+{
+  "collected_at": "2026-02-17T15:07:27.123Z",
+  "source": "github",
+  "check": "branch-protection",
+  "org": "QuickSeries-Software-Development",
+  "repos_audited": [
+    "qs-mono"
+  ],
+  "summary": {
+    "total_repos": 1,
+    "protected": 0,
+    "unprotected": 1,
+    "errors": 0
+  },
+  "data": {
+    "qs-mono": {
+      "branch": "release/v4.0.0",
+      "protected": false,
+      "reason": "No branch protection configured"
+    }
+  }
+}
