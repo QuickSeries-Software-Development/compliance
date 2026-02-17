@@ -146,18 +146,18 @@ title: Unauthorized access to production systems
 asset: Production AWS Environment
 threat: External attacker / insider threat
 vulnerability: Weak access controls
-likelihood: 3
-impact: 4
-inherent_risk: 12
+likelihood: 2          # 0-2 scale (0=low, 1=medium, 2=high)
+impact: 2              # 0-2 scale (0=low, 1=medium, 2=high)
+inherent_risk: 4       # likelihood × impact (0-4)
 treatment: mitigate
 frameworks:
   iso27001:
     controls: [A.8.2, A.8.3, A.8.5]
   # soc2:
   #   criteria: [CC6.1, CC6.3]
-residual_likelihood: 2
-residual_impact: 4
-residual_risk: 8
+residual_likelihood: 1
+residual_impact: 1
+residual_risk: 1
 owner: j.ledoux
 status: treating
 review_date: 2026-06-15
@@ -196,6 +196,97 @@ evidence:
     status: current  # current | stale | missing
 ```
 
+**Source documents (consultant deliverables):**
+
+The following documents have been converted from Word to Markdown via pandoc and are ready for cleanup and migration into the target structure. A risk assessment CSV with 151 risks is also available.
+
+*Policies → `policies/`*
+
+| Source File | Target Filename | Owner | ISO Controls | Notes |
+| --- | --- | --- | --- | --- |
+| 09.01 | `acceptable-use-policy.md` | e.stpierre | A.5.9, A.5.10, A.5.11, A.5.14, A.5.17, A.5.32, A.6.7, A.7.7, A.7.9, A.7.10, A.8.1, A.8.7, A.8.10, A.8.12, A.8.13, A.8.19, A.8.23 | Large doc |
+| 09.02 | `clear-desk-clear-screen-policy.md` | e.stpierre | A.7.7, A.8.1 | Short, clean |
+| 09.04 | `byod-policy.md` | e.stpierre | A.5.14, A.6.7, A.8.1 | Clean |
+| 09.06 | `information-classification-policy.md` | r.ledoux | A.5.9, A.5.10, A.5.12, A.5.13, A.5.14, A.7.10, A.8.3, A.8.5, A.8.11, A.8.12 | Large handling matrix |
+| 09.09 | `change-management-policy.md` | e.stpierre | A.8.32 | Well-structured |
+| 09.10 | `backup-policy.md` | e.stpierre | A.8.13 | Excellent operational detail |
+| 09.14 | `access-control-policy.md` | e.stpierre | A.5.15, A.5.16, A.5.17, A.5.18, A.8.2, A.8.3, A.8.4, A.8.5 | Copy-paste errors in 3 section titles need fixing |
+| 09.16 | `secure-development-policy.md` | j.ledoux | A.5.33, A.8.8, A.8.11, A.8.25, A.8.26, A.8.27, A.8.28, A.8.29, A.8.30, A.8.31, A.8.32, A.8.33 | Largest policy; bare URLs need wrapping |
+| 09.18 | `supplier-security-policy.md` | r.ledoux | A.5.7, A.5.11, A.5.19, A.5.20, A.5.21, A.5.22, A.5.23, A.6.1, A.6.2, A.6.3, A.8.30 | Unfilled `[Job title]` placeholders |
+| 09.19 | `supplier-security-clauses.md` | r.ledoux | A.5.19, A.5.20, A.5.21, A.5.22, A.5.23 | Appendix to supplier policy; cleanest file |
+
+*Procedures → `procedures/`*
+
+| Source File | Target Filename | Owner | ISO Controls | Notes |
+| --- | --- | --- | --- | --- |
+| 09.05 | `secure-areas-procedure.md` | r.ledoux | A.7.4, A.7.6 | `[organization name]` placeholder unfilled |
+| 09.08 | `it-security-procedures.md` | e.stpierre | A.5.7, A.5.14, A.5.37, A.7.10, A.7.14, A.8.4, A.8.6, A.8.7, A.8.8, A.8.9, A.8.10, A.8.12, A.8.13, A.8.15, A.8.16, A.8.17, A.8.18, A.8.20, A.8.21, A.8.22, A.8.23, A.8.31, A.8.32 | Very large; embedded image ref; `[TBD]` placeholders |
+| 09.20 | `incident-management-procedure.md` | e.stpierre | A.5.7, A.5.24, A.5.25, A.5.26, A.5.27, A.5.28, A.6.4, A.6.8 | Good content |
+| 09.24 | `disciplinary-process.md` | r.ledoux | A.6.4 | Step 6 (Appeal Process) missing from body |
+
+*Program docs → `program/`*
+
+| Source File | Target Filename | Owner | Notes |
+| --- | --- | --- | --- |
+| 09.17 | `information-system-specifications.md` | e.stpierre | 11 systems documented; `[??]` and `[TBD]` fields unfilled |
+| 09.22 | `confidentiality-statement.md` | r.ledoux | Employee signing template |
+| 09.23 | `isms-acceptance-statement.md` | r.ledoux | Very short; policy list placeholder never filled |
+
+*Incidents → `incidents/`*
+
+| Source File | Target | Notes |
+| --- | --- | --- |
+| 09.21 | `INC-2025-01.yml`, `INC-2025-02.yml`, `INC-2025-03.yml` | 3 real incidents to split into individual YAML files |
+
+*Risks → `risks/`*
+
+| Source File | Target | Notes |
+| --- | --- | --- |
+| Risk CSV (V8, 151 rows) | `R-001.yml` through `R-151.yml` | 0-2 scale for likelihood/impact; many blank residual scores; all treatment = "selection of controls" → `mitigate` |
+
+Risk CSV columns map to YAML schema as follows:
+
+| CSV Column | YAML Field | Notes |
+| --- | --- | --- |
+| Risk # | `id` | Direct (e.g., R-001) |
+| Asset + Threat | `title` | Combine for descriptive title |
+| Asset | `asset` | Direct |
+| Threat | `threat` | Direct |
+| Vulnerability | `vulnerability` | Direct |
+| Likelihood (0-2) | `likelihood` | Direct |
+| Consequence (0-2) | `impact` | Direct |
+| Risk Score | `inherent_risk` | Direct (0-4) |
+| Treatment Type | `treatment` | All = `mitigate` |
+| Equivalent ISO Control(s) | `frameworks.iso27001.controls` | Parse comma-separated |
+| Likelihood after treatment | `residual_likelihood` | Many blank |
+| Consequence after treatment | `residual_impact` | Many blank |
+| Risk Score after treatment | `residual_risk` | Many blank |
+| Risk Owner | `owner` | Normalize job titles to usernames |
+| Client Statement | `notes` | Preserve as context |
+| Implementation Notes | `treatment_plan` | Content for `risks/treatment/R-XXX-plan.md` |
+
+**Common pandoc junk to strip from all converted files:**
+
+1. Pandoc image reference on line 1 (cover page logo)
+2. Company name / title duplication
+3. Cover page metadata table (code, version, date, created/approved by)
+4. Change history table
+5. Table of contents with broken anchor links
+6. "Managing records" table near end of document
+7. "Validity and document management" section + signature block
+8. `{.mark}`, `{.anchor}`, escaped quotes (`\'`, `\"`) throughout
+
+**Known content issues to resolve during conversion:**
+
+- 09.05: `[organization name]` placeholder never filled
+- 09.08: `[TBD]` placeholders for antivirus on AWS/Dev; `[job title]` placeholders; embedded network diagram image needs separate handling
+- 09.12: Unfilled `[Job title]` and `[date]` placeholders
+- 09.14: Copy-paste errors — 3 sections incorrectly labeled "Executive Management" instead of Content/Development/IT
+- 09.16: Bare URLs in training section need wrapping
+- 09.17: All "Impact value from risk assessment" fields unfilled (`[??]`); multiple `[TBD]` entries
+- 09.23: Policy list placeholder never filled
+- 09.24: Step 6 (Appeal Process) referenced in TOC but entirely missing from body
+
 **Deliverables:**
 
 - [ ] All existing policies converted to markdown with multi-framework frontmatter
@@ -205,6 +296,9 @@ evidence:
 - [ ] Asset register populated
 - [ ] Interested parties register populated
 - [ ] Program scope and context documents converted to `program/`
+- [ ] 3 incident records converted to individual YAML files in `incidents/`
+- [ ] Pandoc artifacts and boilerplate stripped from all converted documents
+- [ ] Known content issues flagged or resolved
 
 ### 1.3 Graph Builder Script (Week 2)
 

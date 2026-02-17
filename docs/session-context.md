@@ -354,6 +354,14 @@ For ISO/SOC 2/GDPR, Layer 1 IS the deliverable. For FedRAMP, we would add export
 
 **No structural changes needed.** The `frameworks/{name}/` directory already supports framework-specific documents and templates. A future `scripts/export-fedramp-ssp.js` would assemble content from shared files into prescribed formats.
 
+## Risk Scoring Scale
+
+**Decision**: Use a 0-2 scale for likelihood and impact, producing risk scores of 0-4 (likelihood × impact). This matches the consultant's existing risk assessment spreadsheet (151 risks, V8).
+
+**Scale**: 0 = low, 1 = medium, 2 = high
+
+**Rationale**: The consultant already assessed all 151 risks using this scale. Changing it would mean re-scoring everything and losing alignment with the consultant's methodology. Keeping it 1:1 means the CSV conversion is a straight mapping with no data transformation.
+
 ## GitHub CODEOWNERS for Policy Approval Enforcement
 
 **Decision**: Use GitHub CODEOWNERS to enforce that document owners must approve PRs containing changes to their files.
