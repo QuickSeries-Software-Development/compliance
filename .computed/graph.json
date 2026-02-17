@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-17T15:17:24.973Z",
+  "generated_at": "2026-02-17T15:21:55.634Z",
   "nodes": {
     "policies/supplier-security-policy.md": {
       "type": "policy",
@@ -5928,10 +5928,10 @@
       "source": "github",
       "collection": "automated",
       "frequency": "weekly",
-      "last_collected": "2026-01-30",
-      "next_due": "2026-02-06",
-      "path": "evidence/automated/github/2026-01-30/branch-protection.json",
-      "status": "stale"
+      "last_collected": "2026-02-17",
+      "next_due": "2026-02-24",
+      "path": "evidence/automated/github/2026-02-17/branch-protection.json",
+      "status": "current"
     },
     "evidence/EVD-002": {
       "type": "evidence",
@@ -5947,10 +5947,10 @@
       "source": "github",
       "collection": "automated",
       "frequency": "weekly",
-      "last_collected": "2026-01-30",
-      "next_due": "2026-02-06",
-      "path": "evidence/automated/github/2026-01-30/pr-reviews.json",
-      "status": "stale"
+      "last_collected": "2026-02-17",
+      "next_due": "2026-02-24",
+      "path": "evidence/automated/github/2026-02-17/pr-reviews.json",
+      "status": "current"
     },
     "evidence/EVD-003": {
       "type": "evidence",

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-17T15:17:24.973Z",
+  "generated_at": "2026-02-17T15:21:55.634Z",
   "totals": {
     "policies": 10,
     "procedures": 4,
@@ -26,8 +26,7 @@
     "4": 11
   },
   "evidence_by_status": {
-    "stale": 2,
-    "current": 4
+    "current": 6
   },
   "stale_documents": 0,
   "frameworks": {}
