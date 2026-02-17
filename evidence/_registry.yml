@@ -9,8 +9,8 @@ evidence:
     source: github
     collection: automated
     frequency: weekly
-    last_collected: '2026-02-17'
-    next_due: '2026-02-24'
+    last_collected: '2026-01-30'
+    next_due: '2026-02-06'
     path: evidence/automated/github/2026-02-17/branch-protection.json
     status: current
   - id: EVD-002
@@ -22,8 +22,8 @@ evidence:
     source: github
     collection: automated
     frequency: weekly
-    last_collected: '2026-02-17'
-    next_due: '2026-02-24'
+    last_collected: '2026-01-30'
+    next_due: '2026-02-06'
     path: evidence/automated/github/2026-02-17/pr-reviews.json
     status: current
   - id: EVD-003
@@ -35,8 +35,8 @@ evidence:
     source: github
     collection: automated
     frequency: weekly
-    last_collected: '2026-02-17'
-    next_due: '2026-02-24'
+    last_collected: '2026-01-30'
+    next_due: '2026-02-06'
     path: evidence/automated/github/2026-02-17/org-members.json
     status: current
   - id: EVD-004
@@ -48,8 +48,8 @@ evidence:
     source: github
     collection: automated
     frequency: weekly
-    last_collected: '2026-02-17'
-    next_due: '2026-02-24'
+    last_collected: '2026-01-30'
+    next_due: '2026-02-06'
     path: evidence/automated/github/2026-02-17/repo-settings.json
     status: current
   - id: EVD-005
@@ -61,8 +61,8 @@ evidence:
     source: github
     collection: automated
     frequency: weekly
-    last_collected: '2026-02-17'
-    next_due: '2026-02-24'
+    last_collected: '2026-01-30'
+    next_due: '2026-02-06'
     path: evidence/automated/github/2026-02-17/dependabot-alerts.json
     status: current
   - id: EVD-006
@@ -74,7 +74,7 @@ evidence:
     source: github
     collection: automated
     frequency: weekly
-    last_collected: '2026-02-17'
-    next_due: '2026-02-24'
+    last_collected: '2026-01-30'
+    next_due: '2026-02-06'
     path: evidence/automated/github/2026-02-17/audit-log.json
     status: current
