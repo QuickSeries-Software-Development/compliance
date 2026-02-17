@@ -147,7 +147,7 @@ jobs:
       - name: Create or update issue
         if: steps.staleness.outputs.has_issues == 'true'
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.EVIDENCE_GITHUB_TOKEN }}
           ISSUE_TITLE: ${{ steps.staleness.outputs.issue_title }}
           ISSUE_BODY: ${{ steps.staleness.outputs.issue_body }}
         run: |
