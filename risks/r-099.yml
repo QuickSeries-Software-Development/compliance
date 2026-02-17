@@ -1,0 +1,22 @@
+id: R-099
+title: "Campaign Monitor - Email Phishing / Data Exposure"
+asset: Campaign Monitor
+asset_owner: "Leadership - Marketing Director"
+threat: Email Phishing / Data Exposure
+vulnerability: "Poor contact list control, weak MFA"
+likelihood: 2
+impact: 1
+inherent_risk: 3
+treatment: mitigate
+frameworks:
+  iso27001:
+    controls: [A.5.16, A.8.5]
+required_controls: [A.5.23]
+notes: "SSO enforced, contact access scoped by campaign group, 2FA required"
+implementation_notes: Establish policy on the use of cloud services
+residual_likelihood: 1
+residual_impact: 1
+residual_risk: 2
+owner: e.stpierre
+status: treating
+review_date: 2026-06-15

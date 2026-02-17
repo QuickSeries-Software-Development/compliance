@@ -1,0 +1,22 @@
+id: R-121
+title: "IT Administrator - Privilege Misuse / Insider Threat"
+asset: IT Administrator
+asset_owner: "IT & Security Manager"
+threat: Privilege Misuse / Insider Threat
+vulnerability: "Broad access, lack of role separation"
+likelihood: 0
+impact: 2
+inherent_risk: 2
+treatment: mitigate
+frameworks:
+  iso27001:
+    controls: [A.5.15, A.5.18, A.8.2]
+required_controls: [A.8.2]
+notes: "Least-privilege IAM roles, role separation, activity logs in CloudTrail and AWS Config"
+implementation_notes: null
+residual_likelihood: null
+residual_impact: null
+residual_risk: null
+owner: e.stpierre
+status: treating
+review_date: 2026-06-15

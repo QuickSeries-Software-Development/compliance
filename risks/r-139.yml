@@ -1,0 +1,22 @@
+id: R-139
+title: "UPS Backup System - Power Loss / Downtime"
+asset: UPS Backup System
+asset_owner: "IT & Security Manager"
+threat: Power Loss / Downtime
+vulnerability: "Battery failure, misconfigured failover"
+likelihood: 1
+impact: 1
+inherent_risk: 2
+treatment: mitigate
+frameworks:
+  iso27001:
+    controls: [A.7.11, A.5.30]
+required_controls: [A.7.11]
+notes: "UPS health monitoring,"
+implementation_notes: Mention in IT policy
+residual_likelihood: null
+residual_impact: null
+residual_risk: null
+owner: e.stpierre
+status: treating
+review_date: 2026-06-15

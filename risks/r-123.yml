@@ -1,0 +1,22 @@
+id: R-123
+title: "Full-Stack Developer - Code Injection / Data Leakage"
+asset: Full-Stack Developer
+asset_owner: CTO
+threat: Code Injection / Data Leakage
+vulnerability: "Direct access to source code, secrets, or infrastructure"
+likelihood: 1
+impact: 1
+inherent_risk: 2
+treatment: mitigate
+frameworks:
+  iso27001:
+    controls: [A.8.4, A.5.15, A.5.18]
+required_controls: [A.5.18]
+notes: "Code reviews, SAST tools, access segregation between dev/staging/prod, GitHub SSO"
+implementation_notes: null
+residual_likelihood: null
+residual_impact: null
+residual_risk: null
+owner: j.ledoux
+status: treating
+review_date: 2026-06-15

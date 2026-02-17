@@ -1,0 +1,22 @@
+id: R-116
+title: "Algolia API - Search Data Exposure"
+asset: Algolia API
+asset_owner: CTO
+threat: Search Data Exposure
+vulnerability: "API misuse, public index access"
+likelihood: 2
+impact: 1
+inherent_risk: 3
+treatment: mitigate
+frameworks:
+  iso27001:
+    controls: [A.8.3, A.5.23]
+required_controls: [A.5.23]
+notes: "Search and Admin API keys are separate, store as environment variables in AWS Parameter Store."
+implementation_notes: Mention in cloud policy
+residual_likelihood: 1
+residual_impact: 1
+residual_risk: 2
+owner: developer
+status: treating
+review_date: 2026-06-15

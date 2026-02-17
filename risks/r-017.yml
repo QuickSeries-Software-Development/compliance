@@ -1,0 +1,22 @@
+id: R-017
+title: "Contracts and Agreements - Legal Exposure"
+asset: Contracts and Agreements
+asset_owner: "Leadership - CEO"
+threat: Legal Exposure
+vulnerability: Unencrypted storage or unauthorized access
+likelihood: 1
+impact: 1
+inherent_risk: 2
+treatment: mitigate
+frameworks:
+  iso27001:
+    controls: [A.5.31, A.5.33]
+required_controls: [A.5.31]
+notes: "Stored in Google Drive and access restrictions; shared via secure links"
+implementation_notes: null
+residual_likelihood: null
+residual_impact: null
+residual_risk: null
+owner: r.ledoux
+status: treating
+review_date: 2026-06-15

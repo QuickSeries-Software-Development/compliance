@@ -1,0 +1,22 @@
+id: R-025
+title: "Shipping & UPS documentation - Information Misuse"
+asset: "Shipping & UPS documentation"
+asset_owner: "Leadership - CEO"
+threat: Information Misuse
+vulnerability: Insecure transmission or access
+likelihood: 1
+impact: 1
+inherent_risk: 2
+treatment: mitigate
+frameworks:
+  iso27001:
+    controls: [A.5.14, A.8.20]
+required_controls: [A.5.14]
+notes: "Shared over HTTPS only; stored in secure shared drives with tracking"
+implementation_notes: null
+residual_likelihood: null
+residual_impact: null
+residual_risk: null
+owner: r.ledoux
+status: treating
+review_date: 2026-06-15

@@ -1,0 +1,22 @@
+id: R-058
+title: "API Gateway Instances - API Abuse"
+asset: API Gateway Instances
+asset_owner: "IT & Security Manager"
+threat: API Abuse
+vulnerability: "Lack of throttling, auth, or input validation"
+likelihood: 0
+impact: 1
+inherent_risk: 1
+treatment: mitigate
+frameworks:
+  iso27001:
+    controls: [A.8.26]
+required_controls: [A.8.26]
+notes: "JWT validation, API keys, usage plans, rate limiting, WAF integration"
+implementation_notes: null
+residual_likelihood: null
+residual_impact: null
+residual_risk: null
+owner: e.stpierre
+status: treating
+review_date: 2026-06-15

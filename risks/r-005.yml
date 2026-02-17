@@ -1,0 +1,22 @@
+id: R-005
+title: "System Logs - Unauthorized Access"
+asset: System Logs
+asset_owner: "IT & Security Manager"
+threat: Unauthorized Access
+vulnerability: Logs stored without access controls or masking
+likelihood: 0
+impact: 1
+inherent_risk: 1
+treatment: mitigate
+frameworks:
+  iso27001:
+    controls: [A.8.15, A.5.15]
+required_controls: [A.8.15]
+notes: Logs centralized in CloudWatch with restricted IAM access and audit trail
+implementation_notes: null
+residual_likelihood: null
+residual_impact: null
+residual_risk: null
+owner: e.stpierre
+status: treating
+review_date: 2026-06-15

@@ -1,0 +1,22 @@
+id: R-069
+title: "AWS Amplify SDK - Code Injection"
+asset: AWS Amplify SDK
+asset_owner: CTO
+threat: Code Injection
+vulnerability: Poorly secured front-end integrations
+likelihood: 1
+impact: 1
+inherent_risk: 2
+treatment: mitigate
+frameworks:
+  iso27001:
+    controls: [A.8.28, A.8.5]
+required_controls: [A.8.28]
+notes: "Frontend auth via Cognito, input validation, use of environment vars"
+implementation_notes: null
+residual_likelihood: null
+residual_impact: null
+residual_risk: null
+owner: j.ledoux
+status: treating
+review_date: 2026-06-15

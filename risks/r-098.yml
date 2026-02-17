@@ -1,0 +1,22 @@
+id: R-098
+title: "Avantage Accounting Server - Financial Data Breach"
+asset: Avantage Accounting Server
+asset_owner: "Leadership - VP Finance"
+threat: Financial Data Breach
+vulnerability: "On-prem server compromise, lack of encryption"
+likelihood: 2
+impact: 1
+inherent_risk: 3
+treatment: mitigate
+frameworks:
+  iso27001:
+    controls: [A.5.33, A.8.3, A.8.24]
+required_controls: [A.8.3]
+notes: To implement remote desktop solution
+implementation_notes: Implement remote desktop solution
+residual_likelihood: 1
+residual_impact: 1
+residual_risk: 2
+owner: e.stpierre
+status: treating
+review_date: 2026-06-15

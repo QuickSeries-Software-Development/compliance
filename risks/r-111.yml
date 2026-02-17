@@ -1,0 +1,22 @@
+id: R-111
+title: "Google Maps API - Location Data Misuse"
+asset: Google Maps API
+asset_owner: CTO
+threat: Location Data Misuse
+vulnerability: "Exposed queries, insecure token storage"
+likelihood: 1
+impact: 2
+inherent_risk: 3
+treatment: mitigate
+frameworks:
+  iso27001:
+    controls: [A.8.3, A.5.23]
+required_controls: [A.5.23]
+notes: "Domain restriction, store in AWS Parameter Store."
+implementation_notes: "Establish policy on the use of cloud services: Domain restriction, store in AWS Parameter Store."
+residual_likelihood: 1
+residual_impact: 1
+residual_risk: 2
+owner: developer
+status: treating
+review_date: 2026-06-15

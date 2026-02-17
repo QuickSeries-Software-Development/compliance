@@ -1,0 +1,22 @@
+id: R-101
+title: "Generative AI - IP Leakage / Misinformation"
+asset: Generative AI
+asset_owner: CTO
+threat: IP Leakage / Misinformation
+vulnerability: Use of sensitive prompts or output manipulation
+likelihood: 1
+impact: 1
+inherent_risk: 2
+treatment: mitigate
+frameworks:
+  iso27001:
+    controls: [A.5.12, A.5.36, A.8.3, A.8.10]
+required_controls: [A.5.10]
+notes: "Policy forbids sensitive data in AI tools; access review and opt-out logging"
+implementation_notes: null
+residual_likelihood: null
+residual_impact: null
+residual_risk: null
+owner: developer
+status: treating
+review_date: 2026-06-15

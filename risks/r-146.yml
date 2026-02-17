@@ -1,0 +1,22 @@
+id: R-146
+title: "End user workspace data - Data loss / Data Corruption"
+asset: End user workspace data
+asset_owner: "IT & Security Manager"
+threat: Data loss / Data Corruption
+vulnerability: No availability of data copies
+likelihood: 1
+impact: 1
+inherent_risk: 2
+treatment: mitigate
+frameworks:
+  iso27001:
+    controls: [A.8.13]
+required_controls: [A.8.13]
+notes: "Every employee's desktop and documents folders backed up with Google Drive"
+implementation_notes: Describe in backup procedure
+residual_likelihood: null
+residual_impact: null
+residual_risk: null
+owner: e.stpierre
+status: treating
+review_date: 2026-06-15

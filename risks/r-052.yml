@@ -1,0 +1,22 @@
+id: R-052
+title: "Amazon EC2 Instances - Remote Compromise"
+asset: Amazon EC2 Instances
+asset_owner: "IT & Security Manager"
+threat: Remote Compromise
+vulnerability: Lack of patching
+likelihood: 0
+impact: 1
+inherent_risk: 1
+treatment: mitigate
+frameworks:
+  iso27001:
+    controls: [A.8.20, A.8.7]
+required_controls: [A.8.7]
+notes: "SG audits, AMI baselines,"
+implementation_notes: "We rely on Amazon-managed imaged in ECS. NEED TO IMPLEMENT: AV on S3 bucket"
+residual_likelihood: null
+residual_impact: null
+residual_risk: null
+owner: e.stpierre
+status: treating
+review_date: 2026-06-15

@@ -1,0 +1,22 @@
+id: R-092
+title: "Docker Images - Malware / Code Injection"
+asset: Docker Images
+asset_owner: CTO
+threat: Malware / Code Injection
+vulnerability: "Unscanned images, outdated base images"
+likelihood: 2
+impact: 1
+inherent_risk: 3
+treatment: mitigate
+frameworks:
+  iso27001:
+    controls: [A.8.8, A.8.25]
+required_controls: [A.8.8]
+notes: Implement Synk or equivalent
+implementation_notes: Implement Synk or equivalent
+residual_likelihood: 1
+residual_impact: 1
+residual_risk: 2
+owner: j.ledoux
+status: treating
+review_date: 2026-06-15

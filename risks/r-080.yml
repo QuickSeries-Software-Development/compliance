@@ -1,0 +1,22 @@
+id: R-080
+title: "NTP Server - Time Manipulation"
+asset: NTP Server
+asset_owner: "IT & Security Manager"
+threat: Time Manipulation
+vulnerability: Unsynchronized clocks
+likelihood: 0
+impact: 1
+inherent_risk: 1
+treatment: mitigate
+frameworks:
+  iso27001:
+    controls: [A.8.17, A.8.20]
+required_controls: [A.8.17]
+notes: "All systems sync to trusted NTP (e.g., time.aws.com); alerts on drift via CloudWatch"
+implementation_notes: null
+residual_likelihood: null
+residual_impact: null
+residual_risk: null
+owner: e.stpierre
+status: treating
+review_date: 2026-06-15

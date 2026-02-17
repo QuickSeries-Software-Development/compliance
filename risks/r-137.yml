@@ -1,0 +1,22 @@
+id: R-137
+title: "Badge Reader System - Unauthorized Entry"
+asset: Badge Reader System
+asset_owner: "IT & Security Manager"
+threat: Unauthorized Entry
+vulnerability: "Device tampering, tailgating, outdated access assignments"
+likelihood: 1
+impact: 1
+inherent_risk: 2
+treatment: mitigate
+frameworks:
+  iso27001:
+    controls: [A.7.2, A.5.18]
+required_controls: [A.7.2]
+notes: "Periodic review of badge access rights, anti-tailgating policies, tamper detection enabled"
+implementation_notes: null
+residual_likelihood: null
+residual_impact: null
+residual_risk: null
+owner: e.stpierre
+status: treating
+review_date: 2026-06-15

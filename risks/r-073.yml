@@ -1,0 +1,22 @@
+id: R-073
+title: "VPN Gateway - Hosted Data Center - Unauthorized Remote Access"
+asset: "VPN Gateway \u2013 Hosted Data Center"
+asset_owner: "IT & Security Manager"
+threat: Unauthorized Remote Access
+vulnerability: Weak VPN credentials
+likelihood: 1
+impact: 1
+inherent_risk: 2
+treatment: mitigate
+frameworks:
+  iso27001:
+    controls: [A.5.17, A.8.5, A.8.20, A.6.7]
+required_controls: [A.6.7]
+notes: "MFA for VPN, strong password policies, no split tunneling on client profiles"
+implementation_notes: null
+residual_likelihood: null
+residual_impact: null
+residual_risk: null
+owner: e.stpierre
+status: treating
+review_date: 2026-06-15

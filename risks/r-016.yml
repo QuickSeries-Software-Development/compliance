@@ -1,0 +1,22 @@
+id: R-016
+title: "Incident Response Plans - New Attacks"
+asset: Incident Response Plans
+asset_owner: "IT & Security Manager"
+threat: New Attacks
+vulnerability: "Zero-day vulnerabilities"
+likelihood: 2
+impact: 2
+inherent_risk: 4
+treatment: mitigate
+frameworks:
+  iso27001:
+    controls: []
+required_controls: [A.5.7]
+notes: null
+implementation_notes: Subscribe to Threat Intelligence Feed
+residual_likelihood: 1
+residual_impact: 1
+residual_risk: 2
+owner: e.stpierre
+status: treating
+review_date: 2026-06-15

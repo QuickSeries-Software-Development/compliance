@@ -1,0 +1,22 @@
+id: R-135
+title: "HR, IT, finance, dev teams - Insider Threat"
+asset: "HR, IT, finance, dev teams"
+asset_owner: "IT & Security Manager"
+threat: Insider Threat
+vulnerability: Malicious Insider Activity
+likelihood: 1
+impact: 2
+inherent_risk: 3
+treatment: mitigate
+frameworks:
+  iso27001:
+    controls: []
+required_controls: [A.5.3]
+notes: security training on insider threat
+implementation_notes: Describe in various policies related to approval processes.
+residual_likelihood: null
+residual_impact: null
+residual_risk: null
+owner: e.stpierre
+status: treating
+review_date: 2026-06-15

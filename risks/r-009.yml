@@ -1,0 +1,22 @@
+id: R-009
+title: "Configuration Files - Misconfiguration"
+asset: Configuration Files
+asset_owner: CTO
+threat: Misconfiguration
+vulnerability: Insecure default settings or plaintext credentials
+likelihood: 2
+impact: 2
+inherent_risk: 4
+treatment: mitigate
+frameworks:
+  iso27001:
+    controls: [A.8.9, A.8.10]
+required_controls: [A.8.9]
+notes: Config stored in AWS Parameter Store or Secrets Manager with IAM restrictions
+implementation_notes: Prefer the use of Configuration Management database.
+residual_likelihood: 1
+residual_impact: 1
+residual_risk: 2
+owner: j.ledoux
+status: treating
+review_date: 2026-06-15

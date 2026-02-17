@@ -1,0 +1,22 @@
+id: R-150
+title: "Leakage of proprietary code to public models - Insider misuse"
+asset: "Leakage of proprietary code to public models (e.g., prompts accidentally reveal confidential logic or comments)"
+asset_owner: CTO
+threat: Insider misuse
+vulnerability: Admins deploy unauthorized modifications
+likelihood: 2
+impact: 1
+inherent_risk: 3
+treatment: mitigate
+frameworks:
+  iso27001:
+    controls: []
+required_controls: [A.8.32]
+notes: "Need to clarify separation of duties, change management process. TO IMPLEMENT"
+implementation_notes: Create the change management policy
+residual_likelihood: 1
+residual_impact: 1
+residual_risk: 2
+owner: developer
+status: treating
+review_date: 2026-06-15

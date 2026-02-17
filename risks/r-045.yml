@@ -1,0 +1,22 @@
+id: R-045
+title: "Managed iPhones - Executives - Business Espionage"
+asset: "Managed iPhones - Executives"
+asset_owner: "IT & Security Manager"
+threat: Business Espionage
+vulnerability: Compromise via public networks or app hijacking
+likelihood: 0
+impact: 1
+inherent_risk: 1
+treatment: mitigate
+frameworks:
+  iso27001:
+    controls: [A.8.1]
+required_controls: [A.8.1]
+notes: "iOS MDM enforcing passcode, app control, remote wipe. NOT IMPLEMENTED (PERSONAL DEVICES)"
+implementation_notes: "Final implementation of MDM policies by End of October: business profile on personal iPhone, app control (Slack, Gmail) with remote wipe"
+residual_likelihood: null
+residual_impact: null
+residual_risk: null
+owner: e.stpierre
+status: treating
+review_date: 2026-06-15

@@ -1,0 +1,22 @@
+id: R-030
+title: "Password Managers - Credential Compromise"
+asset: Password Managers
+asset_owner: "IT & Security Manager"
+threat: Credential Compromise
+vulnerability: Weak master credentials or lack of MFA
+likelihood: 1
+impact: 1
+inherent_risk: 2
+treatment: mitigate
+frameworks:
+  iso27001:
+    controls: [A.8.5, A.5.17]
+required_controls: [A.5.17]
+notes: Enterprise-grade password manager with MFA and logging
+implementation_notes: null
+residual_likelihood: null
+residual_impact: null
+residual_risk: null
+owner: e.stpierre
+status: treating
+review_date: 2026-06-15

@@ -1,0 +1,22 @@
+id: R-024
+title: "Product specs, product IP, Product pricing - IP Theft"
+asset: "Product specs, product IP, Product pricing"
+asset_owner: "Leadership - CEO"
+threat: IP Theft
+vulnerability: Stored in shared locations without access restrictions
+likelihood: 1
+impact: 2
+inherent_risk: 3
+treatment: mitigate
+frameworks:
+  iso27001:
+    controls: [A.5.12, A.8.24]
+required_controls: [A.5.32]
+notes: Confluence and Google Drive with encryption
+implementation_notes: "Procedure for protecting IP (storage locations). Code repositories access controlled and logged;"
+residual_likelihood: 1
+residual_impact: 1
+residual_risk: 2
+owner: e.stpierre
+status: treating
+review_date: 2026-06-15

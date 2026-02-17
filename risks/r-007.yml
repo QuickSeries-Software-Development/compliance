@@ -1,0 +1,22 @@
+id: R-007
+title: "Audit Trails - Forensic Evasion"
+asset: Audit Trails
+asset_owner: "IT & Security Manager"
+threat: Forensic Evasion
+vulnerability: Absence of audit logging or tamper protection
+likelihood: 1
+impact: 2
+inherent_risk: 3
+treatment: mitigate
+frameworks:
+  iso27001:
+    controls: [A.5.24, A.8.15]
+required_controls: [A.5.28]
+notes: CloudTrail and CloudWatch logs with write-once retention policies
+implementation_notes: Include evidence collection in IRP.
+residual_likelihood: 1
+residual_impact: 1
+residual_risk: 2
+owner: e.stpierre
+status: treating
+review_date: 2026-06-15

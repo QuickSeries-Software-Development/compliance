@@ -1,0 +1,22 @@
+id: R-117
+title: "Twilio SMS API - SMS Flood / Phishing Abuse"
+asset: Twilio SMS API
+asset_owner: CTO
+threat: SMS Flood / Phishing Abuse
+vulnerability: Inadequate throttling or token leakage
+likelihood: 2
+impact: 1
+inherent_risk: 3
+treatment: mitigate
+frameworks:
+  iso27001:
+    controls: [A.8.20]
+required_controls: [A.8.20]
+notes: Currently evaluating Twillio and Vonage
+implementation_notes: Twilio or Vonage
+residual_likelihood: null
+residual_impact: null
+residual_risk: null
+owner: developer
+status: treating
+review_date: 2026-06-15

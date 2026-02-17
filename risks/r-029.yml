@@ -1,0 +1,22 @@
+id: R-029
+title: "Employee PII - Identity Theft / Privacy Breach"
+asset: Employee PII
+asset_owner: "Leadership - CEO"
+threat: Identity Theft / Privacy Breach
+vulnerability: Lack of encryption or consent processes
+likelihood: 2
+impact: 2
+inherent_risk: 4
+treatment: mitigate
+frameworks:
+  iso27001:
+    controls: [A.5.34, A.5.15]
+required_controls: [A.5.34]
+notes: "Stored encrypted in HR systems; access audited and consent collected"
+implementation_notes: Address Privacy and PII in policy document
+residual_likelihood: 1
+residual_impact: 1
+residual_risk: 2
+owner: r.ledoux
+status: treating
+review_date: 2026-06-15

@@ -1,0 +1,22 @@
+id: R-085
+title: "Google Workspace - Email - Phishing / Unauthorized Access"
+asset: "Google Workspace \u2013 Email"
+asset_owner: "IT & Security Manager"
+threat: Phishing / Unauthorized Access
+vulnerability: "Weak MFA, lack of alerting"
+likelihood: 1
+impact: 1
+inherent_risk: 2
+treatment: mitigate
+frameworks:
+  iso27001:
+    controls: [A.5.16, A.8.5, A.8.16]
+required_controls: [A.8.5]
+notes: "Enforced 2FA, Google Admin alerting rules, account login alerts"
+implementation_notes: null
+residual_likelihood: null
+residual_impact: null
+residual_risk: null
+owner: e.stpierre
+status: treating
+review_date: 2026-06-15

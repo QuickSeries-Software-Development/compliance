@@ -1,0 +1,22 @@
+id: R-086
+title: "Google Workspace - Drive - Data Leakage"
+asset: "Google Workspace \u2013 Drive"
+asset_owner: "IT & Security Manager"
+threat: Data Leakage
+vulnerability: "Public sharing, no classification or audit"
+likelihood: 2
+impact: 2
+inherent_risk: 4
+treatment: mitigate
+frameworks:
+  iso27001:
+    controls: [A.5.33, A.5.36]
+required_controls: [A.5.23]
+notes: "Shared drive policies, audit logs"
+implementation_notes: Establish policy on the use of cloud services
+residual_likelihood: 1
+residual_impact: 1
+residual_risk: 2
+owner: e.stpierre
+status: treating
+review_date: 2026-06-15

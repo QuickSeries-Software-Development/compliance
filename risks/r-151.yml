@@ -1,0 +1,22 @@
+id: R-151
+title: "Reduced traceability or explainability of generated code actions - Production outage"
+asset: Reduced traceability or explainability of generated code actions
+asset_owner: CTO
+threat: Production outage
+vulnerability: Poorly tested or rushed changes
+likelihood: 2
+impact: 1
+inherent_risk: 3
+treatment: mitigate
+frameworks:
+  iso27001:
+    controls: []
+required_controls: [A.8.32]
+notes: "Need to clarify separation of duties, change management process. TO IMPLEMENT"
+implementation_notes: Create the change management policy
+residual_likelihood: 1
+residual_impact: 1
+residual_risk: 2
+owner: j.ledoux
+status: treating
+review_date: 2026-06-15

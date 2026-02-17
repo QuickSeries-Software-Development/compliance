@@ -1,0 +1,22 @@
+id: R-106
+title: "TestRails - Data Integrity Loss"
+asset: TestRails
+asset_owner: CTO
+threat: Data Integrity Loss
+vulnerability: Uncontrolled access to test results and cases
+likelihood: 1
+impact: 1
+inherent_risk: 2
+treatment: mitigate
+frameworks:
+  iso27001:
+    controls: [A.5.15, A.8.15]
+required_controls: [A.8.33]
+notes: "Test environments use sanitized datasets; PII tokenized or anonymized before import."
+implementation_notes: null
+residual_likelihood: null
+residual_impact: null
+residual_risk: null
+owner: j.ledoux
+status: treating
+review_date: 2026-06-15

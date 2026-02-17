@@ -1,0 +1,22 @@
+id: R-141
+title: "DDO Office general security issues - Physical Security Breach"
+asset: DDO Office general security issues
+asset_owner: "Leadership - CEO"
+threat: Physical Security Breach
+vulnerability: "Weak lock systems, no policy enforcement"
+likelihood: 1
+impact: 1
+inherent_risk: 2
+treatment: mitigate
+frameworks:
+  iso27001:
+    controls: [A.7.1, A.7.3]
+required_controls: [A.7.3]
+notes: "Locks upgraded to electronic systems, documented physical security policy enforced"
+implementation_notes: null
+residual_likelihood: null
+residual_impact: null
+residual_risk: null
+owner: r.ledoux
+status: treating
+review_date: 2026-06-15

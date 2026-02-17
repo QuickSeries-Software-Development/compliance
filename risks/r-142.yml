@@ -1,0 +1,22 @@
+id: R-142
+title: "IT Systems Configuration Files - Unauthorized Changes"
+asset: IT Systems Configuration Files
+asset_owner: "IT & Security Manager"
+threat: Unauthorized Changes
+vulnerability: Lack of change control
+likelihood: 2
+impact: 2
+inherent_risk: 4
+treatment: mitigate
+frameworks:
+  iso27001:
+    controls: []
+required_controls: [A.8.32]
+notes: null
+implementation_notes: Develop and document the change management procedures for IT systems configuration. (In the respective IT procedures document).
+residual_likelihood: 1
+residual_impact: 1
+residual_risk: 2
+owner: e.stpierre
+status: treating
+review_date: 2026-06-15

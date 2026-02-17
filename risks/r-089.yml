@@ -1,0 +1,22 @@
+id: R-089
+title: "Confluence Knowledge Base - Sensitive Info Exposure"
+asset: Confluence Knowledge Base
+asset_owner: "IT & Security Manager"
+threat: Sensitive Info Exposure
+vulnerability: "Lack of access control, unmanaged page permissions"
+likelihood: 1
+impact: 1
+inherent_risk: 2
+treatment: mitigate
+frameworks:
+  iso27001:
+    controls: [A.5.15, A.5.36]
+required_controls: [A.5.15]
+notes: "Page-level access control, view/edit restrictions, Google SSO enforced"
+implementation_notes: null
+residual_likelihood: null
+residual_impact: null
+residual_risk: null
+owner: e.stpierre
+status: treating
+review_date: 2026-06-15

@@ -1,0 +1,22 @@
+id: R-136
+title: "Office locations and premises - Physical Intrusion"
+asset: Office locations and premises
+asset_owner: "Leadership - CEO"
+threat: Physical Intrusion
+vulnerability: "Inadequate surveillance, visitor control, or perimeter protection"
+likelihood: 2
+impact: 1
+inherent_risk: 3
+treatment: mitigate
+frameworks:
+  iso27001:
+    controls: [A.7.1, A.7.3, A.7.4]
+required_controls: [A.7.3]
+notes: "visitor registration and escort policies; cameras to be installed."
+implementation_notes: Camera to be installed in loading area
+residual_likelihood: 1
+residual_impact: 1
+residual_risk: 2
+owner: r.ledoux
+status: treating
+review_date: 2026-06-15

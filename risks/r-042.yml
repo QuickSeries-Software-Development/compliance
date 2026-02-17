@@ -1,0 +1,22 @@
+id: R-042
+title: "Windows Workstation - UPS Software - Malware"
+asset: "Windows Workstation - UPS Software"
+asset_owner: "IT & Security Manager"
+threat: Malware
+vulnerability: Lack of endpoint protection or outdated software
+likelihood: 0
+impact: 1
+inherent_risk: 1
+treatment: mitigate
+frameworks:
+  iso27001:
+    controls: [A.8.7, A.5.15]
+required_controls: [A.8.7]
+notes: "MDM, Avast Anti-malware/anti-virus, restricted admin access via policy"
+implementation_notes: null
+residual_likelihood: null
+residual_impact: null
+residual_risk: null
+owner: e.stpierre
+status: treating
+review_date: 2026-06-15

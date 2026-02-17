@@ -1,0 +1,22 @@
+id: R-021
+title: "Financial Reports - Data Leakage"
+asset: Financial Reports
+asset_owner: "Leadership - VP Finance"
+threat: Data Leakage
+vulnerability: Stored without encryption or access tracking
+likelihood: 1
+impact: 1
+inherent_risk: 2
+treatment: mitigate
+frameworks:
+  iso27001:
+    controls: [A.5.33]
+required_controls: [A.5.33]
+notes: "Stored in encrypted GDrive folders; access by finance group only"
+implementation_notes: null
+residual_likelihood: null
+residual_impact: null
+residual_risk: null
+owner: vp-finance
+status: treating
+review_date: 2026-06-15

@@ -1,0 +1,22 @@
+id: R-114
+title: "iPAWS Emergency Alerts - False or Malicious Alert Delivery"
+asset: iPAWS Emergency Alerts
+asset_owner: CTO
+threat: False or Malicious Alert Delivery
+vulnerability: Compromised API or unauthorized access
+likelihood: 1
+impact: 1
+inherent_risk: 2
+treatment: mitigate
+frameworks:
+  iso27001:
+    controls: [A.8.26, A.5.24]
+required_controls: [A.8.26]
+notes: Public API using a PIN store in AWS Parameter Store.
+implementation_notes: null
+residual_likelihood: null
+residual_impact: null
+residual_risk: null
+owner: developer
+status: treating
+review_date: 2026-06-15

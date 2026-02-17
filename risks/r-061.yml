@@ -1,0 +1,22 @@
+id: R-061
+title: "AWS IAM Policies - Unauthorized Access"
+asset: AWS IAM Policies
+asset_owner: "IT & Security Manager"
+threat: Unauthorized Access
+vulnerability: Misconfigured resource policies or privilege creep
+likelihood: 0
+impact: 1
+inherent_risk: 1
+treatment: mitigate
+frameworks:
+  iso27001:
+    controls: [A.5.15, A.5.18]
+required_controls: [A.5.15]
+notes: "Periodic IAM review, AWS Config rules for policy compliance"
+implementation_notes: null
+residual_likelihood: null
+residual_impact: null
+residual_risk: null
+owner: e.stpierre
+status: treating
+review_date: 2026-06-15

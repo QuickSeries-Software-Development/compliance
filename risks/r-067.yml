@@ -1,0 +1,22 @@
+id: R-067
+title: "AWS VPC Configurations - Network Exposure"
+asset: AWS VPC Configurations
+asset_owner: "IT & Security Manager"
+threat: Network Exposure
+vulnerability: Insecure subnet design
+likelihood: 1
+impact: 1
+inherent_risk: 2
+treatment: mitigate
+frameworks:
+  iso27001:
+    controls: [A.8.22, A.8.9]
+required_controls: [A.8.22]
+notes: "Public/private subnet separation, no IGW in private zones, AWS Config checks"
+implementation_notes: null
+residual_likelihood: null
+residual_impact: null
+residual_risk: null
+owner: e.stpierre
+status: treating
+review_date: 2026-06-15

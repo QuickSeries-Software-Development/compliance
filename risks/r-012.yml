@@ -1,0 +1,22 @@
+id: R-012
+title: "Infrastructure-as-Code Scripts - Unauthorized Changes"
+asset: Infrastructure-as-Code Scripts
+asset_owner: CTO
+threat: Unauthorized Changes
+vulnerability: Poor control of versioning or access
+likelihood: 0
+impact: 2
+inherent_risk: 2
+treatment: mitigate
+frameworks:
+  iso27001:
+    controls: [A.8.25, A.8.32]
+required_controls: [A.8.9]
+notes: GitHub/GitLab IaC repos with commit reviews and branch protection
+implementation_notes: Prefer the use of CM database.
+residual_likelihood: 1
+residual_impact: 1
+residual_risk: 2
+owner: j.ledoux
+status: treating
+review_date: 2026-06-15

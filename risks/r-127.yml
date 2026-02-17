@@ -1,0 +1,22 @@
+id: R-127
+title: "Temporary Staff - Insider Threat / Mishandling"
+asset: Temporary Staff
+asset_owner: "Leadership - CEO"
+threat: Insider Threat / Mishandling
+vulnerability: Inadequate onboarding/offboarding or training
+likelihood: 2
+impact: 1
+inherent_risk: 3
+treatment: mitigate
+frameworks:
+  iso27001:
+    controls: [A.6.1, A.6.2, A.6.5, A.5.11]
+required_controls: [A.6.5]
+notes: "Defined onboarding/offboarding checklist, short-term accounts with expiration, access logs"
+implementation_notes: Employee Handbook to include all Annex A.6.x Required procedures
+residual_likelihood: 1
+residual_impact: 1
+residual_risk: 2
+owner: e.stpierre
+status: treating
+review_date: 2026-06-15

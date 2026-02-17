@@ -1,0 +1,22 @@
+id: R-112
+title: "ArcGIS API - Unauthorized Geographic Access"
+asset: ArcGIS API
+asset_owner: CTO
+threat: Unauthorized Geographic Access
+vulnerability: Open or unprotected access to sensitive geodata
+likelihood: 1
+impact: 2
+inherent_risk: 3
+treatment: mitigate
+frameworks:
+  iso27001:
+    controls: [A.5.23, A.5.15]
+required_controls: [A.5.23]
+notes: Public API using username/password stored in AWS Paramerter Store.
+implementation_notes: Mention in cloud policy
+residual_likelihood: 1
+residual_impact: 1
+residual_risk: 2
+owner: developer
+status: treating
+review_date: 2026-06-15

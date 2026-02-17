@@ -1,0 +1,22 @@
+id: R-020
+title: "Company Corporate Books - Unauthorized Disclosure"
+asset: Company Corporate Books
+asset_owner: "Leadership - VP Finance"
+threat: Unauthorized Disclosure
+vulnerability: Weak access control or insufficient audit logging
+likelihood: 1
+impact: 1
+inherent_risk: 2
+treatment: mitigate
+frameworks:
+  iso27001:
+    controls: [A.5.33, A.5.36]
+required_controls: [A.5.36]
+notes: "Google Drive access restrictions and audit logging; user roles defined"
+implementation_notes: null
+residual_likelihood: null
+residual_impact: null
+residual_risk: null
+owner: vp-finance
+status: treating
+review_date: 2026-06-15

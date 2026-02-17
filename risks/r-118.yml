@@ -1,0 +1,22 @@
+id: R-118
+title: "Social Media (LinkedIn, Facebook, etc) - Brand Impersonation / Info Leak"
+asset: "Social Media (LinkedIn, Facebook, etc)"
+asset_owner: "Leadership - Marketing Director"
+threat: Brand Impersonation / Info Leak
+vulnerability: "Shared accounts, lack of content control"
+likelihood: 2
+impact: 2
+inherent_risk: 4
+treatment: mitigate
+frameworks:
+  iso27001:
+    controls: [A.5.23, A.5.16, A.5.17]
+required_controls: [A.5.23]
+notes: "Social logins managed via corporate password manager, brand policy for posts"
+implementation_notes: Establish policy on the use of cloud services
+residual_likelihood: 1
+residual_impact: 1
+residual_risk: 2
+owner: e.stpierre
+status: treating
+review_date: 2026-06-15

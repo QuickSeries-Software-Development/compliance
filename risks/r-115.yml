@@ -1,0 +1,22 @@
+id: R-115
+title: "Corporate website - Website Defacement / Downtime"
+asset: Corporate website
+asset_owner: CTO
+threat: Website Defacement / Downtime
+vulnerability: "Outdated CMS, weak WAF, or vulnerable plug-ins"
+likelihood: 2
+impact: 1
+inherent_risk: 3
+treatment: mitigate
+frameworks:
+  iso27001:
+    controls: [A.8.8, A.8.26]
+required_controls: [A.8.8]
+notes: "WAF managed rules (e.g., AWS WAF), access control for the backend, restrictions on infrastructure"
+implementation_notes: Implement WAF rules
+residual_likelihood: 1
+residual_impact: 1
+residual_risk: 2
+owner: e.stpierre
+status: treating
+review_date: 2026-06-15

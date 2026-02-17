@@ -1,0 +1,22 @@
+id: R-122
+title: "DevOps Engineer - Pipeline Manipulation"
+asset: DevOps Engineer
+asset_owner: CTO
+threat: Pipeline Manipulation
+vulnerability: "Secrets exposure, direct infrastructure access"
+likelihood: 1
+impact: 1
+inherent_risk: 2
+treatment: mitigate
+frameworks:
+  iso27001:
+    controls: [A.8.15, A.8.25, A.5.15]
+required_controls: [A.8.25]
+notes: "Secrets in Parameter Store/Secrets Manager, privileged actions gated via OIDC-based CI, audit logs"
+implementation_notes: null
+residual_likelihood: null
+residual_impact: null
+residual_risk: null
+owner: j.ledoux
+status: treating
+review_date: 2026-06-15

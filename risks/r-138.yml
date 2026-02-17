@@ -1,0 +1,22 @@
+id: R-138
+title: "Fire Detection System - Fire / Safety Risk"
+asset: Fire Detection System
+asset_owner: "Leadership - CEO"
+threat: Fire / Safety Risk
+vulnerability: "Faulty sensors, untested alarms"
+likelihood: 2
+impact: 1
+inherent_risk: 3
+treatment: mitigate
+frameworks:
+  iso27001:
+    controls: [A.7.5, A.7.4]
+required_controls: [A.7.5]
+notes: "Fire detection tested quarterly, audit logs maintained, integration with alarm systems TO VALIDATE"
+implementation_notes: Validate with building owner
+residual_likelihood: null
+residual_impact: null
+residual_risk: null
+owner: r.ledoux
+status: treating
+review_date: 2026-06-15

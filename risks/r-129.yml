@@ -1,0 +1,22 @@
+id: R-129
+title: "HR Administrator - PII Exposure / Manipulation"
+asset: HR Administrator
+asset_owner: "Leadership - VP Finance"
+threat: PII Exposure / Manipulation
+vulnerability: Direct access to employee files and HR records
+likelihood: 0
+impact: 2
+inherent_risk: 2
+treatment: mitigate
+frameworks:
+  iso27001:
+    controls: [A.5.33, A.5.34, A.5.15]
+required_controls: [A.5.33]
+notes: Encrypted data via google workspace business plus
+implementation_notes: "Encryption on google drive; ACL;HR PC solution?"
+residual_likelihood: null
+residual_impact: null
+residual_risk: null
+owner: e.stpierre
+status: treating
+review_date: 2026-06-15

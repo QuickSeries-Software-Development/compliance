@@ -1,0 +1,22 @@
+id: R-077
+title: "Wi-Fi Access Points - Unauthorized Access"
+asset: Wi-Fi Access Points
+asset_owner: "IT & Security Manager"
+threat: Unauthorized Access
+vulnerability: Lack of segmentation
+likelihood: 0
+impact: 1
+inherent_risk: 1
+treatment: mitigate
+frameworks:
+  iso27001:
+    controls: [A.8.20, A.8.5, A.8.22]
+required_controls: [A.8.22]
+notes: "WPA2/3-Enterprise, MAC filtering, isolated guest SSID"
+implementation_notes: null
+residual_likelihood: null
+residual_impact: null
+residual_risk: null
+owner: e.stpierre
+status: treating
+review_date: 2026-06-15

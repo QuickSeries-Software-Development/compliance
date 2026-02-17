@@ -1,0 +1,22 @@
+id: R-062
+title: "AWS CloudWatch - Missed Anomaly Detection"
+asset: AWS CloudWatch
+asset_owner: "IT & Security Manager"
+threat: Missed Anomaly Detection
+vulnerability: Gaps in alarm thresholds or unmonitored metrics
+likelihood: 0
+impact: 1
+inherent_risk: 1
+treatment: mitigate
+frameworks:
+  iso27001:
+    controls: [A.8.16]
+required_controls: [A.8.16]
+notes: "Alarms on EC2, ECS, VPC events; GuardDuty integration"
+implementation_notes: null
+residual_likelihood: null
+residual_impact: null
+residual_risk: null
+owner: e.stpierre
+status: treating
+review_date: 2026-06-15

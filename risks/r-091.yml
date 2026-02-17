@@ -1,0 +1,22 @@
+id: R-091
+title: "CI/CD pipeline, GitHub - Vulnerability push to prod"
+asset: "CI/CD pipeline, GitHub"
+asset_owner: CTO
+threat: Vulnerability push to prod
+vulnerability: No testing before deployment
+likelihood: 2
+impact: 1
+inherent_risk: 3
+treatment: mitigate
+frameworks:
+  iso27001:
+    controls: [A.8.29]
+required_controls: [A.8.29]
+notes: To implement Synk or equivalent
+implementation_notes: Implement Synk or equivalent
+residual_likelihood: 1
+residual_impact: 1
+residual_risk: 2
+owner: j.ledoux
+status: treating
+review_date: 2026-06-15

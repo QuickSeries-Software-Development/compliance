@@ -1,0 +1,22 @@
+id: R-147
+title: "Use of AI in SDLC: Source code repositories - Insertion of insecure or malicious code by AI (Copilot/Agent)"
+asset: "Use of AI in SDLC: Source code repositories (e.g. GitHub, GitLab)"
+asset_owner: CTO
+threat: Insertion of insecure or malicious code by AI (Copilot/Agent)
+vulnerability: "Over-reliance on AI-generated code without human validation"
+likelihood: 1
+impact: 1
+inherent_risk: 2
+treatment: mitigate
+frameworks:
+  iso27001:
+    controls: [A.8.25]
+required_controls: [A.8.25]
+notes: "Standardized usage for all developers, enforced code review before merging changes, clear usage policies, Clode Code \"commands\" managed by team leader"
+implementation_notes: "Mention in the SDLC policy; mention in A.8.28-A.8.31"
+residual_likelihood: null
+residual_impact: null
+residual_risk: null
+owner: developer
+status: treating
+review_date: 2026-06-15

@@ -1,0 +1,22 @@
+id: R-023
+title: "Our CodeBase (QS Connect & Quick ICS) - Source Code Theft"
+asset: "Our CodeBase (QS Connect & Quick ICS)"
+asset_owner: "Leadership - CEO"
+threat: Source Code Theft
+vulnerability: Insecure repo access or inadequate access control
+likelihood: 1
+impact: 1
+inherent_risk: 2
+treatment: mitigate
+frameworks:
+  iso27001:
+    controls: [A.8.4, A.5.15]
+required_controls: [A.8.4]
+notes: "GitHub with branch protection, SSO & role-based access control"
+implementation_notes: null
+residual_likelihood: null
+residual_impact: null
+residual_risk: null
+owner: r.ledoux
+status: treating
+review_date: 2026-06-15

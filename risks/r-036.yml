@@ -1,0 +1,22 @@
+id: R-036
+title: "Disaster Recovery Plan - Business Continuity Failure"
+asset: Disaster Recovery Plan
+asset_owner: "Leadership - CEO"
+threat: Business Continuity Failure
+vulnerability: Outdated or inaccessible documentation
+likelihood: 1
+impact: 2
+inherent_risk: 3
+treatment: mitigate
+frameworks:
+  iso27001:
+    controls: []
+required_controls: [A.5.30]
+notes: null
+implementation_notes: Create the BCP/DR policies
+residual_likelihood: 1
+residual_impact: 1
+residual_risk: 2
+owner: r.ledoux
+status: treating
+review_date: 2026-06-15

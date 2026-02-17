@@ -1,0 +1,22 @@
+id: R-033
+title: "LucidCharts - Data Exposure via SaaS"
+asset: LucidCharts
+asset_owner: CTO
+threat: Data Exposure via SaaS
+vulnerability: Weak SaaS security config or unauthorized sharing
+likelihood: 1
+impact: 1
+inherent_risk: 2
+treatment: mitigate
+frameworks:
+  iso27001:
+    controls: [A.5.23, A.8.15]
+required_controls: [A.5.23]
+notes: "Access via Google SSO; periodic audit of sharing permissions"
+implementation_notes: null
+residual_likelihood: null
+residual_impact: null
+residual_risk: null
+owner: j.ledoux
+status: treating
+review_date: 2026-06-15

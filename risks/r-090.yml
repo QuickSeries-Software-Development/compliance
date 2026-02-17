@@ -1,0 +1,22 @@
+id: R-090
+title: "GitLab Pipelines - Supply Chain Compromise"
+asset: GitLab Pipelines
+asset_owner: CTO
+threat: Supply Chain Compromise
+vulnerability: Insecure CI/CD secrets or code execution pipelines
+likelihood: 1
+impact: 1
+inherent_risk: 2
+treatment: mitigate
+frameworks:
+  iso27001:
+    controls: [A.8.25, A.8.26, A.5.17]
+required_controls: [A.8.25]
+notes: "GitLab CI secrets encrypted, job isolation, OIDC integration for deploy steps"
+implementation_notes: null
+residual_likelihood: null
+residual_impact: null
+residual_risk: null
+owner: j.ledoux
+status: treating
+review_date: 2026-06-15

@@ -1,0 +1,22 @@
+id: R-010
+title: "Source Code - Backend - Source Code Leakage"
+asset: "Source Code - Backend"
+asset_owner: CTO
+threat: Source Code Leakage
+vulnerability: Insecure repositories or exposed endpoints
+likelihood: 0
+impact: 1
+inherent_risk: 1
+treatment: mitigate
+frameworks:
+  iso27001:
+    controls: [A.8.4, A.8.28]
+required_controls: [A.8.4]
+notes: "GitHub private repos; access via SSO/MFA; GitHub branch protection rules"
+implementation_notes: null
+residual_likelihood: null
+residual_impact: null
+residual_risk: null
+owner: j.ledoux
+status: treating
+review_date: 2026-06-15

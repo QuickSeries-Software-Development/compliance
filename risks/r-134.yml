@@ -1,0 +1,22 @@
+id: R-134
+title: "Content team - Unauthorized Disclosure"
+asset: Content team
+asset_owner: "Leadership - President"
+threat: Unauthorized Disclosure
+vulnerability: "Access to pre-release materials, unmanaged collaboration tools"
+likelihood: 1
+impact: 1
+inherent_risk: 2
+treatment: mitigate
+frameworks:
+  iso27001:
+    controls: [A.5.10, A.5.12, A.5.15]
+required_controls: [A.5.10]
+notes: "Acceptable use policy, content staging system with MFA, document classification, restricted sharing via Google Workspace"
+implementation_notes: null
+residual_likelihood: null
+residual_impact: null
+residual_risk: null
+owner: r.ledoux
+status: treating
+review_date: 2026-06-15

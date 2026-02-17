@@ -1,0 +1,22 @@
+id: R-038
+title: "Development and source code data - Data loss / Data Corruption"
+asset: Development and source code data
+asset_owner: CTO
+threat: Data loss / Data Corruption
+vulnerability: No availability of data copies
+likelihood: 2
+impact: 2
+inherent_risk: 4
+treatment: mitigate
+frameworks:
+  iso27001:
+    controls: [A.8.13]
+required_controls: [A.8.13]
+notes: Backup of GitHub
+implementation_notes: Describe the backup solution and type of data protected
+residual_likelihood: 1
+residual_impact: 1
+residual_risk: null
+owner: j.ledoux
+status: treating
+review_date: 2026-06-15

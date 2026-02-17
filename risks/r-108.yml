@@ -1,0 +1,22 @@
+id: R-108
+title: "CRM systems - Customer Data Exposure"
+asset: CRM systems
+asset_owner: "IT & Security Manager"
+threat: Customer Data Exposure
+vulnerability: Weak access control or insecure storage
+likelihood: 1
+impact: 2
+inherent_risk: 3
+treatment: mitigate
+frameworks:
+  iso27001:
+    controls: [A.5.15, A.5.34]
+required_controls: [A.5.34]
+notes: "Role-based CRM access,"
+implementation_notes: "Address Privacy and PII in policy document: CRM only accessible through VPN, roles-based and users-based ACLs"
+residual_likelihood: 1
+residual_impact: 1
+residual_risk: 2
+owner: e.stpierre
+status: treating
+review_date: 2026-06-15

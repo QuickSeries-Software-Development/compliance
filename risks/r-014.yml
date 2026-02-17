@@ -1,0 +1,22 @@
+id: R-014
+title: "Access Control Policies - Privilege Escalation"
+asset: Access Control Policies
+asset_owner: "IT & Security Manager"
+threat: Privilege Escalation
+vulnerability: "Policies not enforced, misconfigured IAM"
+likelihood: 0
+impact: 1
+inherent_risk: 1
+treatment: mitigate
+frameworks:
+  iso27001:
+    controls: [A.5.18, A.5.15]
+required_controls: [A.5.18]
+notes: "IAM policies reviewed periodically; access granted by role, not user; Access rights defined;CloudTrail logging"
+implementation_notes: null
+residual_likelihood: null
+residual_impact: null
+residual_risk: null
+owner: e.stpierre
+status: treating
+review_date: 2026-06-15

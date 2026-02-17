@@ -1,0 +1,22 @@
+id: R-071
+title: "Security Groups - Unauthorized Access"
+asset: Security Groups
+asset_owner: "IT & Security Manager"
+threat: Unauthorized Access
+vulnerability: Overly broad
+likelihood: 1
+impact: 1
+inherent_risk: 2
+treatment: mitigate
+frameworks:
+  iso27001:
+    controls: [A.8.20]
+required_controls: [A.8.20]
+notes: "Least-privilege rules, AWS Config and Security Hub alerts"
+implementation_notes: null
+residual_likelihood: null
+residual_impact: null
+residual_risk: null
+owner: e.stpierre
+status: treating
+review_date: 2026-06-15

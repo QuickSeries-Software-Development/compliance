@@ -1,0 +1,22 @@
+id: R-039
+title: "Workstations - Employees - Malware"
+asset: "Workstations - Employees"
+asset_owner: "IT & Security Manager"
+threat: Malware
+vulnerability: Lack of endpoint protection or outdated software
+likelihood: 1
+impact: 1
+inherent_risk: 2
+treatment: mitigate
+frameworks:
+  iso27001:
+    controls: [A.8.7, A.6.7]
+required_controls: [A.8.7]
+notes: "macOS with MDM (Miradore), EDR agents, managed updates"
+implementation_notes: null
+residual_likelihood: null
+residual_impact: null
+residual_risk: null
+owner: e.stpierre
+status: treating
+review_date: 2026-06-15

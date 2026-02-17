@@ -1,0 +1,22 @@
+id: R-018
+title: "Bank Tokens & Passwords - Credential Theft"
+asset: "Bank Tokens & Passwords"
+asset_owner: "Leadership - CEO"
+threat: Credential Theft
+vulnerability: "Poor password/key storage, no vaulting"
+likelihood: 0
+impact: 1
+inherent_risk: 1
+treatment: mitigate
+frameworks:
+  iso27001:
+    controls: [A.5.17, A.8.5]
+required_controls: [A.5.17]
+notes: Stored in AWS Secrets Manager or password manager with MFA
+implementation_notes: null
+residual_likelihood: null
+residual_impact: null
+residual_risk: null
+owner: r.ledoux
+status: treating
+review_date: 2026-06-15

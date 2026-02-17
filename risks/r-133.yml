@@ -1,0 +1,22 @@
+id: R-133
+title: "All other employees - Social Engineering / Error"
+asset: All other employees
+asset_owner: "Leadership - CEO"
+threat: Social Engineering / Error
+vulnerability: "Lack of awareness, phishing susceptibility"
+likelihood: 1
+impact: 1
+inherent_risk: 2
+treatment: mitigate
+frameworks:
+  iso27001:
+    controls: [A.6.3, A.6.4]
+required_controls: [A.6.3]
+notes: "Phishing simulations, recurring security training, Slack/email phishing reporting channel"
+implementation_notes: null
+residual_likelihood: null
+residual_impact: null
+residual_risk: null
+owner: e.stpierre
+status: treating
+review_date: 2026-06-15

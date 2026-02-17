@@ -1,0 +1,22 @@
+id: R-125
+title: "Finance Officer - Financial Fraud / Data Breach"
+asset: Finance Officer
+asset_owner: "Leadership - VP Finance"
+threat: Financial Fraud / Data Breach
+vulnerability: Access to accounting systems and sensitive financial records
+likelihood: 0
+impact: 2
+inherent_risk: 2
+treatment: mitigate
+frameworks:
+  iso27001:
+    controls: [A.5.33, A.5.15, A.5.18, A.8.15]
+required_controls: [A.5.18]
+notes: "Role-based access in accounting systems, encryption at rest, 2FA and audit logs"
+implementation_notes: null
+residual_likelihood: null
+residual_impact: null
+residual_risk: null
+owner: e.stpierre
+status: treating
+review_date: 2026-06-15

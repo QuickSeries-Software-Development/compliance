@@ -1,0 +1,22 @@
+id: R-100
+title: "CookieYes - Privacy Compliance Failure"
+asset: CookieYes
+asset_owner: CTO
+threat: Privacy Compliance Failure
+vulnerability: Misconfigured cookie consent or data collection controls
+likelihood: 1
+impact: 1
+inherent_risk: 2
+treatment: mitigate
+frameworks:
+  iso27001:
+    controls: [A.5.34, A.5.31]
+required_controls: [A.5.34]
+notes: "Cookie banner aligned with privacy regulations, script manager for tracking enforcement"
+implementation_notes: null
+residual_likelihood: null
+residual_impact: null
+residual_risk: null
+owner: j.ledoux
+status: treating
+review_date: 2026-06-15

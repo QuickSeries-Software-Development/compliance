@@ -1,0 +1,22 @@
+id: R-145
+title: "Internal Use Applications (CRM, Accounting) - Data loss / Data Corruption"
+asset: "Internal Use Applications (CRM , Accounting)"
+asset_owner: "IT & Security Manager"
+threat: Data loss / Data Corruption
+vulnerability: No availability of data copies
+likelihood: 1
+impact: 1
+inherent_risk: 2
+treatment: mitigate
+frameworks:
+  iso27001:
+    controls: [A.8.13]
+required_controls: [A.8.13]
+notes: "daily automated backups. CRM: twice a day (noon and 8pm) Accounting: once a day (8pm]"
+implementation_notes: Describe backup system in IT policy.
+residual_likelihood: null
+residual_impact: null
+residual_risk: null
+owner: e.stpierre
+status: treating
+review_date: 2026-06-15

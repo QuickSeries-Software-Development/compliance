@@ -1,0 +1,22 @@
+id: R-081
+title: "Firewall Ruleset - Misconfiguration"
+asset: Firewall Ruleset
+asset_owner: "IT & Security Manager"
+threat: Misconfiguration
+vulnerability: Allowing unauthorized access or overly permissive rules
+likelihood: 0
+impact: 1
+inherent_risk: 1
+treatment: mitigate
+frameworks:
+  iso27001:
+    controls: [A.8.9, A.8.20]
+required_controls: [A.8.20]
+notes: "rule audit scripts, deny-all defaults"
+implementation_notes: null
+residual_likelihood: null
+residual_impact: null
+residual_risk: null
+owner: e.stpierre
+status: treating
+review_date: 2026-06-15

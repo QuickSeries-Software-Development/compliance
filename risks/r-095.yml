@@ -1,0 +1,22 @@
+id: R-095
+title: "Third-party libraries - Supply Chain Attack"
+asset: Third-party libraries
+asset_owner: CTO
+threat: Supply Chain Attack
+vulnerability: Outdated or unverified dependencies
+likelihood: 2
+impact: 1
+inherent_risk: 3
+treatment: mitigate
+frameworks:
+  iso27001:
+    controls: [A.8.28, A.8.8]
+required_controls: [A.8.8]
+notes: "Dependabotin GitHub; To implement Synk"
+implementation_notes: Implement Synk or equivalent
+residual_likelihood: 1
+residual_impact: 1
+residual_risk: 2
+owner: developer
+status: treating
+review_date: 2026-06-15

@@ -1,0 +1,22 @@
+id: R-119
+title: "AI Tools (ChatGPT, Claude, Gemini, Slack AI) - Data Leakage / Prompt Injection"
+asset: "AI Tools (ChatGPT, Claude, Gemini, Slack AI)"
+asset_owner: CTO
+threat: Data Leakage / Prompt Injection
+vulnerability: Input of confidential data or misleading results
+likelihood: 1
+impact: 1
+inherent_risk: 2
+treatment: mitigate
+frameworks:
+  iso27001:
+    controls: [A.5.12, A.5.36, A.8.3, A.8.10]
+required_controls: [A.5.10]
+notes: "Guidance and restrictions for prompt input, opt-out logging where applicable, no PII sharing via AI per policy, proper configuration management"
+implementation_notes: null
+residual_likelihood: null
+residual_impact: null
+residual_risk: null
+owner: j.ledoux
+status: treating
+review_date: 2026-06-15

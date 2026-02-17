@@ -1,0 +1,22 @@
+id: R-048
+title: "Network Attached Storage - Ransomware / Data Loss"
+asset: Network Attached Storage
+asset_owner: "IT & Security Manager"
+threat: Ransomware / Data Loss
+vulnerability: "Open SMB shares, outdated firmware, no access segregation"
+likelihood: 1
+impact: 1
+inherent_risk: 2
+treatment: mitigate
+frameworks:
+  iso27001:
+    controls: [A.8.1, A.8.13]
+required_controls: [A.8.1]
+notes: "NAS access via VPN; ACL policies; firmware updates;data backup"
+implementation_notes: null
+residual_likelihood: null
+residual_impact: null
+residual_risk: null
+owner: e.stpierre
+status: treating
+review_date: 2026-06-15

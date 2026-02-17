@@ -1,0 +1,22 @@
+id: R-120
+title: "G7 Executive Group - Targeted Spear Phishing / Breach"
+asset: G7 Executive Group
+asset_owner: "Leadership - CEO"
+threat: Targeted Spear Phishing / Breach
+vulnerability: "High-profile targets, access to sensitive business data"
+likelihood: 0
+impact: 2
+inherent_risk: 2
+treatment: mitigate
+frameworks:
+  iso27001:
+    controls: [A.6.3, A.5.17, A.8.5]
+required_controls: [A.6.3]
+notes: "Mandatory MFA, executive awareness training, password managers"
+implementation_notes: null
+residual_likelihood: null
+residual_impact: null
+residual_risk: null
+owner: e.stpierre
+status: treating
+review_date: 2026-06-15

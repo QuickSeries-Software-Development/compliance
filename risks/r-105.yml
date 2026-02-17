@@ -1,0 +1,22 @@
+id: R-105
+title: "Snyk - Vulnerability Exposure"
+asset: Snyk
+asset_owner: CTO
+threat: Vulnerability Exposure
+vulnerability: Unpatched or unreviewed findings left unresolved
+likelihood: 1
+impact: 1
+inherent_risk: 2
+treatment: mitigate
+frameworks:
+  iso27001:
+    controls: [A.8.8, A.8.16]
+required_controls: [A.8.8]
+notes: "CI pipeline breaks on high-severity CVEs, auto-remediation alerts, ticket tracking"
+implementation_notes: null
+residual_likelihood: null
+residual_impact: null
+residual_risk: null
+owner: j.ledoux
+status: treating
+review_date: 2026-06-15

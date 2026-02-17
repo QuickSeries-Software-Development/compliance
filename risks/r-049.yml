@@ -1,0 +1,22 @@
+id: R-049
+title: "USB Storage Devices - Data Exfiltration"
+asset: USB Storage Devices
+asset_owner: "IT & Security Manager"
+threat: Data Exfiltration
+vulnerability: Lack of encryption or data classification
+likelihood: 1
+impact: 1
+inherent_risk: 2
+treatment: mitigate
+frameworks:
+  iso27001:
+    controls: [A.5.12, A.7.10, A.8.24]
+required_controls: [A.7.10]
+notes: "USB port control via MDM; encrypted drives enforced; information backup."
+implementation_notes: null
+residual_likelihood: null
+residual_impact: null
+residual_risk: null
+owner: e.stpierre
+status: treating
+review_date: 2026-06-15

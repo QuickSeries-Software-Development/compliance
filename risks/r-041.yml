@@ -1,0 +1,22 @@
+id: R-041
+title: "All Laptos and Workstations - Malware Download"
+asset: All Laptos and Workstations
+asset_owner: "IT & Security Manager"
+threat: Malware Download
+vulnerability: emp Cloud Engineer we hired
+likelihood: 1
+impact: 1
+inherent_risk: 2
+treatment: mitigate
+frameworks:
+  iso27001:
+    controls: [A.8.7]
+required_controls: [A.8.23]
+notes: Avast Filetring service
+implementation_notes: null
+residual_likelihood: null
+residual_impact: null
+residual_risk: null
+owner: e.stpierre
+status: treating
+review_date: 2026-06-15

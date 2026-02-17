@@ -1,0 +1,22 @@
+id: R-065
+title: "Elastic Load Balancers - Traffic Interception"
+asset: Elastic Load Balancers
+asset_owner: "IT & Security Manager"
+threat: Traffic Interception
+vulnerability: Misconfigured listeners
+likelihood: 0
+impact: 1
+inherent_risk: 1
+treatment: mitigate
+frameworks:
+  iso27001:
+    controls: [A.8.20]
+required_controls: [A.8.20]
+notes: "TLS enforced, only strong ciphers allowed, listener validation in Terraform/CDK"
+implementation_notes: null
+residual_likelihood: null
+residual_impact: null
+residual_risk: null
+owner: e.stpierre
+status: treating
+review_date: 2026-06-15

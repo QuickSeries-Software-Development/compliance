@@ -1,0 +1,22 @@
+id: R-066
+title: "Route 53 DNS Records - DNS Hijacking"
+asset: Route 53 DNS Records
+asset_owner: "IT & Security Manager"
+threat: DNS Hijacking
+vulnerability: Misconfigured routing policies or lack of DNSSEC
+likelihood: 0
+impact: 1
+inherent_risk: 1
+treatment: mitigate
+frameworks:
+  iso27001:
+    controls: [A.8.20]
+required_controls: [A.8.20]
+notes: "DNSSEC for hosted zones, restricted zone edits, monitored changes"
+implementation_notes: null
+residual_likelihood: null
+residual_impact: null
+residual_risk: null
+owner: e.stpierre
+status: treating
+review_date: 2026-06-15

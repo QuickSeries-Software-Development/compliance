@@ -1,0 +1,22 @@
+id: R-124
+title: "QA Analyst - Test Data Exposure"
+asset: QA Analyst
+asset_owner: CTO
+threat: Test Data Exposure
+vulnerability: Use of production data in test environments
+likelihood: 1
+impact: 1
+inherent_risk: 2
+treatment: mitigate
+frameworks:
+  iso27001:
+    controls: [A.8.31, A.5.34, A.5.12, A.8.10]
+required_controls: [A.8.31]
+notes: "Separate environments, use of synthetic data"
+implementation_notes: null
+residual_likelihood: null
+residual_impact: null
+residual_risk: null
+owner: j.ledoux
+status: treating
+review_date: 2026-06-15

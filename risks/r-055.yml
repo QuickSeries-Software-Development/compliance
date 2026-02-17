@@ -1,0 +1,22 @@
+id: R-055
+title: "MongoDB Instances - Data Breach"
+asset: MongoDB Instances
+asset_owner: "IT & Security Manager"
+threat: Data Breach
+vulnerability: "Poor DB ACLs, lack of encryption, exposed credentials"
+likelihood: 0
+impact: 1
+inherent_risk: 1
+treatment: mitigate
+frameworks:
+  iso27001:
+    controls: [A.8.24, A.8.3]
+required_controls: [A.8.24]
+notes: "Encryption at rest (KMS), IAM auth for DB, subnet isolation, SGs for access"
+implementation_notes: null
+residual_likelihood: null
+residual_impact: null
+residual_risk: null
+owner: e.stpierre
+status: treating
+review_date: 2026-06-15

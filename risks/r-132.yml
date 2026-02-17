@@ -1,0 +1,22 @@
+id: R-132
+title: "Visitors - Physical Security Breach"
+asset: Visitors
+asset_owner: "Leadership - CEO"
+threat: Physical Security Breach
+vulnerability: "Unescorted movement in office, network access via guest Wi-Fi"
+likelihood: 1
+impact: 1
+inherent_risk: 2
+treatment: mitigate
+frameworks:
+  iso27001:
+    controls: [A.7.1, A.7.2, A.8.22]
+required_controls: [A.7.2]
+notes: "Visitor badge registration, escort policy, VLAN isolation for guest Wi-Fi"
+implementation_notes: null
+residual_likelihood: null
+residual_impact: null
+residual_risk: null
+owner: e.stpierre
+status: treating
+review_date: 2026-06-15

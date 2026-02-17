@@ -1,0 +1,22 @@
+id: R-043
+title: "Windows Workstations - Finance - Financial Data Theft"
+asset: "Windows Workstations - Finance"
+asset_owner: "IT & Security Manager"
+threat: Financial Data Theft
+vulnerability: Weak access control or removable storage enabled
+likelihood: 2
+impact: 1
+inherent_risk: 3
+treatment: mitigate
+frameworks:
+  iso27001:
+    controls: [A.5.15, A.8.1]
+required_controls: [A.8.1]
+notes: NEED TO IMPLEMENT.
+implementation_notes: Add endpoint protection A.8.1 to new remote access solution
+residual_likelihood: null
+residual_impact: null
+residual_risk: null
+owner: e.stpierre
+status: treating
+review_date: 2026-06-15

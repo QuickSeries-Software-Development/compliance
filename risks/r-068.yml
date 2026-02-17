@@ -1,0 +1,22 @@
+id: R-068
+title: "AWS WAF - Application Attack Vector"
+asset: AWS WAF
+asset_owner: "IT & Security Manager"
+threat: Application Attack Vector
+vulnerability: OWASP threats unmitigated
+likelihood: 2
+impact: 1
+inherent_risk: 3
+treatment: mitigate
+frameworks:
+  iso27001:
+    controls: [A.8.21, A.8.20]
+required_controls: [A.8.21]
+notes: "WAF with managed rules for SQLi/XSS, IP filtering, rate limits. TO IMPLEMENT."
+implementation_notes: Implement better firewall rules on WAF
+residual_likelihood: 1
+residual_impact: 1
+residual_risk: 2
+owner: e.stpierre
+status: treating
+review_date: 2026-06-15

@@ -1,0 +1,22 @@
+id: R-128
+title: "Contractors - Data Misuse"
+asset: Contractors
+asset_owner: "Leadership - CEO"
+threat: Data Misuse
+vulnerability: "Limited oversight, third-party network access"
+likelihood: 1
+impact: 1
+inherent_risk: 2
+treatment: mitigate
+frameworks:
+  iso27001:
+    controls: [A.5.19, A.5.20, A.5.22, A.6.6]
+required_controls: [A.6.6]
+notes: "NDA binding, VPN + MFA enforced, time-restricted IAM roles with periodic access reviews"
+implementation_notes: null
+residual_likelihood: null
+residual_impact: null
+residual_risk: null
+owner: e.stpierre
+status: treating
+review_date: 2026-06-15

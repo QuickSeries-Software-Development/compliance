@@ -1,0 +1,22 @@
+id: R-034
+title: "Test cases - IP Theft / Data Leak"
+asset: Test cases
+asset_owner: CTO
+threat: IP Theft / Data Leak
+vulnerability: Stored without access restriction or classification
+likelihood: 1
+impact: 0
+inherent_risk: 1
+treatment: mitigate
+frameworks:
+  iso27001:
+    controls: [A.5.12, A.8.4]
+required_controls: [A.5.12]
+notes: "Stored in versioned Git repos; access only to QA/Dev via IAM"
+implementation_notes: null
+residual_likelihood: null
+residual_impact: null
+residual_risk: null
+owner: j.ledoux
+status: treating
+review_date: 2026-06-15

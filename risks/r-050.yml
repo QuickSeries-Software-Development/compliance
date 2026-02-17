@@ -1,0 +1,22 @@
+id: R-050
+title: "Developer Test Machines - Source/Data Exposure"
+asset: Developer Test Machines
+asset_owner: CTO
+threat: Source/Data Exposure
+vulnerability: "Local unpatched tools, test credentials stored"
+likelihood: 1
+impact: 1
+inherent_risk: 2
+treatment: mitigate
+frameworks:
+  iso27001:
+    controls: [A.8.4, A.8.9, A.8.25, A.8.28]
+required_controls: [A.8.25]
+notes: "default .ENV file provided to developers, GitHub Secrets used, we check for Node.js/Docker images versions bi-weekly, and we are using Dependabot for other updates"
+implementation_notes: null
+residual_likelihood: null
+residual_impact: null
+residual_risk: null
+owner: j.ledoux
+status: treating
+review_date: 2026-06-15

@@ -1,0 +1,22 @@
+id: R-004
+title: "Application Data - Data Corruption"
+asset: Application Data
+asset_owner: "IT & Security Manager"
+threat: Data Corruption
+vulnerability: Lack of data validation and integrity checks
+likelihood: 0
+impact: 1
+inherent_risk: 1
+treatment: mitigate
+frameworks:
+  iso27001:
+    controls: [A.8.27, A.8.3]
+required_controls: [A.8.27]
+notes: "Input validation in backend (ECS), WAF rules for API Gateway, schema validation on API endpoints"
+implementation_notes: null
+residual_likelihood: null
+residual_impact: null
+residual_risk: null
+owner: e.stpierre
+status: treating
+review_date: 2026-06-15

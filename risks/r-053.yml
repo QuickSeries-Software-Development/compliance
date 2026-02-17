@@ -1,0 +1,22 @@
+id: R-053
+title: "Amazon ECS Clusters - Container Breakout"
+asset: Amazon ECS Clusters
+asset_owner: "IT & Security Manager"
+threat: Container Breakout
+vulnerability: "Insecure images, lack of runtime controls"
+likelihood: 0
+impact: 1
+inherent_risk: 1
+treatment: mitigate
+frameworks:
+  iso27001:
+    controls: [A.8.25, A.8.26]
+required_controls: [A.8.26]
+notes: "Secure SDLC, Application Security controls"
+implementation_notes: null
+residual_likelihood: null
+residual_impact: null
+residual_risk: null
+owner: e.stpierre
+status: treating
+review_date: 2026-06-15

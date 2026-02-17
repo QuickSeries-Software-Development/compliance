@@ -1,0 +1,22 @@
+id: R-094
+title: "VSCode Configurations - Source Code Exposure"
+asset: VSCode Configurations
+asset_owner: CTO
+threat: Source Code Exposure
+vulnerability: Misconfigured workspace settings or shared config
+likelihood: 1
+impact: 1
+inherent_risk: 2
+treatment: mitigate
+frameworks:
+  iso27001:
+    controls: [A.8.4]
+required_controls: [A.8.4]
+notes: Extension Total for scanning
+implementation_notes: null
+residual_likelihood: null
+residual_impact: null
+residual_risk: null
+owner: developer
+status: treating
+review_date: 2026-06-15

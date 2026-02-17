@@ -1,0 +1,22 @@
+id: R-103
+title: "Freshdesk - Unauthorized Access"
+asset: Freshdesk
+asset_owner: "IT & Security Manager"
+threat: Unauthorized Access
+vulnerability: Misconfigured agent permissions or SSO integration
+likelihood: 2
+impact: 1
+inherent_risk: 3
+treatment: mitigate
+frameworks:
+  iso27001:
+    controls: [A.5.15, A.5.16]
+required_controls: [A.5.23]
+notes: "Roles mapped to support tiers, SSO via Google Workspace with MFA"
+implementation_notes: Establish policy on the use of cloud services
+residual_likelihood: 1
+residual_impact: 1
+residual_risk: 2
+owner: e.stpierre
+status: treating
+review_date: 2026-06-15

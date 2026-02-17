@@ -1,0 +1,22 @@
+id: R-027
+title: "General corporate documents - Insider Threat / Info Leak"
+asset: General corporate documents
+asset_owner: "Leadership - CEO"
+threat: Insider Threat / Info Leak
+vulnerability: Lack of document classification or controls
+likelihood: 1
+impact: 1
+inherent_risk: 2
+treatment: mitigate
+frameworks:
+  iso27001:
+    controls: [A.5.12, A.5.33]
+required_controls: [A.5.33]
+notes: Documents labeled in Google Workspace with classification tags
+implementation_notes: null
+residual_likelihood: null
+residual_impact: null
+residual_risk: null
+owner: r.ledoux
+status: treating
+review_date: 2026-06-15

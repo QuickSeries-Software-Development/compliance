@@ -1,0 +1,22 @@
+id: R-040
+title: "Laptops - Executives - Data Exfiltration"
+asset: "Laptops - Executives"
+asset_owner: "IT & Security Manager"
+threat: Data Exfiltration
+vulnerability: Inadequate encryption or theft of device
+likelihood: 1
+impact: 1
+inherent_risk: 2
+treatment: mitigate
+frameworks:
+  iso27001:
+    controls: [A.5.15, A.8.1, A.8.24, A.6.7]
+required_controls: [A.8.24]
+notes: "Full disk encryption (FileVault), VPN,MDM"
+implementation_notes: null
+residual_likelihood: null
+residual_impact: null
+residual_risk: null
+owner: e.stpierre
+status: treating
+review_date: 2026-06-15

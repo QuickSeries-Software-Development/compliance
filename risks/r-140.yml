@@ -1,0 +1,22 @@
+id: R-140
+title: "Office keys - Theft / Unauthorized Entry"
+asset: Office keys
+asset_owner: "Leadership - CEO"
+threat: Theft / Unauthorized Entry
+vulnerability: "Lost/stolen keys, no key inventory or tracking"
+likelihood: 1
+impact: 1
+inherent_risk: 2
+treatment: mitigate
+frameworks:
+  iso27001:
+    controls: [A.7.1, A.7.2, A.7.3, A.5.11]
+required_controls: [A.7.3]
+notes: "Key register maintained, periodic audits, physical key return on offboarding"
+implementation_notes: null
+residual_likelihood: null
+residual_impact: null
+residual_risk: null
+owner: r.ledoux
+status: treating
+review_date: 2026-06-15

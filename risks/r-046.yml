@@ -1,0 +1,22 @@
+id: R-046
+title: "Managed iPhones - QA / Dev - Source/Test Leak"
+asset: Managed iPhones - QA / Dev
+asset_owner: "IT & Security Manager"
+threat: Source/Test Leak
+vulnerability: Development apps or credentials left exposed
+likelihood: 0
+impact: 0
+inherent_risk: 0
+treatment: mitigate
+frameworks:
+  iso27001:
+    controls: [A.8.1]
+required_controls: [A.8.1]
+notes: "iOS MDM enforcing passcode, app control, remote wipe"
+implementation_notes: null
+residual_likelihood: null
+residual_impact: null
+residual_risk: null
+owner: e.stpierre
+status: treating
+review_date: 2026-06-15

@@ -1,0 +1,22 @@
+id: R-096
+title: "Other software development add-ons (i.e.: IDE Extensions / Plugins) - Supply Chain Attack"
+asset: "Other software development add-ons (i.e.: IDE Extensions / Plugins)"
+asset_owner: CTO
+threat: Supply Chain Attack
+vulnerability: Sourcing from untrusted sources or auto-updates
+likelihood: 2
+impact: 1
+inherent_risk: 3
+treatment: mitigate
+frameworks:
+  iso27001:
+    controls: [A.8.25, A.8.28]
+required_controls: [A.8.25]
+notes: Policy forbids installing from unauthorized source or list. Audit performed quarterly.
+implementation_notes: Implement policy and quarterly audits
+residual_likelihood: null
+residual_impact: null
+residual_risk: null
+owner: developer
+status: treating
+review_date: 2026-06-15

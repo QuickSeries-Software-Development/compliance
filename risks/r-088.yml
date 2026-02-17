@@ -1,0 +1,22 @@
+id: R-088
+title: "Jira Project Management - Confidential Info Disclosure"
+asset: Jira Project Management
+asset_owner: CTO
+threat: Confidential Info Disclosure
+vulnerability: "Improper access roles, unmonitored project visibility"
+likelihood: 1
+impact: 1
+inherent_risk: 2
+treatment: mitigate
+frameworks:
+  iso27001:
+    controls: [A.5.15, A.5.18]
+required_controls: [A.5.18]
+notes: "Role-based project visibility, Jira project access control policy and regular reviews"
+implementation_notes: null
+residual_likelihood: null
+residual_impact: null
+residual_risk: null
+owner: e.stpierre
+status: treating
+review_date: 2026-06-15

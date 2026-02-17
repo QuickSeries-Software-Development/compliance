@@ -1,0 +1,22 @@
+id: R-013
+title: "DevOps Pipeline Definitions - Pipeline Compromise"
+asset: DevOps Pipeline Definitions
+asset_owner: CTO
+threat: Pipeline Compromise
+vulnerability: Misconfigured permissions or insecure secrets
+likelihood: 0
+impact: 1
+inherent_risk: 1
+treatment: mitigate
+frameworks:
+  iso27001:
+    controls: [A.8.9, A.8.25, A.5.16]
+required_controls: [A.8.25]
+notes: "GitHub Actions workflows with OIDC roles in AWS; secrets encrypted; least-privilege IAM"
+implementation_notes: null
+residual_likelihood: null
+residual_impact: null
+residual_risk: null
+owner: j.ledoux
+status: treating
+review_date: 2026-06-15

@@ -1,0 +1,22 @@
+id: R-130
+title: "Account Managers - Client Data Disclosure"
+asset: Account Managers
+asset_owner: "Leadership - VP Sales"
+threat: Client Data Disclosure
+vulnerability: "Handling of contracts, CRM access, customer communications"
+likelihood: 0
+impact: 2
+inherent_risk: 2
+treatment: mitigate
+frameworks:
+  iso27001:
+    controls: [A.5.15, A.5.18, A.5.33]
+required_controls: [A.5.33]
+notes: "CRM account scoping, encrypted messaging, periodic permission audits"
+implementation_notes: null
+residual_likelihood: null
+residual_impact: null
+residual_risk: null
+owner: e.stpierre
+status: treating
+review_date: 2026-06-15

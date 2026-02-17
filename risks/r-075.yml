@@ -1,0 +1,22 @@
+id: R-075
+title: "Firewall Devices - Perimeter Compromise"
+asset: Firewall Devices
+asset_owner: "IT & Security Manager"
+threat: Perimeter Compromise
+vulnerability: Lack of rule reviews
+likelihood: 1
+impact: 1
+inherent_risk: 2
+treatment: mitigate
+frameworks:
+  iso27001:
+    controls: [A.8.20, A.8.9]
+required_controls: [A.8.20]
+notes: "Firewall rule review quarterly; deny-all base rule; logging to CloudWatch or syslog"
+implementation_notes: null
+residual_likelihood: null
+residual_impact: null
+residual_risk: null
+owner: e.stpierre
+status: treating
+review_date: 2026-06-15

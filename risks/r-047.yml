@@ -1,0 +1,22 @@
+id: R-047
+title: "Printers - Unmanaged/At home - Data Leakage"
+asset: "Printers - Unmanaged/At home"
+asset_owner: "IT & Security Manager"
+threat: Data Leakage
+vulnerability: Print jobs cached locally or printed without oversight
+likelihood: 2
+impact: 1
+inherent_risk: 3
+treatment: mitigate
+frameworks:
+  iso27001:
+    controls: [A.5.10, A.7.9]
+required_controls: [A.7.9]
+notes: "Restrict printing via VPN; home use discouraged; acceptable use policy. NOT IMPLEMENTED."
+implementation_notes: Add in the AUP
+residual_likelihood: 1
+residual_impact: 1
+residual_risk: 2
+owner: e.stpierre
+status: treating
+review_date: 2026-06-15

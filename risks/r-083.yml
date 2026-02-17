@@ -1,0 +1,22 @@
+id: R-083
+title: "Alarm system - Physical Intrusion"
+asset: Alarm system
+asset_owner: "Leadership - CEO"
+threat: Physical Intrusion
+vulnerability: Poorly monitored sensors
+likelihood: 1
+impact: 2
+inherent_risk: 3
+treatment: mitigate
+frameworks:
+  iso27001:
+    controls: [A.7.1, A.7.4, A.7.5]
+required_controls: [A.7.5]
+notes: "Alarm logs reviewed daily; alerts via phone from security company to managers"
+implementation_notes: Implement Alarm logs
+residual_likelihood: 0
+residual_impact: 2
+residual_risk: 2
+owner: r.ledoux
+status: treating
+review_date: 2026-06-15

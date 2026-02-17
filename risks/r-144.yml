@@ -1,0 +1,22 @@
+id: R-144
+title: "End user workstations - System Abuse"
+asset: End user workstations
+asset_owner: "IT & Security Manager"
+threat: System Abuse
+vulnerability: Admin tools used for unauthorized access
+likelihood: 1
+impact: 1
+inherent_risk: 2
+treatment: mitigate
+frameworks:
+  iso27001:
+    controls: [A.8.18]
+required_controls: [A.8.18]
+notes: "Teamviewer, Apple Remote Desktop, etc..."
+implementation_notes: Make sure these tools are well configured (and documented) and have reasonable use.
+residual_likelihood: null
+residual_impact: null
+residual_risk: null
+owner: e.stpierre
+status: treating
+review_date: 2026-06-15
