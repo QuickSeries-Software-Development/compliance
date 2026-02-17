@@ -5,13 +5,15 @@
   "scripts": {
     "validate": "node scripts/validate.js",
     "build-graph": "node scripts/build-graph.js",
-    "check-propagation": "node scripts/check-propagation.js"
+    "check-propagation": "node scripts/check-propagation.js",
+    "update-evidence": "node scripts/update-evidence-registry.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/justinledoux-web/compliance.git"
   },
   "dependencies": {
+    "@octokit/rest": "^22.0.1",
     "ajv": "^8.18.0",
     "ajv-formats": "^3.0.1",
     "glob": "^13.0.3",

@@ -1,0 +1,85 @@
+evidence:
+  - id: EVD-001
+    title: GitHub branch protection rules
+    frameworks:
+      iso27001:
+        controls:
+          - A.8.4
+          - A.8.32
+    source: github
+    collection: automated
+    frequency: weekly
+    last_collected: null
+    next_due: null
+    path: evidence/automated/github/branch-protection.json
+    status: missing
+
+  - id: EVD-002
+    title: GitHub merged PRs with reviews
+    frameworks:
+      iso27001:
+        controls:
+          - A.8.32
+    source: github
+    collection: automated
+    frequency: weekly
+    last_collected: null
+    next_due: null
+    path: evidence/automated/github/pr-reviews.json
+    status: missing
+
+  - id: EVD-003
+    title: GitHub organization members and access
+    frameworks:
+      iso27001:
+        controls:
+          - A.5.16
+    source: github
+    collection: automated
+    frequency: weekly
+    last_collected: null
+    next_due: null
+    path: evidence/automated/github/org-members.json
+    status: missing
+
+  - id: EVD-004
+    title: GitHub repository settings
+    frameworks:
+      iso27001:
+        controls:
+          - A.8.4
+    source: github
+    collection: automated
+    frequency: weekly
+    last_collected: null
+    next_due: null
+    path: evidence/automated/github/repo-settings.json
+    status: missing
+
+  - id: EVD-005
+    title: GitHub Dependabot security alerts
+    frameworks:
+      iso27001:
+        controls:
+          - A.8.8
+    source: github
+    collection: automated
+    frequency: weekly
+    last_collected: null
+    next_due: null
+    path: evidence/automated/github/dependabot-alerts.json
+    status: missing
+
+  - id: EVD-006
+    title: GitHub audit log
+    frameworks:
+      iso27001:
+        controls:
+          - A.8.15
+    source: github
+    collection: automated
+    frequency: weekly
+    last_collected: null
+    next_due: null
+    path: evidence/automated/github/audit-log.json
+    status: missing
