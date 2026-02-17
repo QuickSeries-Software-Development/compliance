@@ -5,4 +5,5 @@ theme: technological
 applicable: true
 justification: ""
 implementation_status: not-started
+control_description: "Access to information and other associated assets shall be restricted in accordance with the established topic-specific policy on access control."
 notes: ""

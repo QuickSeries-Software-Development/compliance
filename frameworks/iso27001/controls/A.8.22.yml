@@ -5,4 +5,5 @@ theme: technological
 applicable: true
 justification: ""
 implementation_status: not-started
+control_description: "Groups of information services, users and information systems shall be segregated in the organization's networks."
 notes: ""

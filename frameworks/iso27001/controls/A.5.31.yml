@@ -5,4 +5,5 @@ theme: organizational
 applicable: true
 justification: ""
 implementation_status: not-started
+control_description: "Legal, statutory, regulatory and contractual requirements relevant to information security and the organization's approach to meet these requirements shall be identified, documented and kept up to date."
 notes: ""

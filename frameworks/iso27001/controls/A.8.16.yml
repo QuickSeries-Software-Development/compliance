@@ -5,4 +5,5 @@ theme: technological
 applicable: true
 justification: ""
 implementation_status: not-started
+control_description: "Networks, systems and applications shall be monitored for anomalous behaviour and appropriate actions taken to evaluate potential information security incidents."
 notes: ""

@@ -5,4 +5,5 @@ theme: organizational
 applicable: true
 justification: ""
 implementation_status: not-started
+control_description: "Records shall be protected from loss, destruction, falsification, unauthorized access and unauthorized release."
 notes: ""

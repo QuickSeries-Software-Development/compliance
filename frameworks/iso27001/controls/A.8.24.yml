@@ -5,4 +5,5 @@ theme: technological
 applicable: true
 justification: ""
 implementation_status: not-started
+control_description: "Rules for the effective use of cryptography, including cryptographic key management, shall be defined and implemented."
 notes: ""

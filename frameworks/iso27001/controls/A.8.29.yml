@@ -5,4 +5,5 @@ theme: technological
 applicable: true
 justification: ""
 implementation_status: not-started
+control_description: "Security testing processes shall be defined and implemented in the development life cycle."
 notes: ""

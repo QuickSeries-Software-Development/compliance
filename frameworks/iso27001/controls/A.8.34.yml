@@ -5,4 +5,5 @@ theme: technological
 applicable: true
 justification: ""
 implementation_status: not-started
+control_description: "Audit tests and other assurance activities involving assessment of operational systems shall be planned and agreed between the tester and appropriate management."
 notes: ""

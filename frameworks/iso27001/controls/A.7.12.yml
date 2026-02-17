@@ -5,4 +5,5 @@ theme: physical
 applicable: true
 justification: ""
 implementation_status: not-started
+control_description: "Cables carrying power, data or supporting information services shall be protected from interception, interference or damage."
 notes: ""

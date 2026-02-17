@@ -5,4 +5,5 @@ theme: technological
 applicable: true
 justification: ""
 implementation_status: not-started
+control_description: "Principles for engineering secure systems shall be established, documented, maintained and applied to any information system development activities."
 notes: ""

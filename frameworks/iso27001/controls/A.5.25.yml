@@ -5,4 +5,5 @@ theme: organizational
 applicable: true
 justification: ""
 implementation_status: not-started
+control_description: "The organization shall assess information security events and decide if they are to be categorized as information security incidents."
 notes: ""

@@ -5,4 +5,5 @@ theme: physical
 applicable: true
 justification: ""
 implementation_status: not-started
+control_description: "Equipment shall be maintained correctly to ensure availability, integrity and confidentiality of information."
 notes: ""

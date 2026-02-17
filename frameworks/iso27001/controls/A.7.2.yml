@@ -5,4 +5,5 @@ theme: physical
 applicable: true
 justification: ""
 implementation_status: not-started
+control_description: "Secure areas shall be protected by appropriate entry controls and access points."
 notes: ""

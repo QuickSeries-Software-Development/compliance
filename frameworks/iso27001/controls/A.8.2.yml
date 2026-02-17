@@ -5,4 +5,5 @@ theme: technological
 applicable: true
 justification: ""
 implementation_status: not-started
+control_description: "The allocation and use of privileged access rights shall be restricted and managed."
 notes: ""

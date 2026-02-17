@@ -5,4 +5,5 @@ theme: organizational
 applicable: true
 justification: ""
 implementation_status: not-started
+control_description: "Knowledge gained from information security incidents shall be used to strengthen and improve the information security controls."
 notes: ""

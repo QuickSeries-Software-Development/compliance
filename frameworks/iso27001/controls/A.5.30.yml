@@ -5,4 +5,5 @@ theme: organizational
 applicable: true
 justification: ""
 implementation_status: not-started
+control_description: "ICT readiness shall be planned, implemented, maintained and tested based on business continuity objectives and ICT continuity requirements."
 notes: ""

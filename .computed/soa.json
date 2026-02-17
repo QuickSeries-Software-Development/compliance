@@ -1,0 +1,1573 @@
+{
+  "generated_at": "2026-02-17T02:24:50.483Z",
+  "framework": "iso27001",
+  "controls": [
+    {
+      "id": "A.5.1",
+      "title": "Policies for information security",
+      "category": "Organizational controls",
+      "applicable": true,
+      "justification": "",
+      "implementation_status": "not-started",
+      "implementing_policies": [],
+      "related_risks": [],
+      "evidence": []
+    },
+    {
+      "id": "A.5.2",
+      "title": "Information security roles and responsibilities",
+      "category": "Organizational controls",
+      "applicable": true,
+      "justification": "",
+      "implementation_status": "not-started",
+      "implementing_policies": [],
+      "related_risks": [],
+      "evidence": []
+    },
+    {
+      "id": "A.5.3",
+      "title": "Segregation of duties",
+      "category": "Organizational controls",
+      "applicable": true,
+      "justification": "",
+      "implementation_status": "not-started",
+      "implementing_policies": [],
+      "related_risks": [],
+      "evidence": []
+    },
+    {
+      "id": "A.5.4",
+      "title": "Management responsibilities",
+      "category": "Organizational controls",
+      "applicable": true,
+      "justification": "",
+      "implementation_status": "not-started",
+      "implementing_policies": [],
+      "related_risks": [],
+      "evidence": []
+    },
+    {
+      "id": "A.5.5",
+      "title": "Contact with authorities",
+      "category": "Organizational controls",
+      "applicable": true,
+      "justification": "",
+      "implementation_status": "not-started",
+      "implementing_policies": [],
+      "related_risks": [],
+      "evidence": []
+    },
+    {
+      "id": "A.5.6",
+      "title": "Contact with special interest groups",
+      "category": "Organizational controls",
+      "applicable": true,
+      "justification": "",
+      "implementation_status": "not-started",
+      "implementing_policies": [],
+      "related_risks": [],
+      "evidence": []
+    },
+    {
+      "id": "A.5.7",
+      "title": "Threat intelligence",
+      "category": "Organizational controls",
+      "applicable": true,
+      "justification": "",
+      "implementation_status": "not-started",
+      "implementing_policies": [
+        "policies/supplier-security-policy.md",
+        "procedures/it-security-procedures.md",
+        "procedures/incident-management-procedure.md"
+      ],
+      "related_risks": [],
+      "evidence": []
+    },
+    {
+      "id": "A.5.8",
+      "title": "Information security in project management",
+      "category": "Organizational controls",
+      "applicable": true,
+      "justification": "",
+      "implementation_status": "not-started",
+      "implementing_policies": [],
+      "related_risks": [],
+      "evidence": []
+    },
+    {
+      "id": "A.5.9",
+      "title": "Inventory of information and other associated assets",
+      "category": "Organizational controls",
+      "applicable": true,
+      "justification": "",
+      "implementation_status": "not-started",
+      "implementing_policies": [
+        "policies/information-classification-policy.md",
+        "policies/acceptable-use-policy.md"
+      ],
+      "related_risks": [
+        "risks/r-109.yml"
+      ],
+      "evidence": []
+    },
+    {
+      "id": "A.5.10",
+      "title": "Acceptable use of information and other associated assets",
+      "category": "Organizational controls",
+      "applicable": true,
+      "justification": "",
+      "implementation_status": "not-started",
+      "implementing_policies": [
+        "policies/information-classification-policy.md",
+        "policies/acceptable-use-policy.md"
+      ],
+      "related_risks": [
+        "risks/r-148.yml",
+        "risks/r-134.yml",
+        "risks/r-107.yml",
+        "risks/r-093.yml",
+        "risks/r-087.yml",
+        "risks/r-047.yml",
+        "risks/r-028.yml"
+      ],
+      "evidence": []
+    },
+    {
+      "id": "A.5.11",
+      "title": "Return of assets",
+      "category": "Organizational controls",
+      "applicable": true,
+      "justification": "",
+      "implementation_status": "not-started",
+      "implementing_policies": [
+        "policies/supplier-security-policy.md",
+        "policies/acceptable-use-policy.md"
+      ],
+      "related_risks": [
+        "risks/r-140.yml",
+        "risks/r-127.yml"
+      ],
+      "evidence": []
+    },
+    {
+      "id": "A.5.12",
+      "title": "Classification of information",
+      "category": "Organizational controls",
+      "applicable": true,
+      "justification": "",
+      "implementation_status": "not-started",
+      "implementing_policies": [
+        "policies/information-classification-policy.md"
+      ],
+      "related_risks": [
+        "risks/r-134.yml",
+        "risks/r-124.yml",
+        "risks/r-119.yml",
+        "risks/r-101.yml",
+        "risks/r-049.yml",
+        "risks/r-034.yml",
+        "risks/r-027.yml",
+        "risks/r-024.yml",
+        "risks/r-001.yml"
+      ],
+      "evidence": []
+    },
+    {
+      "id": "A.5.13",
+      "title": "Labelling of information",
+      "category": "Organizational controls",
+      "applicable": true,
+      "justification": "",
+      "implementation_status": "not-started",
+      "implementing_policies": [
+        "policies/information-classification-policy.md"
+      ],
+      "related_risks": [],
+      "evidence": []
+    },
+    {
+      "id": "A.5.14",
+      "title": "Information transfer",
+      "category": "Organizational controls",
+      "applicable": true,
+      "justification": "",
+      "implementation_status": "not-started",
+      "implementing_policies": [
+        "policies/information-classification-policy.md",
+        "policies/byod-policy.md",
+        "policies/acceptable-use-policy.md",
+        "procedures/it-security-procedures.md"
+      ],
+      "related_risks": [
+        "risks/r-025.yml"
+      ],
+      "evidence": []
+    },
+    {
+      "id": "A.5.15",
+      "title": "Access control",
+      "category": "Organizational controls",
+      "applicable": true,
+      "justification": "",
+      "implementation_status": "not-started",
+      "implementing_policies": [
+        "policies/access-control-policy.md"
+      ],
+      "related_risks": [
+        "risks/r-134.yml",
+        "risks/r-130.yml",
+        "risks/r-129.yml",
+        "risks/r-126.yml",
+        "risks/r-125.yml",
+        "risks/r-123.yml",
+        "risks/r-122.yml",
+        "risks/r-121.yml",
+        "risks/r-113.yml",
+        "risks/r-112.yml",
+        "risks/r-109.yml",
+        "risks/r-108.yml",
+        "risks/r-107.yml",
+        "risks/r-106.yml",
+        "risks/r-103.yml",
+        "risks/r-102.yml",
+        "risks/r-089.yml",
+        "risks/r-088.yml",
+        "risks/r-087.yml",
+        "risks/r-061.yml",
+        "risks/r-043.yml",
+        "risks/r-042.yml",
+        "risks/r-040.yml",
+        "risks/r-031.yml",
+        "risks/r-029.yml",
+        "risks/r-023.yml",
+        "risks/r-014.yml",
+        "risks/r-005.yml",
+        "risks/r-001.yml"
+      ],
+      "evidence": []
+    },
+    {
+      "id": "A.5.16",
+      "title": "Identity management",
+      "category": "Organizational controls",
+      "applicable": true,
+      "justification": "",
+      "implementation_status": "not-started",
+      "implementing_policies": [
+        "policies/access-control-policy.md"
+      ],
+      "related_risks": [
+        "risks/r-118.yml",
+        "risks/r-103.yml",
+        "risks/r-099.yml",
+        "risks/r-085.yml",
+        "risks/r-059.yml",
+        "risks/r-013.yml",
+        "risks/r-003.yml"
+      ],
+      "evidence": []
+    },
+    {
+      "id": "A.5.17",
+      "title": "Authentication information",
+      "category": "Organizational controls",
+      "applicable": true,
+      "justification": "",
+      "implementation_status": "not-started",
+      "implementing_policies": [
+        "policies/access-control-policy.md",
+        "policies/acceptable-use-policy.md"
+      ],
+      "related_risks": [
+        "risks/r-120.yml",
+        "risks/r-118.yml",
+        "risks/r-093.yml",
+        "risks/r-090.yml",
+        "risks/r-074.yml",
+        "risks/r-073.yml",
+        "risks/r-035.yml",
+        "risks/r-032.yml",
+        "risks/r-030.yml",
+        "risks/r-026.yml",
+        "risks/r-018.yml",
+        "risks/r-003.yml",
+        "risks/r-002.yml"
+      ],
+      "evidence": []
+    },
+    {
+      "id": "A.5.18",
+      "title": "Access rights",
+      "category": "Organizational controls",
+      "applicable": true,
+      "justification": "",
+      "implementation_status": "not-started",
+      "implementing_policies": [
+        "policies/access-control-policy.md"
+      ],
+      "related_risks": [
+        "risks/r-137.yml",
+        "risks/r-130.yml",
+        "risks/r-126.yml",
+        "risks/r-125.yml",
+        "risks/r-123.yml",
+        "risks/r-121.yml",
+        "risks/r-088.yml",
+        "risks/r-061.yml",
+        "risks/r-060.yml",
+        "risks/r-014.yml"
+      ],
+      "evidence": []
+    },
+    {
+      "id": "A.5.19",
+      "title": "Information security in supplier relationships",
+      "category": "Organizational controls",
+      "applicable": true,
+      "justification": "",
+      "implementation_status": "not-started",
+      "implementing_policies": [
+        "policies/supplier-security-policy.md",
+        "policies/supplier-security-clauses.md"
+      ],
+      "related_risks": [
+        "risks/r-128.yml"
+      ],
+      "evidence": []
+    },
+    {
+      "id": "A.5.20",
+      "title": "Addressing information security within supplier agreements",
+      "category": "Organizational controls",
+      "applicable": true,
+      "justification": "",
+      "implementation_status": "not-started",
+      "implementing_policies": [
+        "policies/supplier-security-policy.md",
+        "policies/supplier-security-clauses.md"
+      ],
+      "related_risks": [
+        "risks/r-128.yml"
+      ],
+      "evidence": []
+    },
+    {
+      "id": "A.5.21",
+      "title": "Managing information security in the ICT supply chain",
+      "category": "Organizational controls",
+      "applicable": true,
+      "justification": "",
+      "implementation_status": "not-started",
+      "implementing_policies": [
+        "policies/supplier-security-policy.md",
+        "policies/supplier-security-clauses.md"
+      ],
+      "related_risks": [],
+      "evidence": []
+    },
+    {
+      "id": "A.5.22",
+      "title": "Monitoring, review and change management of supplier services",
+      "category": "Organizational controls",
+      "applicable": true,
+      "justification": "",
+      "implementation_status": "not-started",
+      "implementing_policies": [
+        "policies/supplier-security-policy.md",
+        "policies/supplier-security-clauses.md"
+      ],
+      "related_risks": [
+        "risks/r-128.yml"
+      ],
+      "evidence": []
+    },
+    {
+      "id": "A.5.23",
+      "title": "Information security for use of cloud services",
+      "category": "Organizational controls",
+      "applicable": true,
+      "justification": "",
+      "implementation_status": "not-started",
+      "implementing_policies": [
+        "policies/supplier-security-policy.md",
+        "policies/supplier-security-clauses.md"
+      ],
+      "related_risks": [
+        "risks/r-118.yml",
+        "risks/r-116.yml",
+        "risks/r-113.yml",
+        "risks/r-112.yml",
+        "risks/r-111.yml",
+        "risks/r-033.yml"
+      ],
+      "evidence": []
+    },
+    {
+      "id": "A.5.24",
+      "title": "Information security incident management planning and preparation",
+      "category": "Organizational controls",
+      "applicable": true,
+      "justification": "",
+      "implementation_status": "not-started",
+      "implementing_policies": [
+        "procedures/incident-management-procedure.md"
+      ],
+      "related_risks": [
+        "risks/r-114.yml",
+        "risks/r-015.yml",
+        "risks/r-007.yml"
+      ],
+      "evidence": []
+    },
+    {
+      "id": "A.5.25",
+      "title": "Assessment and decision on information security events",
+      "category": "Organizational controls",
+      "applicable": true,
+      "justification": "",
+      "implementation_status": "not-started",
+      "implementing_policies": [
+        "procedures/incident-management-procedure.md"
+      ],
+      "related_risks": [],
+      "evidence": []
+    },
+    {
+      "id": "A.5.26",
+      "title": "Response to information security incidents",
+      "category": "Organizational controls",
+      "applicable": true,
+      "justification": "",
+      "implementation_status": "not-started",
+      "implementing_policies": [
+        "procedures/incident-management-procedure.md"
+      ],
+      "related_risks": [
+        "risks/r-015.yml"
+      ],
+      "evidence": []
+    },
+    {
+      "id": "A.5.27",
+      "title": "Learning from information security incidents",
+      "category": "Organizational controls",
+      "applicable": true,
+      "justification": "",
+      "implementation_status": "not-started",
+      "implementing_policies": [
+        "procedures/incident-management-procedure.md"
+      ],
+      "related_risks": [],
+      "evidence": []
+    },
+    {
+      "id": "A.5.28",
+      "title": "Collection of evidence",
+      "category": "Organizational controls",
+      "applicable": true,
+      "justification": "",
+      "implementation_status": "not-started",
+      "implementing_policies": [
+        "procedures/incident-management-procedure.md"
+      ],
+      "related_risks": [
+        "risks/r-063.yml"
+      ],
+      "evidence": []
+    },
+    {
+      "id": "A.5.29",
+      "title": "Information security during disruption",
+      "category": "Organizational controls",
+      "applicable": true,
+      "justification": "",
+      "implementation_status": "not-started",
+      "implementing_policies": [],
+      "related_risks": [],
+      "evidence": []
+    },
+    {
+      "id": "A.5.30",
+      "title": "ICT readiness for business continuity",
+      "category": "Organizational controls",
+      "applicable": true,
+      "justification": "",
+      "implementation_status": "not-started",
+      "implementing_policies": [],
+      "related_risks": [
+        "risks/r-139.yml"
+      ],
+      "evidence": []
+    },
+    {
+      "id": "A.5.31",
+      "title": "Legal, statutory, regulatory and contractual requirements",
+      "category": "Organizational controls",
+      "applicable": true,
+      "justification": "",
+      "implementation_status": "not-started",
+      "implementing_policies": [],
+      "related_risks": [
+        "risks/r-104.yml",
+        "risks/r-100.yml",
+        "risks/r-022.yml",
+        "risks/r-019.yml",
+        "risks/r-017.yml"
+      ],
+      "evidence": []
+    },
+    {
+      "id": "A.5.32",
+      "title": "Intellectual property rights",
+      "category": "Organizational controls",
+      "applicable": true,
+      "justification": "",
+      "implementation_status": "not-started",
+      "implementing_policies": [
+        "policies/acceptable-use-policy.md"
+      ],
+      "related_risks": [],
+      "evidence": []
+    },
+    {
+      "id": "A.5.33",
+      "title": "Protection of records",
+      "category": "Organizational controls",
+      "applicable": true,
+      "justification": "",
+      "implementation_status": "not-started",
+      "implementing_policies": [
+        "policies/secure-development-policy.md"
+      ],
+      "related_risks": [
+        "risks/r-131.yml",
+        "risks/r-130.yml",
+        "risks/r-129.yml",
+        "risks/r-125.yml",
+        "risks/r-098.yml",
+        "risks/r-086.yml",
+        "risks/r-028.yml",
+        "risks/r-027.yml",
+        "risks/r-022.yml",
+        "risks/r-021.yml",
+        "risks/r-020.yml",
+        "risks/r-017.yml"
+      ],
+      "evidence": []
+    },
+    {
+      "id": "A.5.34",
+      "title": "Privacy and protection of PII",
+      "category": "Organizational controls",
+      "applicable": true,
+      "justification": "",
+      "implementation_status": "not-started",
+      "implementing_policies": [],
+      "related_risks": [
+        "risks/r-129.yml",
+        "risks/r-126.yml",
+        "risks/r-124.yml",
+        "risks/r-108.yml",
+        "risks/r-104.yml",
+        "risks/r-100.yml",
+        "risks/r-029.yml",
+        "risks/r-019.yml"
+      ],
+      "evidence": []
+    },
+    {
+      "id": "A.5.35",
+      "title": "Independent review of information security",
+      "category": "Organizational controls",
+      "applicable": true,
+      "justification": "",
+      "implementation_status": "not-started",
+      "implementing_policies": [],
+      "related_risks": [],
+      "evidence": []
+    },
+    {
+      "id": "A.5.36",
+      "title": "Compliance with policies, rules and standards for information security",
+      "category": "Organizational controls",
+      "applicable": true,
+      "justification": "",
+      "implementation_status": "not-started",
+      "implementing_policies": [],
+      "related_risks": [
+        "risks/r-119.yml",
+        "risks/r-101.yml",
+        "risks/r-089.yml",
+        "risks/r-086.yml",
+        "risks/r-020.yml"
+      ],
+      "evidence": []
+    },
+    {
+      "id": "A.5.37",
+      "title": "Documented operating procedures",
+      "category": "Organizational controls",
+      "applicable": true,
+      "justification": "",
+      "implementation_status": "not-started",
+      "implementing_policies": [
+        "procedures/it-security-procedures.md"
+      ],
+      "related_risks": [],
+      "evidence": []
+    },
+    {
+      "id": "A.6.1",
+      "title": "Screening",
+      "category": "People controls",
+      "applicable": true,
+      "justification": "",
+      "implementation_status": "not-started",
+      "implementing_policies": [
+        "policies/supplier-security-policy.md"
+      ],
+      "related_risks": [
+        "risks/r-127.yml"
+      ],
+      "evidence": []
+    },
+    {
+      "id": "A.6.2",
+      "title": "Terms and conditions of employment",
+      "category": "People controls",
+      "applicable": true,
+      "justification": "",
+      "implementation_status": "not-started",
+      "implementing_policies": [
+        "policies/supplier-security-policy.md",
+        "program/isms-acceptance-statement.md",
+        "program/confidentiality-statement.md"
+      ],
+      "related_risks": [
+        "risks/r-127.yml"
+      ],
+      "evidence": []
+    },
+    {
+      "id": "A.6.3",
+      "title": "Information security awareness, education and training",
+      "category": "People controls",
+      "applicable": true,
+      "justification": "",
+      "implementation_status": "not-started",
+      "implementing_policies": [
+        "policies/supplier-security-policy.md"
+      ],
+      "related_risks": [
+        "risks/r-133.yml",
+        "risks/r-131.yml",
+        "risks/r-120.yml"
+      ],
+      "evidence": []
+    },
+    {
+      "id": "A.6.4",
+      "title": "Disciplinary process",
+      "category": "People controls",
+      "applicable": true,
+      "justification": "",
+      "implementation_status": "not-started",
+      "implementing_policies": [
+        "procedures/incident-management-procedure.md",
+        "procedures/disciplinary-process.md"
+      ],
+      "related_risks": [
+        "risks/r-133.yml"
+      ],
+      "evidence": []
+    },
+    {
+      "id": "A.6.5",
+      "title": "Responsibilities after termination or change of employment",
+      "category": "People controls",
+      "applicable": true,
+      "justification": "",
+      "implementation_status": "not-started",
+      "implementing_policies": [],
+      "related_risks": [
+        "risks/r-127.yml"
+      ],
+      "evidence": []
+    },
+    {
+      "id": "A.6.6",
+      "title": "Confidentiality or non-disclosure agreements",
+      "category": "People controls",
+      "applicable": true,
+      "justification": "",
+      "implementation_status": "not-started",
+      "implementing_policies": [
+        "program/confidentiality-statement.md"
+      ],
+      "related_risks": [
+        "risks/r-128.yml"
+      ],
+      "evidence": []
+    },
+    {
+      "id": "A.6.7",
+      "title": "Remote working",
+      "category": "People controls",
+      "applicable": true,
+      "justification": "",
+      "implementation_status": "not-started",
+      "implementing_policies": [
+        "policies/byod-policy.md",
+        "policies/acceptable-use-policy.md"
+      ],
+      "related_risks": [
+        "risks/r-084.yml",
+        "risks/r-082.yml",
+        "risks/r-074.yml",
+        "risks/r-073.yml",
+        "risks/r-040.yml",
+        "risks/r-039.yml"
+      ],
+      "evidence": []
+    },
+    {
+      "id": "A.6.8",
+      "title": "Information security event reporting",
+      "category": "People controls",
+      "applicable": true,
+      "justification": "",
+      "implementation_status": "not-started",
+      "implementing_policies": [
+        "procedures/incident-management-procedure.md"
+      ],
+      "related_risks": [],
+      "evidence": []
+    },
+    {
+      "id": "A.7.1",
+      "title": "Physical security perimeters",
+      "category": "Physical controls",
+      "applicable": true,
+      "justification": "",
+      "implementation_status": "not-started",
+      "implementing_policies": [],
+      "related_risks": [
+        "risks/r-141.yml",
+        "risks/r-140.yml",
+        "risks/r-136.yml",
+        "risks/r-132.yml",
+        "risks/r-083.yml"
+      ],
+      "evidence": []
+    },
+    {
+      "id": "A.7.2",
+      "title": "Physical entry",
+      "category": "Physical controls",
+      "applicable": true,
+      "justification": "",
+      "implementation_status": "not-started",
+      "implementing_policies": [],
+      "related_risks": [
+        "risks/r-140.yml",
+        "risks/r-137.yml",
+        "risks/r-132.yml"
+      ],
+      "evidence": []
+    },
+    {
+      "id": "A.7.3",
+      "title": "Securing offices, rooms and facilities",
+      "category": "Physical controls",
+      "applicable": true,
+      "justification": "",
+      "implementation_status": "not-started",
+      "implementing_policies": [],
+      "related_risks": [
+        "risks/r-141.yml",
+        "risks/r-140.yml",
+        "risks/r-136.yml"
+      ],
+      "evidence": []
+    },
+    {
+      "id": "A.7.4",
+      "title": "Physical security monitoring",
+      "category": "Physical controls",
+      "applicable": true,
+      "justification": "",
+      "implementation_status": "not-started",
+      "implementing_policies": [
+        "procedures/secure-areas-procedure.md"
+      ],
+      "related_risks": [
+        "risks/r-138.yml",
+        "risks/r-136.yml",
+        "risks/r-083.yml"
+      ],
+      "evidence": []
+    },
+    {
+      "id": "A.7.5",
+      "title": "Protecting against physical and environmental threats",
+      "category": "Physical controls",
+      "applicable": true,
+      "justification": "",
+      "implementation_status": "not-started",
+      "implementing_policies": [],
+      "related_risks": [
+        "risks/r-138.yml",
+        "risks/r-083.yml"
+      ],
+      "evidence": []
+    },
+    {
+      "id": "A.7.6",
+      "title": "Working in secure areas",
+      "category": "Physical controls",
+      "applicable": true,
+      "justification": "",
+      "implementation_status": "not-started",
+      "implementing_policies": [
+        "procedures/secure-areas-procedure.md"
+      ],
+      "related_risks": [],
+      "evidence": []
+    },
+    {
+      "id": "A.7.7",
+      "title": "Clear desk and clear screen",
+      "category": "Physical controls",
+      "applicable": true,
+      "justification": "",
+      "implementation_status": "not-started",
+      "implementing_policies": [
+        "policies/clear-desk-clear-screen-policy.md",
+        "policies/acceptable-use-policy.md"
+      ],
+      "related_risks": [],
+      "evidence": []
+    },
+    {
+      "id": "A.7.8",
+      "title": "Equipment siting and protection",
+      "category": "Physical controls",
+      "applicable": true,
+      "justification": "",
+      "implementation_status": "not-started",
+      "implementing_policies": [],
+      "related_risks": [],
+      "evidence": []
+    },
+    {
+      "id": "A.7.9",
+      "title": "Security of assets off-premises",
+      "category": "Physical controls",
+      "applicable": true,
+      "justification": "",
+      "implementation_status": "not-started",
+      "implementing_policies": [
+        "policies/acceptable-use-policy.md"
+      ],
+      "related_risks": [
+        "risks/r-047.yml"
+      ],
+      "evidence": []
+    },
+    {
+      "id": "A.7.10",
+      "title": "Storage media",
+      "category": "Physical controls",
+      "applicable": true,
+      "justification": "",
+      "implementation_status": "not-started",
+      "implementing_policies": [
+        "policies/information-classification-policy.md",
+        "policies/acceptable-use-policy.md",
+        "procedures/it-security-procedures.md"
+      ],
+      "related_risks": [
+        "risks/r-049.yml"
+      ],
+      "evidence": []
+    },
+    {
+      "id": "A.7.11",
+      "title": "Supporting utilities",
+      "category": "Physical controls",
+      "applicable": true,
+      "justification": "",
+      "implementation_status": "not-started",
+      "implementing_policies": [],
+      "related_risks": [
+        "risks/r-139.yml"
+      ],
+      "evidence": []
+    },
+    {
+      "id": "A.7.12",
+      "title": "Cabling security",
+      "category": "Physical controls",
+      "applicable": true,
+      "justification": "",
+      "implementation_status": "not-started",
+      "implementing_policies": [],
+      "related_risks": [],
+      "evidence": []
+    },
+    {
+      "id": "A.7.13",
+      "title": "Equipment maintenance",
+      "category": "Physical controls",
+      "applicable": true,
+      "justification": "",
+      "implementation_status": "not-started",
+      "implementing_policies": [],
+      "related_risks": [],
+      "evidence": []
+    },
+    {
+      "id": "A.7.14",
+      "title": "Secure disposal or re-use of equipment",
+      "category": "Physical controls",
+      "applicable": true,
+      "justification": "",
+      "implementation_status": "not-started",
+      "implementing_policies": [
+        "procedures/it-security-procedures.md"
+      ],
+      "related_risks": [],
+      "evidence": []
+    },
+    {
+      "id": "A.8.1",
+      "title": "User endpoint devices",
+      "category": "Technological controls",
+      "applicable": true,
+      "justification": "",
+      "implementation_status": "not-started",
+      "implementing_policies": [
+        "policies/clear-desk-clear-screen-policy.md",
+        "policies/byod-policy.md",
+        "policies/acceptable-use-policy.md"
+      ],
+      "related_risks": [
+        "risks/r-084.yml",
+        "risks/r-082.yml",
+        "risks/r-048.yml",
+        "risks/r-046.yml",
+        "risks/r-045.yml",
+        "risks/r-044.yml",
+        "risks/r-043.yml",
+        "risks/r-040.yml"
+      ],
+      "evidence": []
+    },
+    {
+      "id": "A.8.2",
+      "title": "Privileged access rights",
+      "category": "Technological controls",
+      "applicable": true,
+      "justification": "",
+      "implementation_status": "not-started",
+      "implementing_policies": [
+        "policies/access-control-policy.md"
+      ],
+      "related_risks": [
+        "risks/r-121.yml"
+      ],
+      "evidence": []
+    },
+    {
+      "id": "A.8.3",
+      "title": "Information access restriction",
+      "category": "Technological controls",
+      "applicable": true,
+      "justification": "",
+      "implementation_status": "not-started",
+      "implementing_policies": [
+        "policies/information-classification-policy.md",
+        "policies/access-control-policy.md"
+      ],
+      "related_risks": [
+        "risks/r-119.yml",
+        "risks/r-116.yml",
+        "risks/r-111.yml",
+        "risks/r-110.yml",
+        "risks/r-101.yml",
+        "risks/r-098.yml",
+        "risks/r-097.yml",
+        "risks/r-056.yml",
+        "risks/r-055.yml",
+        "risks/r-054.yml",
+        "risks/r-031.yml",
+        "risks/r-004.yml"
+      ],
+      "evidence": []
+    },
+    {
+      "id": "A.8.4",
+      "title": "Access to source code",
+      "category": "Technological controls",
+      "applicable": true,
+      "justification": "",
+      "implementation_status": "not-started",
+      "implementing_policies": [
+        "policies/access-control-policy.md",
+        "procedures/it-security-procedures.md"
+      ],
+      "related_risks": [
+        "risks/r-123.yml",
+        "risks/r-094.yml",
+        "risks/r-050.yml",
+        "risks/r-034.yml",
+        "risks/r-023.yml",
+        "risks/r-011.yml",
+        "risks/r-010.yml"
+      ],
+      "evidence": []
+    },
+    {
+      "id": "A.8.5",
+      "title": "Secure authentication",
+      "category": "Technological controls",
+      "applicable": true,
+      "justification": "",
+      "implementation_status": "not-started",
+      "implementing_policies": [
+        "policies/information-classification-policy.md",
+        "policies/access-control-policy.md"
+      ],
+      "related_risks": [
+        "risks/r-120.yml",
+        "risks/r-113.yml",
+        "risks/r-102.yml",
+        "risks/r-099.yml",
+        "risks/r-087.yml",
+        "risks/r-085.yml",
+        "risks/r-084.yml",
+        "risks/r-079.yml",
+        "risks/r-077.yml",
+        "risks/r-074.yml",
+        "risks/r-073.yml",
+        "risks/r-069.yml",
+        "risks/r-059.yml",
+        "risks/r-035.yml",
+        "risks/r-032.yml",
+        "risks/r-030.yml",
+        "risks/r-026.yml",
+        "risks/r-018.yml",
+        "risks/r-002.yml"
+      ],
+      "evidence": []
+    },
+    {
+      "id": "A.8.6",
+      "title": "Capacity management",
+      "category": "Technological controls",
+      "applicable": true,
+      "justification": "",
+      "implementation_status": "not-started",
+      "implementing_policies": [
+        "procedures/it-security-procedures.md"
+      ],
+      "related_risks": [],
+      "evidence": []
+    },
+    {
+      "id": "A.8.7",
+      "title": "Protection against malware",
+      "category": "Technological controls",
+      "applicable": true,
+      "justification": "",
+      "implementation_status": "not-started",
+      "implementing_policies": [
+        "policies/acceptable-use-policy.md",
+        "procedures/it-security-procedures.md"
+      ],
+      "related_risks": [
+        "risks/r-097.yml",
+        "risks/r-052.yml",
+        "risks/r-042.yml",
+        "risks/r-041.yml",
+        "risks/r-039.yml"
+      ],
+      "evidence": []
+    },
+    {
+      "id": "A.8.8",
+      "title": "Management of technical vulnerabilities",
+      "category": "Technological controls",
+      "applicable": true,
+      "justification": "",
+      "implementation_status": "not-started",
+      "implementing_policies": [
+        "policies/secure-development-policy.md",
+        "procedures/it-security-procedures.md"
+      ],
+      "related_risks": [
+        "risks/r-115.yml",
+        "risks/r-109.yml",
+        "risks/r-105.yml",
+        "risks/r-095.yml",
+        "risks/r-092.yml"
+      ],
+      "evidence": []
+    },
+    {
+      "id": "A.8.9",
+      "title": "Configuration management",
+      "category": "Technological controls",
+      "applicable": true,
+      "justification": "",
+      "implementation_status": "not-started",
+      "implementing_policies": [
+        "procedures/it-security-procedures.md"
+      ],
+      "related_risks": [
+        "risks/r-081.yml",
+        "risks/r-075.yml",
+        "risks/r-067.yml",
+        "risks/r-056.yml",
+        "risks/r-050.yml",
+        "risks/r-013.yml",
+        "risks/r-009.yml"
+      ],
+      "evidence": []
+    },
+    {
+      "id": "A.8.10",
+      "title": "Information deletion",
+      "category": "Technological controls",
+      "applicable": true,
+      "justification": "",
+      "implementation_status": "not-started",
+      "implementing_policies": [
+        "policies/acceptable-use-policy.md",
+        "procedures/it-security-procedures.md"
+      ],
+      "related_risks": [
+        "risks/r-124.yml",
+        "risks/r-119.yml",
+        "risks/r-101.yml",
+        "risks/r-009.yml"
+      ],
+      "evidence": []
+    },
+    {
+      "id": "A.8.11",
+      "title": "Data masking",
+      "category": "Technological controls",
+      "applicable": true,
+      "justification": "",
+      "implementation_status": "not-started",
+      "implementing_policies": [
+        "policies/secure-development-policy.md",
+        "policies/information-classification-policy.md"
+      ],
+      "related_risks": [],
+      "evidence": []
+    },
+    {
+      "id": "A.8.12",
+      "title": "Data leakage prevention",
+      "category": "Technological controls",
+      "applicable": true,
+      "justification": "",
+      "implementation_status": "not-started",
+      "implementing_policies": [
+        "policies/information-classification-policy.md",
+        "policies/acceptable-use-policy.md",
+        "procedures/it-security-procedures.md"
+      ],
+      "related_risks": [],
+      "evidence": []
+    },
+    {
+      "id": "A.8.13",
+      "title": "Information backup",
+      "category": "Technological controls",
+      "applicable": true,
+      "justification": "",
+      "implementation_status": "not-started",
+      "implementing_policies": [
+        "policies/backup-policy.md",
+        "policies/acceptable-use-policy.md",
+        "procedures/it-security-procedures.md"
+      ],
+      "related_risks": [
+        "risks/r-146.yml",
+        "risks/r-145.yml",
+        "risks/r-048.yml",
+        "risks/r-038.yml",
+        "risks/r-037.yml"
+      ],
+      "evidence": []
+    },
+    {
+      "id": "A.8.14",
+      "title": "Redundancy of information processing facilities",
+      "category": "Technological controls",
+      "applicable": true,
+      "justification": "",
+      "implementation_status": "not-started",
+      "implementing_policies": [],
+      "related_risks": [],
+      "evidence": []
+    },
+    {
+      "id": "A.8.15",
+      "title": "Logging",
+      "category": "Technological controls",
+      "applicable": true,
+      "justification": "",
+      "implementation_status": "not-started",
+      "implementing_policies": [
+        "procedures/it-security-procedures.md"
+      ],
+      "related_risks": [
+        "risks/r-125.yml",
+        "risks/r-122.yml",
+        "risks/r-109.yml",
+        "risks/r-106.yml",
+        "risks/r-063.yml",
+        "risks/r-035.yml",
+        "risks/r-033.yml",
+        "risks/r-007.yml",
+        "risks/r-006.yml",
+        "risks/r-005.yml"
+      ],
+      "evidence": []
+    },
+    {
+      "id": "A.8.16",
+      "title": "Monitoring activities",
+      "category": "Technological controls",
+      "applicable": true,
+      "justification": "",
+      "implementation_status": "not-started",
+      "implementing_policies": [
+        "procedures/it-security-procedures.md"
+      ],
+      "related_risks": [
+        "risks/r-105.yml",
+        "risks/r-085.yml",
+        "risks/r-062.yml",
+        "risks/r-006.yml"
+      ],
+      "evidence": []
+    },
+    {
+      "id": "A.8.17",
+      "title": "Clock synchronization",
+      "category": "Technological controls",
+      "applicable": true,
+      "justification": "",
+      "implementation_status": "not-started",
+      "implementing_policies": [
+        "procedures/it-security-procedures.md"
+      ],
+      "related_risks": [
+        "risks/r-080.yml"
+      ],
+      "evidence": []
+    },
+    {
+      "id": "A.8.18",
+      "title": "Use of privileged utility programs",
+      "category": "Technological controls",
+      "applicable": true,
+      "justification": "",
+      "implementation_status": "not-started",
+      "implementing_policies": [
+        "procedures/it-security-procedures.md"
+      ],
+      "related_risks": [
+        "risks/r-144.yml"
+      ],
+      "evidence": []
+    },
+    {
+      "id": "A.8.19",
+      "title": "Installation of software on operational systems",
+      "category": "Technological controls",
+      "applicable": true,
+      "justification": "",
+      "implementation_status": "not-started",
+      "implementing_policies": [
+        "policies/acceptable-use-policy.md"
+      ],
+      "related_risks": [],
+      "evidence": []
+    },
+    {
+      "id": "A.8.20",
+      "title": "Networks security",
+      "category": "Technological controls",
+      "applicable": true,
+      "justification": "",
+      "implementation_status": "not-started",
+      "implementing_policies": [
+        "procedures/it-security-procedures.md"
+      ],
+      "related_risks": [
+        "risks/r-117.yml",
+        "risks/r-081.yml",
+        "risks/r-080.yml",
+        "risks/r-079.yml",
+        "risks/r-078.yml",
+        "risks/r-077.yml",
+        "risks/r-076.yml",
+        "risks/r-075.yml",
+        "risks/r-074.yml",
+        "risks/r-073.yml",
+        "risks/r-071.yml",
+        "risks/r-068.yml",
+        "risks/r-066.yml",
+        "risks/r-065.yml",
+        "risks/r-052.yml",
+        "risks/r-025.yml"
+      ],
+      "evidence": []
+    },
+    {
+      "id": "A.8.21",
+      "title": "Security of network services",
+      "category": "Technological controls",
+      "applicable": true,
+      "justification": "",
+      "implementation_status": "not-started",
+      "implementing_policies": [
+        "procedures/it-security-procedures.md"
+      ],
+      "related_risks": [
+        "risks/r-068.yml"
+      ],
+      "evidence": []
+    },
+    {
+      "id": "A.8.22",
+      "title": "Segregation of networks",
+      "category": "Technological controls",
+      "applicable": true,
+      "justification": "",
+      "implementation_status": "not-started",
+      "implementing_policies": [
+        "procedures/it-security-procedures.md"
+      ],
+      "related_risks": [
+        "risks/r-132.yml",
+        "risks/r-078.yml",
+        "risks/r-077.yml",
+        "risks/r-076.yml",
+        "risks/r-072.yml",
+        "risks/r-067.yml"
+      ],
+      "evidence": []
+    },
+    {
+      "id": "A.8.23",
+      "title": "Web filtering",
+      "category": "Technological controls",
+      "applicable": true,
+      "justification": "",
+      "implementation_status": "not-started",
+      "implementing_policies": [
+        "policies/acceptable-use-policy.md",
+        "procedures/it-security-procedures.md"
+      ],
+      "related_risks": [],
+      "evidence": []
+    },
+    {
+      "id": "A.8.24",
+      "title": "Use of cryptography",
+      "category": "Technological controls",
+      "applicable": true,
+      "justification": "",
+      "implementation_status": "not-started",
+      "implementing_policies": [],
+      "related_risks": [
+        "risks/r-098.yml",
+        "risks/r-064.yml",
+        "risks/r-055.yml",
+        "risks/r-054.yml",
+        "risks/r-049.yml",
+        "risks/r-040.yml",
+        "risks/r-024.yml",
+        "risks/r-001.yml"
+      ],
+      "evidence": []
+    },
+    {
+      "id": "A.8.25",
+      "title": "Secure development life cycle",
+      "category": "Technological controls",
+      "applicable": true,
+      "justification": "",
+      "implementation_status": "not-started",
+      "implementing_policies": [
+        "policies/secure-development-policy.md"
+      ],
+      "related_risks": [
+        "risks/r-147.yml",
+        "risks/r-122.yml",
+        "risks/r-096.yml",
+        "risks/r-092.yml",
+        "risks/r-090.yml",
+        "risks/r-053.yml",
+        "risks/r-050.yml",
+        "risks/r-013.yml",
+        "risks/r-012.yml",
+        "risks/r-008.yml"
+      ],
+      "evidence": []
+    },
+    {
+      "id": "A.8.26",
+      "title": "Application security requirements",
+      "category": "Technological controls",
+      "applicable": true,
+      "justification": "",
+      "implementation_status": "not-started",
+      "implementing_policies": [
+        "policies/secure-development-policy.md",
+        "program/information-system-specifications.md"
+      ],
+      "related_risks": [
+        "risks/r-115.yml",
+        "risks/r-114.yml",
+        "risks/r-090.yml",
+        "risks/r-070.yml",
+        "risks/r-058.yml",
+        "risks/r-057.yml",
+        "risks/r-053.yml",
+        "risks/r-008.yml"
+      ],
+      "evidence": []
+    },
+    {
+      "id": "A.8.27",
+      "title": "Secure system architecture and engineering principles",
+      "category": "Technological controls",
+      "applicable": true,
+      "justification": "",
+      "implementation_status": "not-started",
+      "implementing_policies": [
+        "policies/secure-development-policy.md",
+        "program/information-system-specifications.md"
+      ],
+      "related_risks": [
+        "risks/r-057.yml",
+        "risks/r-004.yml"
+      ],
+      "evidence": []
+    },
+    {
+      "id": "A.8.28",
+      "title": "Secure coding",
+      "category": "Technological controls",
+      "applicable": true,
+      "justification": "",
+      "implementation_status": "not-started",
+      "implementing_policies": [
+        "policies/secure-development-policy.md"
+      ],
+      "related_risks": [
+        "risks/r-096.yml",
+        "risks/r-095.yml",
+        "risks/r-069.yml",
+        "risks/r-050.yml",
+        "risks/r-011.yml",
+        "risks/r-010.yml"
+      ],
+      "evidence": []
+    },
+    {
+      "id": "A.8.29",
+      "title": "Security testing in development and acceptance",
+      "category": "Technological controls",
+      "applicable": true,
+      "justification": "",
+      "implementation_status": "not-started",
+      "implementing_policies": [
+        "policies/secure-development-policy.md"
+      ],
+      "related_risks": [
+        "risks/r-091.yml"
+      ],
+      "evidence": []
+    },
+    {
+      "id": "A.8.30",
+      "title": "Outsourced development",
+      "category": "Technological controls",
+      "applicable": true,
+      "justification": "",
+      "implementation_status": "not-started",
+      "implementing_policies": [
+        "policies/supplier-security-policy.md",
+        "policies/secure-development-policy.md"
+      ],
+      "related_risks": [],
+      "evidence": []
+    },
+    {
+      "id": "A.8.31",
+      "title": "Separation of development, test and production environments",
+      "category": "Technological controls",
+      "applicable": true,
+      "justification": "",
+      "implementation_status": "not-started",
+      "implementing_policies": [
+        "policies/secure-development-policy.md",
+        "procedures/it-security-procedures.md"
+      ],
+      "related_risks": [
+        "risks/r-124.yml"
+      ],
+      "evidence": []
+    },
+    {
+      "id": "A.8.32",
+      "title": "Change management",
+      "category": "Technological controls",
+      "applicable": true,
+      "justification": "",
+      "implementation_status": "not-started",
+      "implementing_policies": [
+        "policies/secure-development-policy.md",
+        "policies/change-management-policy.md",
+        "procedures/it-security-procedures.md"
+      ],
+      "related_risks": [
+        "risks/r-012.yml"
+      ],
+      "evidence": []
+    },
+    {
+      "id": "A.8.33",
+      "title": "Test information",
+      "category": "Technological controls",
+      "applicable": true,
+      "justification": "",
+      "implementation_status": "not-started",
+      "implementing_policies": [
+        "policies/secure-development-policy.md"
+      ],
+      "related_risks": [],
+      "evidence": []
+    },
+    {
+      "id": "A.8.34",
+      "title": "Protection of information systems during audit testing",
+      "category": "Technological controls",
+      "applicable": true,
+      "justification": "",
+      "implementation_status": "not-started",
+      "implementing_policies": [],
+      "related_risks": [],
+      "evidence": []
+    }
+  ]
+}

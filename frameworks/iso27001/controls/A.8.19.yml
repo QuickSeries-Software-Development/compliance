@@ -5,4 +5,5 @@ theme: technological
 applicable: true
 justification: ""
 implementation_status: not-started
+control_description: "Procedures and measures shall be implemented to securely manage software installation on operational systems."
 notes: ""

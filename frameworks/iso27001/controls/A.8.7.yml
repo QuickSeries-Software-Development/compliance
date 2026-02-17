@@ -5,4 +5,5 @@ theme: technological
 applicable: true
 justification: ""
 implementation_status: not-started
+control_description: "Protection against malware shall be implemented and supported by appropriate user awareness."
 notes: ""

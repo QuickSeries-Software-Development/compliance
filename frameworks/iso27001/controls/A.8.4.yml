@@ -5,4 +5,5 @@ theme: technological
 applicable: true
 justification: ""
 implementation_status: not-started
+control_description: "Read and write access to source code, development tools and software libraries shall be appropriately managed."
 notes: ""

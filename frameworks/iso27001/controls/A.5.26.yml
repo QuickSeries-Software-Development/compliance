@@ -5,4 +5,5 @@ theme: organizational
 applicable: true
 justification: ""
 implementation_status: not-started
+control_description: "Information security incidents shall be responded to in accordance with the documented procedures."
 notes: ""

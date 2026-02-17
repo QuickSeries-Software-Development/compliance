@@ -5,4 +5,5 @@ theme: technological
 applicable: true
 justification: ""
 implementation_status: not-started
+control_description: "Secure authentication technologies and procedures shall be implemented based on information access restrictions and the topic-specific policy on access control."
 notes: ""

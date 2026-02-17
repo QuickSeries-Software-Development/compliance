@@ -5,4 +5,5 @@ theme: technological
 applicable: true
 justification: ""
 implementation_status: not-started
+control_description: "The clocks of information processing systems used by the organization shall be synchronized to approved time sources."
 notes: ""

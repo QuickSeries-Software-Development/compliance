@@ -1,0 +1,31 @@
+{
+  "generated_at": "2026-02-17T02:24:50.482Z",
+  "totals": {
+    "policies": 10,
+    "procedures": 4,
+    "risks": 151,
+    "controls": 93,
+    "incidents": 3,
+    "evidence": 0,
+    "program": 3
+  },
+  "policies_by_status": {
+    "approved": 14
+  },
+  "controls_by_implementation_status": {
+    "not-started": 93
+  },
+  "risks_by_treatment": {
+    "mitigate": 151
+  },
+  "risks_by_inherent_risk": {
+    "0": 1,
+    "1": 34,
+    "2": 76,
+    "3": 29,
+    "4": 11
+  },
+  "evidence_by_status": {},
+  "stale_documents": 0,
+  "frameworks": {}
+}

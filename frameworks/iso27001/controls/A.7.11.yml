@@ -5,4 +5,5 @@ theme: physical
 applicable: true
 justification: ""
 implementation_status: not-started
+control_description: "Information processing facilities shall be protected from power failures and other disruptions caused by failures in supporting utilities."
 notes: ""

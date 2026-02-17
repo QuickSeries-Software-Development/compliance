@@ -5,4 +5,5 @@ theme: technological
 applicable: true
 justification: ""
 implementation_status: not-started
+control_description: "The use of utility programs that can be capable of overriding system and application controls shall be restricted and tightly controlled."
 notes: ""

@@ -5,4 +5,5 @@ theme: technological
 applicable: true
 justification: ""
 implementation_status: not-started
+control_description: "Logs that record activities, exceptions, faults and other relevant events shall be produced, stored, protected and analysed."
 notes: ""

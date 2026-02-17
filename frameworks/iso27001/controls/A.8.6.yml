@@ -5,4 +5,5 @@ theme: technological
 applicable: true
 justification: ""
 implementation_status: not-started
+control_description: "The use of resources shall be monitored and adjusted in line with current and expected capacity requirements."
 notes: ""

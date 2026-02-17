@@ -5,4 +5,5 @@ theme: organizational
 applicable: true
 justification: ""
 implementation_status: not-started
+control_description: "Information security roles and responsibilities shall be defined and allocated according to the organization needs."
 notes: ""

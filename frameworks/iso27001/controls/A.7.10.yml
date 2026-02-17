@@ -5,4 +5,5 @@ theme: physical
 applicable: true
 justification: ""
 implementation_status: not-started
+control_description: "Storage media shall be managed through their life cycle of acquisition, use, transportation and disposal in accordance with the organization's classification scheme and handling requirements."
 notes: ""

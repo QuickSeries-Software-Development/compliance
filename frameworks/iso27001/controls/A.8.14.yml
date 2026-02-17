@@ -5,4 +5,5 @@ theme: technological
 applicable: true
 justification: ""
 implementation_status: not-started
+control_description: "Information processing facilities shall be implemented with redundancy sufficient to meet availability requirements."
 notes: ""

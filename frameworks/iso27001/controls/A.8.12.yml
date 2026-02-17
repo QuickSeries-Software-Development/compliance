@@ -5,4 +5,5 @@ theme: technological
 applicable: true
 justification: ""
 implementation_status: not-started
+control_description: "Data leakage prevention measures shall be applied to systems, networks and any other devices that process, store or transmit sensitive information."
 notes: ""

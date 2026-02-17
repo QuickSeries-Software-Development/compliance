@@ -5,4 +5,5 @@ theme: organizational
 applicable: true
 justification: ""
 implementation_status: not-started
+control_description: "Information relating to information security threats shall be collected and analysed to produce threat intelligence."
 notes: ""

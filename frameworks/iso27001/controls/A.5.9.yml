@@ -5,4 +5,5 @@ theme: organizational
 applicable: true
 justification: ""
 implementation_status: not-started
+control_description: "An inventory of information and other associated assets, including owners, shall be developed and maintained."
 notes: ""

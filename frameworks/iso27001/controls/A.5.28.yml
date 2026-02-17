@@ -5,4 +5,5 @@ theme: organizational
 applicable: true
 justification: ""
 implementation_status: not-started
+control_description: "The organization shall establish and implement procedures for the identification, collection, acquisition and preservation of evidence related to information security events."
 notes: ""

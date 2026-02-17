@@ -5,4 +5,5 @@ theme: organizational
 applicable: true
 justification: ""
 implementation_status: not-started
+control_description: "Processes for acquisition, use, management and exit from cloud services shall be established in accordance with the organization's information security requirements."
 notes: ""

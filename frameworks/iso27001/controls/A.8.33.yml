@@ -5,4 +5,5 @@ theme: technological
 applicable: true
 justification: ""
 implementation_status: not-started
+control_description: "Test information shall be appropriately selected, protected and managed."
 notes: ""

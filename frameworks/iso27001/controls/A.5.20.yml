@@ -5,4 +5,5 @@ theme: organizational
 applicable: true
 justification: ""
 implementation_status: not-started
+control_description: "Relevant information security requirements shall be established and agreed with each supplier based on the type of supplier relationship."
 notes: ""

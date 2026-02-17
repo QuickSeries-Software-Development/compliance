@@ -5,4 +5,5 @@ theme: technological
 applicable: true
 justification: ""
 implementation_status: not-started
+control_description: "Rules for the secure development of software and systems shall be established and applied."
 notes: ""

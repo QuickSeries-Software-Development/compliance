@@ -5,4 +5,5 @@ theme: technological
 applicable: true
 justification: ""
 implementation_status: not-started
+control_description: "Information stored on, processed by or accessible via user end point devices shall be protected."
 notes: ""

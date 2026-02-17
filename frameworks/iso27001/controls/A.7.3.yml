@@ -5,4 +5,5 @@ theme: physical
 applicable: true
 justification: ""
 implementation_status: not-started
+control_description: "Physical security for offices, rooms and facilities shall be designed and implemented."
 notes: ""

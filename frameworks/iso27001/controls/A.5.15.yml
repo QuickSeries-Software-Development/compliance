@@ -5,4 +5,5 @@ theme: organizational
 applicable: true
 justification: ""
 implementation_status: not-started
+control_description: "Rules to control physical and logical access to information and other associated assets shall be established and implemented based on business and information security requirements."
 notes: ""

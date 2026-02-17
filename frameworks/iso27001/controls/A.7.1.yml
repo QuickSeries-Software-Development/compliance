@@ -5,4 +5,5 @@ theme: physical
 applicable: true
 justification: ""
 implementation_status: not-started
+control_description: "Security perimeters shall be defined and used to protect areas that contain information and other associated assets."
 notes: ""

@@ -5,4 +5,5 @@ theme: organizational
 applicable: true
 justification: ""
 implementation_status: not-started
+control_description: "Allocation and management of authentication information shall be controlled by a management process, including advising personnel on appropriate handling of authentication information."
 notes: ""

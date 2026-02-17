@@ -5,4 +5,5 @@ theme: technological
 applicable: true
 justification: ""
 implementation_status: not-started
+control_description: "Information stored in information systems, devices or in any other storage media shall be deleted when no longer required."
 notes: ""

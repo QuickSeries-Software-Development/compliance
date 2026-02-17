@@ -5,4 +5,5 @@ theme: people
 applicable: true
 justification: ""
 implementation_status: not-started
+control_description: "Security measures shall be implemented when personnel are working remotely to protect information accessed, processed or stored outside the organization's premises."
 notes: ""

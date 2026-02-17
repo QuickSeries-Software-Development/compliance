@@ -5,4 +5,5 @@ theme: technological
 applicable: true
 justification: ""
 implementation_status: not-started
+control_description: "Development, testing and production environments shall be separated and secured."
 notes: ""

@@ -5,4 +5,5 @@ theme: physical
 applicable: true
 justification: ""
 implementation_status: not-started
+control_description: "Premises shall be continuously monitored for unauthorized physical access."
 notes: ""

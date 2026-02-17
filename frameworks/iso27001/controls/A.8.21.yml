@@ -5,4 +5,5 @@ theme: technological
 applicable: true
 justification: ""
 implementation_status: not-started
+control_description: "Security mechanisms, service levels and service requirements of network services shall be identified, implemented and monitored."
 notes: ""

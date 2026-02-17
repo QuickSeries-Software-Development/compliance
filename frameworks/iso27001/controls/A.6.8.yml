@@ -5,4 +5,5 @@ theme: people
 applicable: true
 justification: ""
 implementation_status: not-started
+control_description: "The organization shall provide a mechanism for personnel to report observed or suspected information security events through appropriate channels in a timely manner."
 notes: ""

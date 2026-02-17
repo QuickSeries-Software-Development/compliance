@@ -5,4 +5,5 @@ theme: organizational
 applicable: true
 justification: ""
 implementation_status: not-started
+control_description: "Compliance with the organization's information security policy, topic-specific policies, rules and standards shall be regularly reviewed."
 notes: ""

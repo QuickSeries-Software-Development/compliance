@@ -5,4 +5,5 @@ theme: technological
 applicable: true
 justification: ""
 implementation_status: not-started
+control_description: "Networks and network devices shall be secured, managed and controlled to protect information in systems and applications."
 notes: ""
