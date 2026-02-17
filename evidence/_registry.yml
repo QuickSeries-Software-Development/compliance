@@ -9,10 +9,10 @@ evidence:
     source: github
     collection: automated
     frequency: weekly
-    last_collected: '2026-02-17'
-    next_due: '2026-02-24'
-    path: evidence/automated/github/2026-02-17/branch-protection.json
-    status: current
+    last_collected: '2026-01-30'
+    next_due: '2026-02-06'
+    path: evidence/automated/github/2026-01-30/branch-protection.json
+    status: stale
   - id: EVD-002
     title: GitHub merged PRs with reviews
     frameworks:
@@ -22,10 +22,10 @@ evidence:
     source: github
     collection: automated
     frequency: weekly
-    last_collected: '2026-02-17'
-    next_due: '2026-02-24'
-    path: evidence/automated/github/2026-02-17/pr-reviews.json
-    status: current
+    last_collected: '2026-01-30'
+    next_due: '2026-02-06'
+    path: evidence/automated/github/2026-01-30/pr-reviews.json
+    status: stale
   - id: EVD-003
     title: GitHub organization members and access
     frameworks:
