@@ -1,0 +1,42 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Control File",
+  "description": "Validates control YAML files (ISO 27001, SOC 2, GDPR)",
+  "type": "object",
+  "required": ["id", "title", "theme", "applicable", "implementation_status"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Control identifier (e.g., A.5.1, CC6.1, Article 32)"
+    },
+    "title": {
+      "type": "string",
+      "description": "Control title"
+    },
+    "category": {
+      "type": "string",
+      "description": "Control category name"
+    },
+    "theme": {
+      "type": "string",
+      "enum": ["organizational", "people", "physical", "technological"]
+    },
+    "applicable": {
+      "type": "boolean",
+      "description": "Whether the control is applicable to the organization"
+    },
+    "justification": {
+      "type": "string",
+      "description": "Justification for applicability or non-applicability"
+    },
+    "implementation_status": {
+      "type": "string",
+      "enum": ["implemented", "partial", "planned", "not-started"]
+    },
+    "notes": {
+      "type": "string",
+      "description": "Additional notes about the control"
+    }
+  },
+  "additionalProperties": false
+}

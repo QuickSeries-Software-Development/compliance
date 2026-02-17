@@ -1,0 +1,107 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Incident File",
+  "description": "Validates incident YAML files in incidents/*.yml",
+  "type": "object",
+  "required": ["id", "title", "date_reported", "severity", "status", "description"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^INC-\\d{4}-\\d{2}$",
+      "description": "Incident identifier (e.g., INC-2025-01)"
+    },
+    "title": {
+      "type": "string",
+      "description": "Brief incident title"
+    },
+    "date_reported": {
+      "type": "string",
+      "format": "date",
+      "description": "Date the incident was reported"
+    },
+    "date_remediated": {
+      "anyOf": [
+        { "type": "string", "format": "date" },
+        { "type": "null" }
+      ],
+      "description": "Date the incident was remediated"
+    },
+    "severity": {
+      "type": "string",
+      "enum": ["critical", "high", "medium", "low"]
+    },
+    "status": {
+      "type": "string",
+      "enum": ["open", "investigating", "contained", "monitoring", "resolved", "closed"]
+    },
+    "system": {
+      "type": "string",
+      "description": "Affected system"
+    },
+    "type": {
+      "type": "string",
+      "description": "Incident type (e.g., data-leak, data-loss, unauthorized-access)"
+    },
+    "description": {
+      "type": "string",
+      "description": "Detailed incident description"
+    },
+    "affected_systems": {
+      "type": "string",
+      "description": "Systems and data affected"
+    },
+    "person_responsible": {
+      "type": "string",
+      "description": "Person responsible for handling the incident"
+    },
+    "resolution": {
+      "type": "string",
+      "description": "Resolution summary"
+    },
+    "corrective_action_ref": {
+      "type": "string",
+      "description": "Reference to corrective action form"
+    },
+    "identification": {
+      "type": "object",
+      "description": "How the incident was identified and scoped"
+    },
+    "containment": {
+      "type": "object",
+      "description": "Containment measures taken"
+    },
+    "evidence_collected": {
+      "type": "object",
+      "description": "Evidence collected during investigation"
+    },
+    "eradication": {
+      "type": "object",
+      "description": "Permanent fix or solution"
+    },
+    "recovery": {
+      "type": "object",
+      "description": "Recovery measures and backup restoration"
+    },
+    "post_mortem": {
+      "type": "object",
+      "description": "Post-incident review and lessons learned"
+    },
+    "frameworks": {
+      "type": "object",
+      "properties": {
+        "iso27001": {
+          "type": "object",
+          "properties": {
+            "controls": {
+              "type": "array",
+              "items": { "type": "string", "pattern": "^A\\.\\d+\\.\\d+$" }
+            }
+          },
+          "required": ["controls"]
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": true
+}

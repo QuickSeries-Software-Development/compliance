@@ -1,0 +1,91 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Policy/Procedure Frontmatter",
+  "description": "Validates YAML frontmatter in policies/*.md and procedures/*.md files",
+  "type": "object",
+  "required": ["id", "title", "owner", "status", "version"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^(POL|PROC)-\\d{3}(-APP\\d+)?$",
+      "description": "Unique identifier (e.g., POL-001, PROC-002, POL-009-APP1)"
+    },
+    "title": {
+      "type": "string",
+      "description": "Document title"
+    },
+    "owner": {
+      "type": "string",
+      "description": "Username of the document owner"
+    },
+    "status": {
+      "type": "string",
+      "enum": ["draft", "in-review", "approved", "retired"]
+    },
+    "version": {
+      "type": "string",
+      "description": "Document version (e.g., 1.0, 1.1)"
+    },
+    "approved_date": {
+      "anyOf": [
+        { "type": "string", "format": "date" },
+        { "type": "null" }
+      ],
+      "description": "Date the document was approved (null if not yet approved)"
+    },
+    "next_review": {
+      "anyOf": [
+        { "type": "string", "format": "date" },
+        { "type": "null" }
+      ],
+      "description": "Date the document is next due for review"
+    },
+    "frameworks": {
+      "type": "object",
+      "properties": {
+        "iso27001": {
+          "type": "object",
+          "properties": {
+            "controls": {
+              "type": "array",
+              "items": { "type": "string", "pattern": "^A\\.\\d+\\.\\d+$" }
+            }
+          },
+          "required": ["controls"]
+        },
+        "soc2": {
+          "type": "object",
+          "properties": {
+            "criteria": {
+              "type": "array",
+              "items": { "type": "string" }
+            }
+          },
+          "required": ["criteria"]
+        },
+        "gdpr": {
+          "type": "object",
+          "properties": {
+            "articles": {
+              "type": "array",
+              "items": { "type": "string" }
+            }
+          },
+          "required": ["articles"]
+        }
+      },
+      "additionalProperties": false
+    },
+    "triggers_update_to": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "File paths that need review when this document changes"
+    },
+    "triggered_by": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "File paths whose changes trigger review of this document"
+    }
+  },
+  "additionalProperties": false
+}

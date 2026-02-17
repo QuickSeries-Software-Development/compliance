@@ -1,0 +1,144 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Risk File",
+  "description": "Validates individual risk YAML files in risks/*.yml",
+  "type": "object",
+  "required": ["id", "title", "asset", "threat", "vulnerability", "likelihood", "impact", "inherent_risk", "treatment", "owner", "status", "review_date"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^R-\\d{3}$",
+      "description": "Risk identifier (e.g., R-001)"
+    },
+    "title": {
+      "type": "string",
+      "description": "Descriptive title combining asset and threat"
+    },
+    "asset": {
+      "type": "string",
+      "description": "Asset name"
+    },
+    "asset_owner": {
+      "type": "string",
+      "description": "Owner of the asset"
+    },
+    "threat": {
+      "type": "string",
+      "description": "Threat description"
+    },
+    "vulnerability": {
+      "type": "string",
+      "description": "Vulnerability description"
+    },
+    "likelihood": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 2,
+      "description": "Likelihood score (0=low, 1=medium, 2=high)"
+    },
+    "impact": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 2,
+      "description": "Impact/consequence score (0=low, 1=medium, 2=high)"
+    },
+    "inherent_risk": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 4,
+      "description": "Inherent risk score (likelihood x impact)"
+    },
+    "treatment": {
+      "type": "string",
+      "enum": ["mitigate", "accept", "transfer", "avoid"]
+    },
+    "frameworks": {
+      "type": "object",
+      "properties": {
+        "iso27001": {
+          "type": "object",
+          "properties": {
+            "controls": {
+              "type": "array",
+              "items": { "type": "string", "pattern": "^A\\.\\d+\\.\\d+$" }
+            }
+          },
+          "required": ["controls"]
+        },
+        "soc2": {
+          "type": "object",
+          "properties": {
+            "criteria": {
+              "type": "array",
+              "items": { "type": "string" }
+            }
+          },
+          "required": ["criteria"]
+        },
+        "gdpr": {
+          "type": "object",
+          "properties": {
+            "articles": {
+              "type": "array",
+              "items": { "type": "string" }
+            }
+          },
+          "required": ["articles"]
+        }
+      },
+      "additionalProperties": false
+    },
+    "required_controls": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Additional controls required for treatment"
+    },
+    "notes": {
+      "type": "string",
+      "description": "Existing control description / client statement"
+    },
+    "implementation_notes": {
+      "type": "string",
+      "description": "Notes on implementation of treatment"
+    },
+    "residual_likelihood": {
+      "anyOf": [
+        { "type": "integer", "minimum": 0, "maximum": 2 },
+        { "type": "null" }
+      ],
+      "description": "Residual likelihood after treatment (null if not assessed)"
+    },
+    "residual_impact": {
+      "anyOf": [
+        { "type": "integer", "minimum": 0, "maximum": 2 },
+        { "type": "null" }
+      ],
+      "description": "Residual impact after treatment (null if not assessed)"
+    },
+    "residual_risk": {
+      "anyOf": [
+        { "type": "integer", "minimum": 0, "maximum": 4 },
+        { "type": "null" }
+      ],
+      "description": "Residual risk score after treatment (null if not assessed)"
+    },
+    "owner": {
+      "type": "string",
+      "description": "Username of the risk owner"
+    },
+    "status": {
+      "type": "string",
+      "enum": ["identified", "treating", "treated", "accepted", "closed"]
+    },
+    "review_date": {
+      "type": "string",
+      "format": "date",
+      "description": "Next review date"
+    },
+    "treatment_plan": {
+      "type": "string",
+      "description": "Path to treatment plan document"
+    }
+  },
+  "additionalProperties": false
+}
