@@ -33,6 +33,10 @@
       "type": "string",
       "enum": ["implemented", "partial", "planned", "not-started"]
     },
+    "control_description": {
+      "type": "string",
+      "description": "Official control text from the ISO standard"
+    },
     "notes": {
       "type": "string",
       "description": "Additional notes about the control"

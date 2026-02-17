@@ -94,11 +94,17 @@
       "description": "Additional controls required for treatment"
     },
     "notes": {
-      "type": "string",
+      "anyOf": [
+        { "type": "string" },
+        { "type": "null" }
+      ],
       "description": "Existing control description / client statement"
     },
     "implementation_notes": {
-      "type": "string",
+      "anyOf": [
+        { "type": "string" },
+        { "type": "null" }
+      ],
       "description": "Notes on implementation of treatment"
     },
     "residual_likelihood": {
