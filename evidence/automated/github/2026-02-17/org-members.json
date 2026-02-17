@@ -1,0 +1,90 @@
+{
+  "collected_at": "2026-02-17T14:52:57.522Z",
+  "source": "github",
+  "check": "org-members",
+  "org": "QuickSeries-Software-Development",
+  "repos_audited": [
+    "qs-mono"
+  ],
+  "summary": {
+    "total_members": 12,
+    "admins": 3,
+    "members": 9
+  },
+  "data": {
+    "members": [
+      {
+        "login": "Claudio-Cardillo",
+        "role": "member",
+        "state": "active",
+        "two_factor_enabled": null
+      },
+      {
+        "login": "jeremy-friesen-qs",
+        "role": "member",
+        "state": "active",
+        "two_factor_enabled": null
+      },
+      {
+        "login": "jlt-castells",
+        "role": "member",
+        "state": "active",
+        "two_factor_enabled": null
+      },
+      {
+        "login": "justinledoux-web",
+        "role": "admin",
+        "state": "active",
+        "two_factor_enabled": null
+      },
+      {
+        "login": "Kuljit-singh-qs",
+        "role": "member",
+        "state": "active",
+        "two_factor_enabled": null
+      },
+      {
+        "login": "ladanham",
+        "role": "member",
+        "state": "active",
+        "two_factor_enabled": null
+      },
+      {
+        "login": "laeciomorais-coder",
+        "role": "admin",
+        "state": "active",
+        "two_factor_enabled": null
+      },
+      {
+        "login": "mounikachittimelli-hub",
+        "role": "member",
+        "state": "active",
+        "two_factor_enabled": null
+      },
+      {
+        "login": "patrickroy07",
+        "role": "member",
+        "state": "active",
+        "two_factor_enabled": null
+      },
+      {
+        "login": "qs-mobile-admin",
+        "role": "admin",
+        "state": "active",
+        "two_factor_enabled": null
+      },
+      {
+        "login": "QsOresti",
+        "role": "member",
+        "state": "active",
+        "two_factor_enabled": null
+      },
+      {
+        "login": "swathikodumuri-creator",
+        "role": "member",
+        "state": "active",
+        "two_factor_enabled": null
+      }
+    ]
+  }
+}
