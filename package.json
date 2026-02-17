@@ -1,0 +1,24 @@
+{
+  "name": "compliance",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "validate": "node scripts/validate.js",
+    "build-graph": "node scripts/build-graph.js",
+    "check-propagation": "node scripts/check-propagation.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/justinledoux-web/compliance.git"
+  },
+  "dependencies": {
+    "ajv": "^8.18.0",
+    "ajv-formats": "^3.0.1",
+    "glob": "^13.0.3",
+    "gray-matter": "^4.0.3",
+    "js-yaml": "^4.1.1"
+  },
+  "devDependencies": {
+    "lefthook": "^2.1.1"
+  }
+}

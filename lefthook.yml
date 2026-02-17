@@ -1,0 +1,11 @@
+pre-commit:
+  commands:
+    validate:
+      run: node scripts/validate.js --changed-only
+      stage_fixed: true
+    build-graph:
+      run: node scripts/build-graph.js
+      stage_fixed: true
+      glob: "*.{md,yml,yaml}"
+    check-propagation:
+      run: node scripts/check-propagation.js
