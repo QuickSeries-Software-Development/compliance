@@ -115,7 +115,7 @@ jobs:
       - name: Create pull request
         uses: peter-evans/create-pull-request@v7
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.EVIDENCE_GITHUB_TOKEN }}
           branch: evidence/github/${{ env.EVIDENCE_DATE }}
           commit-message: "evidence: GitHub evidence collection ${{ env.EVIDENCE_DATE }}"
           title: "evidence: GitHub evidence collection ${{ env.EVIDENCE_DATE }}"
