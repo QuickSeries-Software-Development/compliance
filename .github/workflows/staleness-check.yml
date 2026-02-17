@@ -140,7 +140,16 @@ jobs:
           '
 
       # ------------------------------------------------------------------
-      # 5. Create or update a GitHub issue if there are stale/missing entries
+      # 5. Ensure the stale-evidence label exists
+      # ------------------------------------------------------------------
+      - name: Ensure stale-evidence label exists
+        if: steps.staleness.outputs.has_issues == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.EVIDENCE_GITHUB_TOKEN }}
+        run: gh label create "stale-evidence" --color "f9d0c4" --description "Evidence past due date" 2>/dev/null || true
+
+      # ------------------------------------------------------------------
+      # 6. Create or update a GitHub issue if there are stale/missing entries
       #    Searches for an existing open issue with the "stale-evidence" label
       #    and updates it, or creates a new one.
       # ------------------------------------------------------------------
