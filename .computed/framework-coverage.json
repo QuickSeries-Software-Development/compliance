@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-02-17T02:24:50.483Z",
+  "generated_at": "2026-02-17T13:46:09.377Z",
   "frameworks": {
     "iso27001": {
       "total_controls": 93,
       "applicable_controls": 93,
       "controls_with_policies": 68,
-      "controls_with_evidence": 0,
+      "controls_with_evidence": 5,
       "controls_implemented": 0,
       "controls_partial": 0,
       "policy_coverage_pct": 73.1,
-      "evidence_coverage_pct": 0,
+      "evidence_coverage_pct": 5.4,
       "implementation_pct": 0
     }
   }

@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-02-17T02:24:50.482Z",
+  "generated_at": "2026-02-17T13:46:09.376Z",
   "totals": {
     "policies": 10,
     "procedures": 4,
     "risks": 151,
     "controls": 93,
     "incidents": 3,
-    "evidence": 0,
+    "evidence": 6,
     "program": 3
   },
   "policies_by_status": {
@@ -25,7 +25,9 @@
     "3": 29,
     "4": 11
   },
-  "evidence_by_status": {},
+  "evidence_by_status": {
+    "missing": 6
+  },
   "stale_documents": 0,
   "frameworks": {}
 }

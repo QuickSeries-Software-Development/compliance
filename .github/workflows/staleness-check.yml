@@ -1,0 +1,177 @@
+# =============================================================================
+# Evidence Staleness Check Workflow
+# =============================================================================
+#
+# Runs daily to check for stale or missing evidence in the registry.
+# Creates or updates a GitHub issue listing all entries that need attention.
+#
+# No secrets required — reads the registry file and uses the built-in
+# GITHUB_TOKEN for issue management.
+# =============================================================================
+
+name: Evidence Staleness Check
+
+on:
+  schedule:
+    # Daily at 8:00 UTC
+    - cron: "0 8 * * *"
+
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  check:
+    name: Check for stale evidence
+    runs-on: ubuntu-latest
+
+    steps:
+      # ------------------------------------------------------------------
+      # 1. Checkout the repository
+      # ------------------------------------------------------------------
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # ------------------------------------------------------------------
+      # 2. Set up Node.js
+      # ------------------------------------------------------------------
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      # ------------------------------------------------------------------
+      # 3. Install dependencies
+      # ------------------------------------------------------------------
+      - name: Install dependencies
+        run: npm ci
+
+      # ------------------------------------------------------------------
+      # 4. Run the staleness check inline
+      #    Reads evidence/_registry.yml, compares dates, and writes the
+      #    result to environment files for the next step.
+      # ------------------------------------------------------------------
+      - name: Check evidence staleness
+        id: staleness
+        run: |
+          node -e '
+          const fs = require("fs");
+          const yaml = require("js-yaml");
+
+          const today = new Date().toISOString().slice(0, 10);
+          const registry = yaml.load(fs.readFileSync("evidence/_registry.yml", "utf8"));
+
+          if (!registry || !Array.isArray(registry.evidence)) {
+            console.log("No evidence entries found in registry.");
+            fs.appendFileSync(process.env.GITHUB_OUTPUT, "has_issues=false\n");
+            process.exit(0);
+          }
+
+          const stale = [];
+          const missing = [];
+
+          for (const entry of registry.evidence) {
+            // Flag entries explicitly marked as missing
+            if (entry.status === "missing") {
+              missing.push(entry);
+              continue;
+            }
+
+            // Flag entries past their next_due date
+            if (entry.next_due && entry.next_due <= today) {
+              stale.push(entry);
+              continue;
+            }
+
+            // Flag entries that have never been collected
+            if (!entry.last_collected) {
+              missing.push(entry);
+              continue;
+            }
+          }
+
+          if (stale.length === 0 && missing.length === 0) {
+            console.log("All evidence is current.");
+            fs.appendFileSync(process.env.GITHUB_OUTPUT, "has_issues=false\n");
+            process.exit(0);
+          }
+
+          // Build the issue body
+          let body = "## Stale Evidence Alert\n\n";
+          body += `Checked on **${today}**. The following evidence entries need attention.\n\n`;
+
+          if (stale.length > 0) {
+            body += "### Stale Evidence\n\n";
+            body += "| ID | Title | Source | Last Collected | Next Due |\n";
+            body += "| --- | --- | --- | --- | --- |\n";
+            for (const e of stale) {
+              body += `| ${e.id} | ${e.title} | ${e.source} | ${e.last_collected || "never"} | ${e.next_due || "—"} |\n`;
+            }
+            body += "\n";
+          }
+
+          if (missing.length > 0) {
+            body += "### Missing Evidence\n\n";
+            body += "| ID | Title | Source | Status |\n";
+            body += "| --- | --- | --- | --- |\n";
+            for (const e of missing) {
+              body += `| ${e.id} | ${e.title} | ${e.source} | ${e.status || "never collected"} |\n`;
+            }
+            body += "\n";
+          }
+
+          body += `**Total stale**: ${stale.length}  \n`;
+          body += `**Total missing**: ${missing.length}  \n`;
+          body += `**Total issues**: ${stale.length + missing.length}\n`;
+
+          // Write outputs for the next step
+          // Use a delimiter for multi-line output
+          const delimiter = "EOF_" + Math.random().toString(36).slice(2);
+          fs.appendFileSync(process.env.GITHUB_OUTPUT, `has_issues=true\n`);
+          fs.appendFileSync(process.env.GITHUB_OUTPUT, `issue_title=Stale evidence alert - ${today}\n`);
+          fs.appendFileSync(process.env.GITHUB_OUTPUT, `issue_body<<${delimiter}\n${body}\n${delimiter}\n`);
+
+          console.log("Found issues:");
+          console.log(`  Stale: ${stale.length}`);
+          console.log(`  Missing: ${missing.length}`);
+          '
+
+      # ------------------------------------------------------------------
+      # 5. Create or update a GitHub issue if there are stale/missing entries
+      #    Searches for an existing open issue with the "stale-evidence" label
+      #    and updates it, or creates a new one.
+      # ------------------------------------------------------------------
+      - name: Create or update issue
+        if: steps.staleness.outputs.has_issues == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ISSUE_TITLE: ${{ steps.staleness.outputs.issue_title }}
+          ISSUE_BODY: ${{ steps.staleness.outputs.issue_body }}
+        run: |
+          # Check for an existing open issue with the stale-evidence label
+          EXISTING=$(gh issue list \
+            --label "stale-evidence" \
+            --state open \
+            --limit 1 \
+            --json number \
+            --jq '.[0].number // empty')
+
+          if [ -n "$EXISTING" ]; then
+            echo "Updating existing issue #$EXISTING"
+            gh issue edit "$EXISTING" \
+              --title "$ISSUE_TITLE" \
+              --body "$ISSUE_BODY"
+          else
+            echo "Creating new issue"
+            gh issue create \
+              --title "$ISSUE_TITLE" \
+              --body "$ISSUE_BODY" \
+              --label "stale-evidence"
+          fi
+
+      - name: All evidence current
+        if: steps.staleness.outputs.has_issues != 'true'
+        run: echo "All evidence entries are current. No issue needed."

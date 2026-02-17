@@ -1,0 +1,145 @@
+# =============================================================================
+# GitHub Evidence Collection Workflow
+# =============================================================================
+#
+# Collects evidence from GitHub APIs on a weekly schedule and opens a PR
+# for human review. Merging the PR = approving the evidence.
+#
+# Required secrets:
+#   EVIDENCE_GITHUB_TOKEN  - GitHub PAT with read access to repos, org,
+#                            and security data (scopes: repo, read:org,
+#                            security_events, admin:org for audit log)
+#
+# Required variables:
+#   EVIDENCE_GITHUB_ORG    - The GitHub organization name to audit
+#
+# Optional variables:
+#   EVIDENCE_GITHUB_REPOS  - Comma-separated list of repos to audit
+#                            (defaults to all org repos if not set)
+# =============================================================================
+
+name: Collect GitHub Evidence
+
+on:
+  schedule:
+    # Weekly on Mondays at 11:00 UTC (6 AM Eastern)
+    - cron: "0 11 * * 1"
+
+  workflow_dispatch:
+    inputs:
+      date:
+        description: "Collection date override (YYYY-MM-DD). Defaults to today."
+        required: false
+        type: string
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  collect:
+    name: Collect GitHub evidence
+    runs-on: ubuntu-latest
+
+    steps:
+      # ------------------------------------------------------------------
+      # 1. Checkout the repository
+      # ------------------------------------------------------------------
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # ------------------------------------------------------------------
+      # 2. Set up Node.js
+      # ------------------------------------------------------------------
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      # ------------------------------------------------------------------
+      # 3. Install dependencies
+      # ------------------------------------------------------------------
+      - name: Install dependencies
+        run: npm ci
+
+      # ------------------------------------------------------------------
+      # 4. Set the evidence collection date
+      # ------------------------------------------------------------------
+      - name: Set collection date
+        id: date
+        run: |
+          if [ -n "${{ inputs.date }}" ]; then
+            echo "EVIDENCE_DATE=${{ inputs.date }}" >> "$GITHUB_ENV"
+          else
+            echo "EVIDENCE_DATE=$(date -u +%Y-%m-%d)" >> "$GITHUB_ENV"
+          fi
+
+      - name: Print collection date
+        run: echo "Collecting evidence for $EVIDENCE_DATE"
+
+      # ------------------------------------------------------------------
+      # 5. Run the GitHub evidence collector
+      #    The collector writes JSON files to:
+      #      evidence/automated/github/{date}/*.json
+      #    If some checks fail, we still continue to collect what we can.
+      # ------------------------------------------------------------------
+      - name: Collect GitHub evidence
+        continue-on-error: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.EVIDENCE_GITHUB_TOKEN }}
+          GITHUB_ORG: ${{ vars.EVIDENCE_GITHUB_ORG }}
+          GITHUB_REPOS: ${{ vars.EVIDENCE_GITHUB_REPOS }}
+        run: node scripts/collectors/github.js
+
+      # ------------------------------------------------------------------
+      # 6. Update the evidence registry with collection dates
+      # ------------------------------------------------------------------
+      - name: Update evidence registry
+        run: |
+          node scripts/update-evidence-registry.js \
+            --source github \
+            --date "$EVIDENCE_DATE"
+
+      # ------------------------------------------------------------------
+      # 7. Rebuild the relationship graph
+      # ------------------------------------------------------------------
+      - name: Rebuild graph
+        run: node scripts/build-graph.js
+
+      # ------------------------------------------------------------------
+      # 8-12. Create branch, commit, push, and open PR
+      #       peter-evans/create-pull-request handles all of this in one
+      #       step. It will skip PR creation if there are no changes.
+      # ------------------------------------------------------------------
+      - name: Create pull request
+        uses: peter-evans/create-pull-request@v7
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: evidence/github/${{ env.EVIDENCE_DATE }}
+          commit-message: "evidence: GitHub evidence collection ${{ env.EVIDENCE_DATE }}"
+          title: "evidence: GitHub evidence collection ${{ env.EVIDENCE_DATE }}"
+          body: |
+            ## Evidence Collected
+
+            Automated weekly evidence collection from GitHub.
+
+            ### Checks Run
+            - Branch protection rules
+            - Merged PRs with reviews
+            - Organization members and access
+            - Repository settings
+            - Dependabot alerts
+            - Audit log
+
+            ### Files
+            - `evidence/automated/github/${{ env.EVIDENCE_DATE }}/*.json`
+            - `evidence/_registry.yml` (updated)
+            - `.computed/*` (regenerated)
+
+            ### Review Checklist
+            - [ ] Evidence data looks reasonable
+            - [ ] No sensitive data exposed in evidence files
+            - [ ] Registry dates updated correctly
+          labels: evidence,automated
+          delete-branch: true
