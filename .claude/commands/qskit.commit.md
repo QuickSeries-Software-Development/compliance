@@ -6,7 +6,7 @@ argument-hint: --push-pr
 
 # Git Commit Assistant
 
-Creates well-formatted commits following ISMS documentation conventions.
+Creates well-formatted commits following compliance documentation conventions.
 
 **Options:**
 
@@ -37,7 +37,7 @@ git rev-parse --abbrev-ref HEAD
 
 ### 2. Pre-Commit Validation
 
-For ISMS documentation, validate:
+For compliance documentation, validate:
 
 1. Changed markdown files have valid frontmatter (if policy documents)
 2. `CHANGELOG.md` is updated for policy/risk changes
@@ -58,7 +58,7 @@ For ISMS documentation, validate:
 **Commit message format:**
 
 ```text
-[ISMS] {type}: {description}
+{type}: {description}
 ```
 
 **Commit types for this project:**
@@ -80,10 +80,10 @@ For ISMS documentation, validate:
 **Examples:**
 
 ```text
-[ISMS] policy: Update Access Control Policy - add MFA requirements
-[ISMS] risk: Add R-152 for new cloud storage asset
-[ISMS] docs: Update CLAUDE.md with risk registry workflow
-[ISMS] skill: Add /risk-update skill for registry management
+policy: Update Access Control Policy - add MFA requirements
+risk: Add R-152 for new cloud storage asset
+docs: Update CLAUDE.md with risk registry workflow
+skill: Add /risk-update skill for registry management
 ```
 
 ### 5. Push & PR (if --push-pr)
@@ -92,7 +92,7 @@ Push to remote and create PR:
 
 ```bash
 git push -u origin <branch>
-gh pr create --title "[ISMS] <summary>" --body "$(cat <<'EOF'
+gh pr create --title "<summary>" --body "$(cat <<'EOF'
 ## Summary
 - [bullet points of changes]
 
