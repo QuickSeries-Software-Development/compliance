@@ -8,14 +8,16 @@
 # Required secrets:
 #   EVIDENCE_GITHUB_TOKEN  - GitHub PAT with read access to repos, org,
 #                            and security data (scopes: repo, read:org,
-#                            security_events, admin:org for audit log)
+#                            security_events, read:audit_log)
 #
 # Required variables:
 #   EVIDENCE_GITHUB_ORG    - The GitHub organization name to audit
 #
 # Optional variables:
-#   EVIDENCE_GITHUB_REPOS  - Comma-separated list of repos to audit
-#                            (defaults to all org repos if not set)
+#   EVIDENCE_GITHUB_REPOS      - Comma-separated list of repos to audit
+#                                (defaults to all org repos if not set)
+#   EVIDENCE_GITHUB_ENTERPRISE - Enterprise slug for audit log collection
+#                                (found in your enterprise URL)
 # =============================================================================
 
 name: Collect GitHub Evidence
@@ -90,6 +92,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.EVIDENCE_GITHUB_TOKEN }}
           GITHUB_ORG: ${{ vars.EVIDENCE_GITHUB_ORG }}
           GITHUB_REPOS: ${{ vars.EVIDENCE_GITHUB_REPOS }}
+          GITHUB_ENTERPRISE: ${{ vars.EVIDENCE_GITHUB_ENTERPRISE }}
         run: node scripts/collectors/github.js
 
       # ------------------------------------------------------------------

@@ -11,6 +11,7 @@ const { Octokit } = require('@octokit/rest');
 const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
 const GITHUB_ORG = process.env.GITHUB_ORG;
 const GITHUB_REPOS = process.env.GITHUB_REPOS; // comma-separated, optional
+const GITHUB_ENTERPRISE = process.env.GITHUB_ENTERPRISE; // enterprise slug, optional
 const EVIDENCE_DATE = process.env.EVIDENCE_DATE || todayISO();
 
 const ROOT = path.resolve(__dirname, '..', '..');
@@ -412,45 +413,71 @@ async function collectDependabotAlerts(octokit, org, repos) {
 async function collectAuditLog(octokit, org, repos) {
   const since = new Date();
   since.setDate(since.getDate() - 7);
+  const sinceDate = since.toISOString().split('T')[0];
 
-  try {
-    const events = await octokit.paginate('GET /orgs/{org}/audit-log', {
+  // Try enterprise endpoint first (if slug provided), then fall back to org endpoint
+  const attempts = [];
+  if (GITHUB_ENTERPRISE) {
+    attempts.push({
+      label: 'enterprise',
+      request: () => octokit.paginate('GET /enterprises/{enterprise}/audit-log', {
+        enterprise: GITHUB_ENTERPRISE,
+        per_page: 100,
+        include: 'all',
+        phrase: `created:>=${sinceDate}`,
+      }),
+    });
+  }
+  attempts.push({
+    label: 'org',
+    request: () => octokit.paginate('GET /orgs/{org}/audit-log', {
       org,
       per_page: 100,
       include: 'all',
-      phrase: `created:>=${since.toISOString().split('T')[0]}`,
-    });
+      phrase: `created:>=${sinceDate}`,
+    }),
+  });
 
-    const summary = {
-      events_collected: events.length,
-      period_start: since.toISOString().split('T')[0],
-      period_end: EVIDENCE_DATE,
-    };
+  for (const attempt of attempts) {
+    try {
+      console.log(`    Trying ${attempt.label} audit log endpoint...`);
+      const events = await attempt.request();
 
-    const data = {
-      events: events.map((e) => ({
-        action: e.action,
-        actor: e.actor || e.user || null,
-        created_at: e.created_at || e['@timestamp'] || null,
-        repo: e.repo || null,
-        org: e.org || null,
-      })),
-    };
+      const summary = {
+        endpoint: attempt.label,
+        events_collected: events.length,
+        period_start: sinceDate,
+        period_end: EVIDENCE_DATE,
+      };
 
-    writeResult('audit-log.json', envelope('audit-log', org, repos, summary, data));
-    return summary;
-  } catch (err) {
-    if (err.status === 403) {
-      const note =
-        'Audit log API requires GitHub Enterprise Cloud. ' +
-        'This organization does not appear to have Enterprise access. Skipping.';
-      console.log(`    Note: ${note}`);
-      const summary = { skipped: true, reason: note };
-      writeResult('audit-log.json', envelope('audit-log', org, repos, summary, { note }));
+      const data = {
+        events: events.map((e) => ({
+          action: e.action,
+          actor: e.actor || e.user || null,
+          created_at: e.created_at || e['@timestamp'] || null,
+          repo: e.repo || null,
+          org: e.org || null,
+        })),
+      };
+
+      writeResult('audit-log.json', envelope('audit-log', org, repos, summary, data));
       return summary;
+    } catch (err) {
+      if (err.status === 403 || err.status === 404) {
+        console.log(`    ${attempt.label} endpoint returned ${err.status}, trying next...`);
+        continue;
+      }
+      throw err;
     }
-    throw err;
   }
+
+  // All attempts failed
+  const note = 'Audit log API not accessible. Ensure the token has read:audit_log scope ' +
+    'and GITHUB_ENTERPRISE is set to your enterprise slug if using Enterprise Cloud.';
+  console.log(`    Note: ${note}`);
+  const summary = { skipped: true, reason: note };
+  writeResult('audit-log.json', envelope('audit-log', org, repos, summary, { note }));
+  return summary;
 }
 
 // ---------------------------------------------------------------------------
