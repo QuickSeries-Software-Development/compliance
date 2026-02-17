@@ -1,0 +1,16 @@
+{
+  "collected_at": "2026-02-17T13:55:40.889Z",
+  "source": "github",
+  "check": "audit-log",
+  "org": "QuickSeries-Software-Development",
+  "repos_audited": [
+    "qs-mono"
+  ],
+  "summary": {
+    "skipped": true,
+    "reason": "Audit log API requires GitHub Enterprise Cloud. This organization does not appear to have Enterprise access. Skipping."
+  },
+  "data": {
+    "note": "Audit log API requires GitHub Enterprise Cloud. This organization does not appear to have Enterprise access. Skipping."
+  }
+}
