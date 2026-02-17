@@ -79,57 +79,85 @@ async function collectBranchProtection(octokit, org, repos) {
   let protectedCount = 0;
   let unprotectedCount = 0;
 
+  async function checkBranch(octokit, org, repo, branch) {
+    try {
+      const { data: protection } = await octokit.repos.getBranchProtection({
+        owner: org,
+        repo,
+        branch,
+      });
+      return {
+        branch,
+        protected: true,
+        required_pull_request_reviews: protection.required_pull_request_reviews
+          ? {
+              required_approving_review_count:
+                protection.required_pull_request_reviews.required_approving_review_count || 0,
+              dismiss_stale_reviews:
+                protection.required_pull_request_reviews.dismiss_stale_reviews || false,
+              require_code_owner_reviews:
+                protection.required_pull_request_reviews.require_code_owner_reviews || false,
+            }
+          : null,
+        required_status_checks: protection.required_status_checks
+          ? {
+              strict: protection.required_status_checks.strict || false,
+              contexts: protection.required_status_checks.contexts || [],
+            }
+          : null,
+        enforce_admins: protection.enforce_admins
+          ? protection.enforce_admins.enabled
+          : false,
+        restrictions: protection.restrictions
+          ? {
+              users: (protection.restrictions.users || []).map((u) => u.login),
+              teams: (protection.restrictions.teams || []).map((t) => t.slug),
+            }
+          : null,
+      };
+    } catch (err) {
+      if (err.status === 404) {
+        return { branch, protected: false, reason: 'No branch protection configured' };
+      }
+      throw err;
+    }
+  }
+
   for (const repo of repos) {
     try {
-      // Get default branch
       const { data: repoData } = await octokit.repos.get({ owner: org, repo });
-      const branch = repoData.default_branch;
+      const defaultBranch = repoData.default_branch;
 
-      try {
-        const { data: protection } = await octokit.repos.getBranchProtection({
-          owner: org,
-          repo,
-          branch,
-        });
+      // Always check the default branch
+      const branches = [defaultBranch];
 
-        data[repo] = {
-          branch,
-          protected: true,
-          required_pull_request_reviews: protection.required_pull_request_reviews
-            ? {
-                required_approving_review_count:
-                  protection.required_pull_request_reviews.required_approving_review_count || 0,
-                dismiss_stale_reviews:
-                  protection.required_pull_request_reviews.dismiss_stale_reviews || false,
-                require_code_owner_reviews:
-                  protection.required_pull_request_reviews.require_code_owner_reviews || false,
-              }
-            : null,
-          required_status_checks: protection.required_status_checks
-            ? {
-                strict: protection.required_status_checks.strict || false,
-                contexts: protection.required_status_checks.contexts || [],
-              }
-            : null,
-          enforce_admins: protection.enforce_admins
-            ? protection.enforce_admins.enabled
-            : false,
-          restrictions: protection.restrictions
-            ? {
-                users: (protection.restrictions.users || []).map((u) => u.login),
-                teams: (protection.restrictions.teams || []).map((t) => t.slug),
-              }
-            : null,
-        };
-        protectedCount++;
-      } catch (err) {
-        if (err.status === 404) {
-          data[repo] = { branch, protected: false, reason: 'No branch protection configured' };
-          unprotectedCount++;
-        } else {
-          throw err;
+      // Also check main/master if they're not the default branch
+      for (const important of ['main', 'master']) {
+        if (important !== defaultBranch) {
+          try {
+            await octokit.repos.getBranch({ owner: org, repo, branch: important });
+            branches.push(important);
+          } catch (_) {
+            // Branch doesn't exist, skip
+          }
         }
       }
+
+      const branchResults = {};
+      let repoProtected = false;
+      for (const branch of branches) {
+        branchResults[branch] = await checkBranch(octokit, org, repo, branch);
+        if (branchResults[branch].protected) repoProtected = true;
+      }
+
+      data[repo] = {
+        default_branch: defaultBranch,
+        branches_checked: branches,
+        branches: branchResults,
+      };
+
+      if (repoProtected) protectedCount++;
+      else unprotectedCount++;
     } catch (err) {
       data[repo] = { error: err.message, status: err.status || null };
     }
