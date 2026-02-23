@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-17T15:21:55.634Z",
+  "generated_at": "2026-02-23T11:38:23.519Z",
   "nodes": {
     "policies/supplier-security-policy.md": {
       "type": "policy",
@@ -5928,9 +5928,9 @@
       "source": "github",
       "collection": "automated",
       "frequency": "weekly",
-      "last_collected": "2026-02-17",
-      "next_due": "2026-02-24",
-      "path": "evidence/automated/github/2026-02-17/branch-protection.json",
+      "last_collected": "2026-02-23",
+      "next_due": "2026-03-02",
+      "path": "evidence/automated/github/2026-02-23/branch-protection.json",
       "status": "current"
     },
     "evidence/EVD-002": {
@@ -5947,9 +5947,9 @@
       "source": "github",
       "collection": "automated",
       "frequency": "weekly",
-      "last_collected": "2026-02-17",
-      "next_due": "2026-02-24",
-      "path": "evidence/automated/github/2026-02-17/pr-reviews.json",
+      "last_collected": "2026-02-23",
+      "next_due": "2026-03-02",
+      "path": "evidence/automated/github/2026-02-23/pr-reviews.json",
       "status": "current"
     },
     "evidence/EVD-003": {
@@ -5966,9 +5966,9 @@
       "source": "github",
       "collection": "automated",
       "frequency": "weekly",
-      "last_collected": "2026-02-17",
-      "next_due": "2026-02-24",
-      "path": "evidence/automated/github/2026-02-17/org-members.json",
+      "last_collected": "2026-02-23",
+      "next_due": "2026-03-02",
+      "path": "evidence/automated/github/2026-02-23/org-members.json",
       "status": "current"
     },
     "evidence/EVD-004": {
@@ -5985,9 +5985,9 @@
       "source": "github",
       "collection": "automated",
       "frequency": "weekly",
-      "last_collected": "2026-02-17",
-      "next_due": "2026-02-24",
-      "path": "evidence/automated/github/2026-02-17/repo-settings.json",
+      "last_collected": "2026-02-23",
+      "next_due": "2026-03-02",
+      "path": "evidence/automated/github/2026-02-23/repo-settings.json",
       "status": "current"
     },
     "evidence/EVD-005": {
@@ -6004,9 +6004,9 @@
       "source": "github",
       "collection": "automated",
       "frequency": "weekly",
-      "last_collected": "2026-02-17",
-      "next_due": "2026-02-24",
-      "path": "evidence/automated/github/2026-02-17/dependabot-alerts.json",
+      "last_collected": "2026-02-23",
+      "next_due": "2026-03-02",
+      "path": "evidence/automated/github/2026-02-23/dependabot-alerts.json",
       "status": "current"
     },
     "evidence/EVD-006": {
@@ -6023,9 +6023,9 @@
       "source": "github",
       "collection": "automated",
       "frequency": "weekly",
-      "last_collected": "2026-02-17",
-      "next_due": "2026-02-24",
-      "path": "evidence/automated/github/2026-02-17/audit-log.json",
+      "last_collected": "2026-02-23",
+      "next_due": "2026-03-02",
+      "path": "evidence/automated/github/2026-02-23/audit-log.json",
       "status": "current"
     },
     "program/isms-acceptance-statement.md": {

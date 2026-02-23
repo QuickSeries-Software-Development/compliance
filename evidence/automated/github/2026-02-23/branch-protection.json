@@ -1,0 +1,36 @@
+{
+  "collected_at": "2026-02-23T11:37:01.990Z",
+  "source": "github",
+  "check": "branch-protection",
+  "org": "QuickSeries-Software-Development",
+  "repos_audited": [
+    "qs-mono"
+  ],
+  "summary": {
+    "total_repos": 1,
+    "protected": 0,
+    "unprotected": 1,
+    "errors": 0
+  },
+  "data": {
+    "qs-mono": {
+      "default_branch": "release/v4.0.0",
+      "branches_checked": [
+        "release/v4.0.0",
+        "master"
+      ],
+      "branches": {
+        "release/v4.0.0": {
+          "branch": "release/v4.0.0",
+          "protected": false,
+          "reason": "No branch protection configured"
+        },
+        "master": {
+          "branch": "master",
+          "protected": false,
+          "reason": "No branch protection configured"
+        }
+      }
+    }
+  }
+}
