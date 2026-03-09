@@ -1,0 +1,1034 @@
+{
+  "collected_at": "2026-03-09T11:16:34.253Z",
+  "source": "github",
+  "check": "pr-reviews",
+  "org": "QuickSeries-Software-Development",
+  "repos_audited": [
+    "qs-mono"
+  ],
+  "summary": {
+    "total_merged": 126,
+    "with_review": 102,
+    "without_review": 24,
+    "compliance_rate": 80.95
+  },
+  "data": {
+    "qs-mono": {
+      "period_start": "2026-02-07",
+      "merged_count": 126,
+      "with_review": 102,
+      "without_review": 24,
+      "compliance_rate": 80.95,
+      "pull_requests": [
+        {
+          "number": 702,
+          "title": "[RCA-14438] Bump Node.js 24.14, PowerSync 1.20.1",
+          "author": "laeciomorais-coder",
+          "merged_at": "2026-03-07T14:56:53Z",
+          "had_approving_review": false,
+          "review_count": 0
+        },
+        {
+          "number": 694,
+          "title": "[RCA-13132] Fix search modal keyboard and scroll issues on Android and iOS",
+          "author": "jeremy-friesen-qs",
+          "merged_at": "2026-03-06T20:48:25Z",
+          "had_approving_review": true,
+          "review_count": 2
+        },
+        {
+          "number": 700,
+          "title": "[RCA-14431] Remove failed codebase index POC artifacts",
+          "author": "justinledoux-web",
+          "merged_at": "2026-03-06T19:15:43Z",
+          "had_approving_review": true,
+          "review_count": 2
+        },
+        {
+          "number": 693,
+          "title": "[RCA-14431] Codebase indexing AI extension",
+          "author": "justinledoux-web",
+          "merged_at": "2026-03-06T18:56:52Z",
+          "had_approving_review": true,
+          "review_count": 3
+        },
+        {
+          "number": 690,
+          "title": "[RCA-13616] Fix form 260 required validators and remove OnPush from form components",
+          "author": "QsOresti",
+          "merged_at": "2026-03-06T17:47:27Z",
+          "had_approving_review": true,
+          "review_count": 3
+        },
+        {
+          "number": 698,
+          "title": "[RCA-0000] Update PowerSync knowledge modules for Edition 3 best practices",
+          "author": "laeciomorais-coder",
+          "merged_at": "2026-03-06T17:26:43Z",
+          "had_approving_review": true,
+          "review_count": 5
+        },
+        {
+          "number": 662,
+          "title": "[RCA-13236] Convert multiple-dropdown-phone-number field to array format",
+          "author": "QsOresti",
+          "merged_at": "2026-03-05T19:34:35Z",
+          "had_approving_review": true,
+          "review_count": 7
+        },
+        {
+          "number": 689,
+          "title": "[RCA-14061] Enhance JAS state service, refactor pages, and add unit tests. Stage 3",
+          "author": "jlt-castells",
+          "merged_at": "2026-03-05T18:36:59Z",
+          "had_approving_review": true,
+          "review_count": 2
+        },
+        {
+          "number": 687,
+          "title": "[RCA-13114] Fix iterative loading of Approved By field in form table view",
+          "author": "jeremy-friesen-qs",
+          "merged_at": "2026-03-05T14:59:12Z",
+          "had_approving_review": true,
+          "review_count": 2
+        },
+        {
+          "number": 683,
+          "title": "[RCA-13129] Fix stale context menu popovers on repeatable form pages",
+          "author": "jeremy-friesen-qs",
+          "merged_at": "2026-03-05T14:58:57Z",
+          "had_approving_review": true,
+          "review_count": 3
+        },
+        {
+          "number": 684,
+          "title": "[RCA-14282] Navigate directly to ICS 215A form from command center",
+          "author": "patrickroy07",
+          "merged_at": "2026-03-05T14:43:17Z",
+          "had_approving_review": true,
+          "review_count": 2
+        },
+        {
+          "number": 668,
+          "title": "[RCA-14267] IMT position contact info popup for Command Center",
+          "author": "patrickroy07",
+          "merged_at": "2026-03-05T14:40:03Z",
+          "had_approving_review": true,
+          "review_count": 7
+        },
+        {
+          "number": 692,
+          "title": "[RCA-14434] - fix(Multer): Increase fieldSize limit.",
+          "author": "laeciomorais-coder",
+          "merged_at": "2026-03-04T22:01:58Z",
+          "had_approving_review": true,
+          "review_count": 2
+        },
+        {
+          "number": 691,
+          "title": "[RCA-0] Update Claude settings and PowerSync sync-rules comments",
+          "author": "laeciomorais-coder",
+          "merged_at": "2026-03-04T21:40:22Z",
+          "had_approving_review": true,
+          "review_count": 2
+        },
+        {
+          "number": 686,
+          "title": "[RCA-0] Update operational period specs with mobile mockups and remove lock state indicator",
+          "author": "justinledoux-web",
+          "merged_at": "2026-03-04T18:22:16Z",
+          "had_approving_review": true,
+          "review_count": 2
+        },
+        {
+          "number": 685,
+          "title": "[RCA-14423] Update PowerSync Sync Streams to Edition 3",
+          "author": "laeciomorais-coder",
+          "merged_at": "2026-03-04T16:42:40Z",
+          "had_approving_review": true,
+          "review_count": 1
+        },
+        {
+          "number": 681,
+          "title": "[RCA-14369] Standardize delete toast message across HICS repeatable forms",
+          "author": "QsOresti",
+          "merged_at": "2026-03-04T13:57:29Z",
+          "had_approving_review": true,
+          "review_count": 2
+        },
+        {
+          "number": 679,
+          "title": "[RCA-12961] Fix missing dynamic data in incident report form values",
+          "author": "QsOresti",
+          "merged_at": "2026-03-03T22:52:49Z",
+          "had_approving_review": true,
+          "review_count": 2
+        },
+        {
+          "number": 682,
+          "title": "[RCA-14405] Increase nginx client_body_buffer_size to 64K",
+          "author": "laeciomorais-coder",
+          "merged_at": "2026-03-03T20:37:18Z",
+          "had_approving_review": true,
+          "review_count": 2
+        },
+        {
+          "number": 680,
+          "title": "[RCA-14061] Implement PowerSync for JAS - Stage 2",
+          "author": "jlt-castells",
+          "merged_at": "2026-03-03T20:20:23Z",
+          "had_approving_review": true,
+          "review_count": 4
+        },
+        {
+          "number": 677,
+          "title": "[RCA-14413] Replace task detail API call with local PowerSync data",
+          "author": "ladanham",
+          "merged_at": "2026-03-03T17:32:31Z",
+          "had_approving_review": true,
+          "review_count": 4
+        },
+        {
+          "number": 651,
+          "title": "[RCA-14405] TCM: Git workflow, performance optimization, and QA setup",
+          "author": "justinledoux-web",
+          "merged_at": "2026-03-03T14:17:04Z",
+          "had_approving_review": true,
+          "review_count": 5
+        },
+        {
+          "number": 678,
+          "title": "[RCA-0] Update QA redis TLS and powersync deprecated property",
+          "author": "laeciomorais-coder",
+          "merged_at": "2026-03-03T14:12:30Z",
+          "had_approving_review": true,
+          "review_count": 2
+        },
+        {
+          "number": 674,
+          "title": "[RCA-12784] Fix total hours display in HICS-252 detail panel",
+          "author": "QsOresti",
+          "merged_at": "2026-03-03T14:10:57Z",
+          "had_approving_review": true,
+          "review_count": 2
+        },
+        {
+          "number": 671,
+          "title": "[RCA-14425] Add Socket.dev configuration for dependency scanning",
+          "author": "justinledoux-web",
+          "merged_at": "2026-03-03T13:58:43Z",
+          "had_approving_review": true,
+          "review_count": 2
+        },
+        {
+          "number": 585,
+          "title": "[RCA-0] Add approved IDE extensions and plugins list",
+          "author": "justinledoux-web",
+          "merged_at": "2026-03-03T13:47:03Z",
+          "had_approving_review": true,
+          "review_count": 2
+        },
+        {
+          "number": 676,
+          "title": "[RCA-14418] Remove enableMultiTabs flag from PowerSync config",
+          "author": "laeciomorais-coder",
+          "merged_at": "2026-03-02T23:16:11Z",
+          "had_approving_review": true,
+          "review_count": 2
+        },
+        {
+          "number": 675,
+          "title": "[RCA-14429] Enable TLS configuration for Redis connections",
+          "author": "laeciomorais-coder",
+          "merged_at": "2026-03-02T23:15:53Z",
+          "had_approving_review": true,
+          "review_count": 2
+        },
+        {
+          "number": 653,
+          "title": "[RCA-0] Claude skills and rules improvements",
+          "author": "justinledoux-web",
+          "merged_at": "2026-03-02T18:23:25Z",
+          "had_approving_review": true,
+          "review_count": 5
+        },
+        {
+          "number": 672,
+          "title": "[RCA-14426] Add approved security scanning tools registry",
+          "author": "justinledoux-web",
+          "merged_at": "2026-03-02T18:17:06Z",
+          "had_approving_review": true,
+          "review_count": 2
+        },
+        {
+          "number": 663,
+          "title": "[RCA-14418] PowerSync: upgrade publication diagnostic query",
+          "author": "laeciomorais-coder",
+          "merged_at": "2026-02-27T14:58:13Z",
+          "had_approving_review": false,
+          "review_count": 0
+        },
+        {
+          "number": 669,
+          "title": "[RCA-0000] Add database skill routing and Docker prerequisite checks",
+          "author": "laeciomorais-coder",
+          "merged_at": "2026-03-02T15:34:51Z",
+          "had_approving_review": true,
+          "review_count": 2
+        },
+        {
+          "number": 666,
+          "title": "[RCA-14256] Fix offline navigation wiping app-slug",
+          "author": "patrickroy07",
+          "merged_at": "2026-03-02T14:57:55Z",
+          "had_approving_review": true,
+          "review_count": 2
+        },
+        {
+          "number": 670,
+          "title": "[RCA-0001] Allow Claude bot to trigger PR reviews",
+          "author": "laeciomorais-coder",
+          "merged_at": "2026-03-01T16:39:32Z",
+          "had_approving_review": false,
+          "review_count": 0
+        },
+        {
+          "number": 664,
+          "title": "[RCA-13161] - fix(AggregateTable): 254 Disposition time table cell",
+          "author": "QsOresti",
+          "merged_at": "2026-02-27T22:13:26Z",
+          "had_approving_review": true,
+          "review_count": 2
+        },
+        {
+          "number": 665,
+          "title": "[RCA-14422] Use DB-generated eid for user creation",
+          "author": "laeciomorais-coder",
+          "merged_at": "2026-02-27T21:42:16Z",
+          "had_approving_review": true,
+          "review_count": 2
+        },
+        {
+          "number": 667,
+          "title": "[RCA-14423] Bump PowerSync service to 1.20.0",
+          "author": "laeciomorais-coder",
+          "merged_at": "2026-02-27T21:09:46Z",
+          "had_approving_review": false,
+          "review_count": 0
+        },
+        {
+          "number": 652,
+          "title": "[RCA-14415] Resolve IRG createdBy/updatedBy via LEFT JOIN on users_lookup",
+          "author": "ladanham",
+          "merged_at": "2026-02-27T20:35:58Z",
+          "had_approving_review": true,
+          "review_count": 4
+        },
+        {
+          "number": 656,
+          "title": "[RCA-14054] Disable SSO button during login processing",
+          "author": "jeremy-friesen-qs",
+          "merged_at": "2026-02-27T20:15:33Z",
+          "had_approving_review": true,
+          "review_count": 3
+        },
+        {
+          "number": 657,
+          "title": "[RCA-14061] Implement PowerSync for JAS with granular reactivity (JAS List only)",
+          "author": "jlt-castells",
+          "merged_at": "2026-02-27T17:53:30Z",
+          "had_approving_review": true,
+          "review_count": 4
+        },
+        {
+          "number": 566,
+          "title": "[RCA-14378] Address PR #487 PowerSync review feedback",
+          "author": "ladanham",
+          "merged_at": "2026-02-25T14:28:11Z",
+          "had_approving_review": true,
+          "review_count": 17
+        },
+        {
+          "number": 661,
+          "title": "[RCA-14418] PowerSync: status filter, VFS selection, and multi-tab support",
+          "author": "laeciomorais-coder",
+          "merged_at": "2026-02-27T14:24:06Z",
+          "had_approving_review": true,
+          "review_count": 2
+        },
+        {
+          "number": 658,
+          "title": "[RCA-0000] Standardize UUID default to gen_random_uuid() (native PG 13+)",
+          "author": "laeciomorais-coder",
+          "merged_at": "2026-02-27T00:46:39Z",
+          "had_approving_review": false,
+          "review_count": 0
+        },
+        {
+          "number": 649,
+          "title": "[RCA-14420] Fix onboarding: workspace selection",
+          "author": "patrickroy07",
+          "merged_at": "2026-02-26T23:48:46Z",
+          "had_approving_review": true,
+          "review_count": 2
+        },
+        {
+          "number": 655,
+          "title": "[RCA-0000] Scope Read permission to project directory",
+          "author": "laeciomorais-coder",
+          "merged_at": "2026-02-26T20:15:44Z",
+          "had_approving_review": false,
+          "review_count": 0
+        },
+        {
+          "number": 654,
+          "title": "[RCA-0000] Remove Edit and Write from auto-allowed Claude permissions",
+          "author": "laeciomorais-coder",
+          "merged_at": "2026-02-26T19:57:50Z",
+          "had_approving_review": false,
+          "review_count": 0
+        },
+        {
+          "number": 647,
+          "title": "[RCA-14352] Fix date picker not navigating to selected date in HICS forms",
+          "author": "QsOresti",
+          "merged_at": "2026-02-26T19:40:29Z",
+          "had_approving_review": true,
+          "review_count": 2
+        },
+        {
+          "number": 643,
+          "title": "[RCA-14061] Implement PowerSync for JAS - Stage 1: Migrations, Schemas, Repositories & Rules.",
+          "author": "jlt-castells",
+          "merged_at": "2026-02-26T17:51:11Z",
+          "had_approving_review": true,
+          "review_count": 8
+        },
+        {
+          "number": 644,
+          "title": "[RCA-13610] - fix(252): form 252 clicking search item & navigating",
+          "author": "QsOresti",
+          "merged_at": "2026-02-26T15:01:51Z",
+          "had_approving_review": true,
+          "review_count": 2
+        },
+        {
+          "number": 648,
+          "title": "[RCA-14419] Use numeric keyboard for MFA verification code input",
+          "author": "patrickroy07",
+          "merged_at": "2026-02-26T14:56:23Z",
+          "had_approving_review": true,
+          "review_count": 2
+        },
+        {
+          "number": 650,
+          "title": "[RCA-14418] Upgrade PowerSync web, wa-sqlite, and diagnostics image versions",
+          "author": "laeciomorais-coder",
+          "merged_at": "2026-02-25T23:30:31Z",
+          "had_approving_review": false,
+          "review_count": 0
+        },
+        {
+          "number": 641,
+          "title": "[RCA-13673] Fix HICS-205A config mode section titles and missing Special Instructions",
+          "author": "jeremy-friesen-qs",
+          "merged_at": "2026-02-25T21:24:47Z",
+          "had_approving_review": true,
+          "review_count": 4
+        },
+        {
+          "number": 645,
+          "title": "[RCA-13057] File upload component improvements",
+          "author": "jlt-castells",
+          "merged_at": "2026-02-25T21:24:05Z",
+          "had_approving_review": true,
+          "review_count": 3
+        },
+        {
+          "number": 640,
+          "title": "[RCA-12784] - fix(hics-forms): fix form 251 field references and simp…",
+          "author": "QsOresti",
+          "merged_at": "2026-02-25T17:32:49Z",
+          "had_approving_review": true,
+          "review_count": 2
+        },
+        {
+          "number": 615,
+          "title": "[RCA-14264] Command Center IMT card component",
+          "author": "patrickroy07",
+          "merged_at": "2026-02-25T14:41:41Z",
+          "had_approving_review": true,
+          "review_count": 21
+        },
+        {
+          "number": 642,
+          "title": "[RCA-14244] Fix incident wizard i18n and alert box styling",
+          "author": "patrickroy07",
+          "merged_at": "2026-02-25T14:15:08Z",
+          "had_approving_review": true,
+          "review_count": 2
+        },
+        {
+          "number": 639,
+          "title": "[RCA-12805] - fix(generic-list-search-dialog): fix dialog layout over…",
+          "author": "QsOresti",
+          "merged_at": "2026-02-25T14:11:49Z",
+          "had_approving_review": true,
+          "review_count": 2
+        },
+        {
+          "number": 637,
+          "title": "[RCA-14241] Fix incident card UI: pill contrast, icon, and accordion padding",
+          "author": "patrickroy07",
+          "merged_at": "2026-02-24T19:01:34Z",
+          "had_approving_review": true,
+          "review_count": 2
+        },
+        {
+          "number": 634,
+          "title": "[RCA-14245] Create first operational period on incident activation",
+          "author": "patrickroy07",
+          "merged_at": "2026-02-24T17:49:26Z",
+          "had_approving_review": true,
+          "review_count": 2
+        },
+        {
+          "number": 638,
+          "title": "[RCA-13634] Fix null guard for MFA and password expiration in mobile profile",
+          "author": "jlt-castells",
+          "merged_at": "2026-02-24T20:17:51Z",
+          "had_approving_review": true,
+          "review_count": 2
+        },
+        {
+          "number": 632,
+          "title": "[RCA-14054] Disable forgot password link during login processing",
+          "author": "jeremy-friesen-qs",
+          "merged_at": "2026-02-24T20:16:56Z",
+          "had_approving_review": true,
+          "review_count": 3
+        },
+        {
+          "number": 631,
+          "title": "[RCA-13554] Redirect to favorite-workspaces instead of blank page on invalid organization",
+          "author": "jeremy-friesen-qs",
+          "merged_at": "2026-02-24T20:16:40Z",
+          "had_approving_review": true,
+          "review_count": 2
+        },
+        {
+          "number": 626,
+          "title": "[RCA-12977, RCA-12979, RCA-12981] Fix HICS-258 config mode view/edit/delete issues",
+          "author": "jeremy-friesen-qs",
+          "merged_at": "2026-02-24T20:16:32Z",
+          "had_approving_review": true,
+          "review_count": 5
+        },
+        {
+          "number": 635,
+          "title": "[RCA-13871] Fix EOP state initialization, lock status, and user name resolution",
+          "author": "jlt-castells",
+          "merged_at": "2026-02-24T19:42:47Z",
+          "had_approving_review": true,
+          "review_count": 2
+        },
+        {
+          "number": 621,
+          "title": "[RCA-13616] Fix decimal input mode, Hospital text field, and label wrapping",
+          "author": "QsOresti",
+          "merged_at": "2026-02-24T18:44:56Z",
+          "had_approving_review": true,
+          "review_count": 2
+        },
+        {
+          "number": 636,
+          "title": "[RCA-11075] Add i18n error keys to delete user 404 response",
+          "author": "laeciomorais-coder",
+          "merged_at": "2026-02-24T17:49:45Z",
+          "had_approving_review": true,
+          "review_count": 1
+        },
+        {
+          "number": 633,
+          "title": "[RCA-0000] - fix(CI): Add missing Legacy QA variable.",
+          "author": "laeciomorais-coder",
+          "merged_at": "2026-02-23T22:37:17Z",
+          "had_approving_review": false,
+          "review_count": 0
+        },
+        {
+          "number": 629,
+          "title": "[RCA-0] - docs(specs): Update incident creation summary tab with OP 1…",
+          "author": "justinledoux-web",
+          "merged_at": "2026-02-23T13:54:43Z",
+          "had_approving_review": false,
+          "review_count": 0
+        },
+        {
+          "number": 596,
+          "title": "[RCA-14323] - feat(auto-scaling): Enable prometheus port.",
+          "author": "laeciomorais-coder",
+          "merged_at": "2026-02-13T17:29:02Z",
+          "had_approving_review": true,
+          "review_count": 2
+        },
+        {
+          "number": 627,
+          "title": "[RCA-14405] Test Case Manager — VS Code extension + API",
+          "author": "justinledoux-web",
+          "merged_at": "2026-02-23T21:17:42Z",
+          "had_approving_review": true,
+          "review_count": 10
+        },
+        {
+          "number": 628,
+          "title": "[RCA-0] Refactor Claude skills: migrate rules to auto-discoverable skills",
+          "author": "justinledoux-web",
+          "merged_at": "2026-02-23T19:13:28Z",
+          "had_approving_review": true,
+          "review_count": 8
+        },
+        {
+          "number": 630,
+          "title": "[RCA-0000] Update Claude Code settings schema and permissions",
+          "author": "laeciomorais-coder",
+          "merged_at": "2026-02-23T13:58:38Z",
+          "had_approving_review": false,
+          "review_count": 0
+        },
+        {
+          "number": 609,
+          "title": "[RCA-14372] Fix file upload component with native mobile support",
+          "author": "jlt-castells",
+          "merged_at": "2026-02-19T20:10:36Z",
+          "had_approving_review": true,
+          "review_count": 10
+        },
+        {
+          "number": 625,
+          "title": "[RCA-14407] Tighten node/npm engine constraints to v24/v11",
+          "author": "laeciomorais-coder",
+          "merged_at": "2026-02-19T20:26:46Z",
+          "had_approving_review": false,
+          "review_count": 0
+        },
+        {
+          "number": 622,
+          "title": "[RCA-14407] Bump Node 24.13, Alpine 3.23, Nginx 1.29",
+          "author": "laeciomorais-coder",
+          "merged_at": "2026-02-19T15:24:11Z",
+          "had_approving_review": true,
+          "review_count": 1
+        },
+        {
+          "number": 623,
+          "title": "[RCA-14405] Add ECS-optimized nginx configurations",
+          "author": "laeciomorais-coder",
+          "merged_at": "2026-02-19T15:25:31Z",
+          "had_approving_review": true,
+          "review_count": 1
+        },
+        {
+          "number": 624,
+          "title": "[RCA-14405] Update QA DNS resolver IP",
+          "author": "laeciomorais-coder",
+          "merged_at": "2026-02-19T20:08:46Z",
+          "had_approving_review": false,
+          "review_count": 0
+        },
+        {
+          "number": 620,
+          "title": "[RCA-13716, RCA-13717] Fix form 200 broken Situation Summary, HASB, and HIMT components",
+          "author": "jeremy-friesen-qs",
+          "merged_at": "2026-02-19T20:35:03Z",
+          "had_approving_review": true,
+          "review_count": 5
+        },
+        {
+          "number": 618,
+          "title": "[RCA-14357] - fix(migration): allow null form_schema_version in sync_…",
+          "author": "QsOresti",
+          "merged_at": "2026-02-18T14:47:03Z",
+          "had_approving_review": true,
+          "review_count": 2
+        },
+        {
+          "number": 619,
+          "title": "[RCA-14404, RCA-14403] Add deployment gate and bump PowerSync to 1.19.2",
+          "author": "laeciomorais-coder",
+          "merged_at": "2026-02-18T17:44:40Z",
+          "had_approving_review": true,
+          "review_count": 2
+        },
+        {
+          "number": 617,
+          "title": "[RCA-14396] Upgrade PR review model to claude-sonnet-4-6",
+          "author": "laeciomorais-coder",
+          "merged_at": "2026-02-17T23:48:39Z",
+          "had_approving_review": false,
+          "review_count": 0
+        },
+        {
+          "number": 616,
+          "title": "[RCA-14396] Cache lock file hash to skip redundant npm ci",
+          "author": "laeciomorais-coder",
+          "merged_at": "2026-02-17T22:02:54Z",
+          "had_approving_review": false,
+          "review_count": 0
+        },
+        {
+          "number": 611,
+          "title": "[RCA-14357] - feat(incident-reports): replace incident_report_log wit…",
+          "author": "QsOresti",
+          "merged_at": "2026-02-17T21:36:48Z",
+          "had_approving_review": true,
+          "review_count": 2
+        },
+        {
+          "number": 613,
+          "title": "[RCA-13235] - fix(DateTime): commits already on QA, now added to dev",
+          "author": "QsOresti",
+          "merged_at": "2026-02-17T20:39:51Z",
+          "had_approving_review": true,
+          "review_count": 2
+        },
+        {
+          "number": 614,
+          "title": "[RCA-14396] Docker autoheal opt-in and dep-update improvements",
+          "author": "laeciomorais-coder",
+          "merged_at": "2026-02-17T19:51:12Z",
+          "had_approving_review": true,
+          "review_count": 2
+        },
+        {
+          "number": 612,
+          "title": "[RCA-13132] Fix search results container height on HICS-257 forms",
+          "author": "jeremy-friesen-qs",
+          "merged_at": "2026-02-17T19:46:24Z",
+          "had_approving_review": true,
+          "review_count": 2
+        },
+        {
+          "number": 610,
+          "title": "[RCA-14396] Modernize Docker scripts and add automatic workspace dependency detection",
+          "author": "laeciomorais-coder",
+          "merged_at": "2026-02-17T15:45:49Z",
+          "had_approving_review": true,
+          "review_count": 1
+        },
+        {
+          "number": 607,
+          "title": "[RCA-13124] Fix HICS-257 returned condition column not showing file count",
+          "author": "jeremy-friesen-qs",
+          "merged_at": "2026-02-17T14:26:31Z",
+          "had_approving_review": true,
+          "review_count": 2
+        },
+        {
+          "number": 605,
+          "title": "[RCA-13129] Fix delete dialog duplicate modal and standardize message",
+          "author": "jeremy-friesen-qs",
+          "merged_at": "2026-02-17T14:25:04Z",
+          "had_approving_review": true,
+          "review_count": 2
+        },
+        {
+          "number": 606,
+          "title": "[RCA-13127] Fix HICS-257 field descriptions and section label",
+          "author": "jeremy-friesen-qs",
+          "merged_at": "2026-02-17T14:24:48Z",
+          "had_approving_review": true,
+          "review_count": 2
+        },
+        {
+          "number": 608,
+          "title": "[RCA-14403] Bump PowerSync SDK and service versions",
+          "author": "laeciomorais-coder",
+          "merged_at": "2026-02-17T13:46:26Z",
+          "had_approving_review": true,
+          "review_count": 1
+        },
+        {
+          "number": 571,
+          "title": "[RCA-14282, RCA-14283] Integrate health and safety briefing card on Command Center",
+          "author": "patrickroy07",
+          "merged_at": "2026-02-16T22:11:38Z",
+          "had_approving_review": true,
+          "review_count": 22
+        },
+        {
+          "number": 601,
+          "title": "[RCA-14373] - feat(forms): add PowerSync reactive watch for form data",
+          "author": "QsOresti",
+          "merged_at": "2026-02-16T18:27:18Z",
+          "had_approving_review": true,
+          "review_count": 3
+        },
+        {
+          "number": 604,
+          "title": "[RCA-0] ICS Spec Updates - Context Menu Behavior and PR Workflow Optimization",
+          "author": "justinledoux-web",
+          "merged_at": "2026-02-16T16:43:44Z",
+          "had_approving_review": false,
+          "review_count": 0
+        },
+        {
+          "number": 603,
+          "title": "[RCA-0] ICS Spec Updates - Context Menu, HICS Forms, and Tooling",
+          "author": "justinledoux-web",
+          "merged_at": "2026-02-16T16:29:29Z",
+          "had_approving_review": false,
+          "review_count": 0
+        },
+        {
+          "number": 602,
+          "title": "[RCA-0000] Slim CLAUDE.md and extend validation checklist",
+          "author": "laeciomorais-coder",
+          "merged_at": "2026-02-16T16:17:04Z",
+          "had_approving_review": true,
+          "review_count": 2
+        },
+        {
+          "number": 600,
+          "title": "[RCA-14287] Fix missed toolbar button colors on Objectives detail page",
+          "author": "jeremy-friesen-qs",
+          "merged_at": "2026-02-13T23:57:32Z",
+          "had_approving_review": true,
+          "review_count": 2
+        },
+        {
+          "number": 599,
+          "title": "[RCA-13131] Fix Android modal toolbar safe area padding",
+          "author": "jeremy-friesen-qs",
+          "merged_at": "2026-02-13T23:56:55Z",
+          "had_approving_review": true,
+          "review_count": 2
+        },
+        {
+          "number": 598,
+          "title": "[RCA-0000] NestJS pipe patterns and autoheal interval adjustment",
+          "author": "laeciomorais-coder",
+          "merged_at": "2026-02-13T23:43:55Z",
+          "had_approving_review": true,
+          "review_count": 2
+        },
+        {
+          "number": 597,
+          "title": "[RCA-13126] Fix file upload empty placeholder for read-only viewers",
+          "author": "jeremy-friesen-qs",
+          "merged_at": "2026-02-13T20:18:05Z",
+          "had_approving_review": true,
+          "review_count": 2
+        },
+        {
+          "number": 592,
+          "title": "[RCA-14385] Fix skeleton loader persisting in user combobox table cells and detail panel",
+          "author": "jeremy-friesen-qs",
+          "merged_at": "2026-02-13T18:10:17Z",
+          "had_approving_review": true,
+          "review_count": 3
+        },
+        {
+          "number": 589,
+          "title": "[RCA-14386] Replace integer validator with format-based number display",
+          "author": "jeremy-friesen-qs",
+          "merged_at": "2026-02-13T18:04:41Z",
+          "had_approving_review": true,
+          "review_count": 3
+        },
+        {
+          "number": 594,
+          "title": "[RCA-13057] - File Upload and Forms Improvements",
+          "author": "jlt-castells",
+          "merged_at": "2026-02-13T17:40:47Z",
+          "had_approving_review": true,
+          "review_count": 3
+        },
+        {
+          "number": 595,
+          "title": "[RCA-14394] Add PowerSync diagnostics app script and documentation",
+          "author": "laeciomorais-coder",
+          "merged_at": "2026-02-13T17:28:08Z",
+          "had_approving_review": true,
+          "review_count": 2
+        },
+        {
+          "number": 593,
+          "title": "[RCA-14276] - fix(package-lock): Fix package-lock generation.",
+          "author": "laeciomorais-coder",
+          "merged_at": "2026-02-12T22:18:40Z",
+          "had_approving_review": true,
+          "review_count": 2
+        },
+        {
+          "number": 572,
+          "title": "[RCA-14276, RCA-14278] Situation Summary Card Display and Edit Feature",
+          "author": "patrickroy07",
+          "merged_at": "2026-02-12T21:38:28Z",
+          "had_approving_review": true,
+          "review_count": 29
+        },
+        {
+          "number": 580,
+          "title": "[RCA-14373] - feat(Forms): auto subscribe to sync",
+          "author": "QsOresti",
+          "merged_at": "2026-02-12T20:07:07Z",
+          "had_approving_review": true,
+          "review_count": 8
+        },
+        {
+          "number": 591,
+          "title": "[RCA-0] - spec(260): Update form field conditions for patient evacuat…",
+          "author": "justinledoux-web",
+          "merged_at": "2026-02-12T15:59:13Z",
+          "had_approving_review": false,
+          "review_count": 0
+        },
+        {
+          "number": 590,
+          "title": "[RCA-0] docs(nestjs-patterns): add GET endpoint example and route paths rule",
+          "author": "laeciomorais-coder",
+          "merged_at": "2026-02-12T15:56:30Z",
+          "had_approving_review": true,
+          "review_count": 3
+        },
+        {
+          "number": 575,
+          "title": "[RCA-13826] Prevent landscape mode for phones (not tablets)",
+          "author": "jeremy-friesen-qs",
+          "merged_at": "2026-02-12T15:01:01Z",
+          "had_approving_review": true,
+          "review_count": 6
+        },
+        {
+          "number": 586,
+          "title": "[RCA-14393] Add autoheal service to local Docker Compose",
+          "author": "laeciomorais-coder",
+          "merged_at": "2026-02-11T14:43:32Z",
+          "had_approving_review": true,
+          "review_count": 1
+        },
+        {
+          "number": 588,
+          "title": "[RCA-13928] Enable HTTP streaming for PowerSync sync proxy",
+          "author": "laeciomorais-coder",
+          "merged_at": "2026-02-11T22:22:07Z",
+          "had_approving_review": true,
+          "review_count": 2
+        },
+        {
+          "number": 584,
+          "title": "[RCA-0] Add mandatory unit test step to implement commands",
+          "author": "justinledoux-web",
+          "merged_at": "2026-02-11T14:37:05Z",
+          "had_approving_review": false,
+          "review_count": 4
+        },
+        {
+          "number": 559,
+          "title": "[RCA-14231] As a HICS Admin, I want to see the HIMT structure for position assignments when creating an incident",
+          "author": "patrickroy07",
+          "merged_at": "2026-02-11T20:03:15Z",
+          "had_approving_review": true,
+          "review_count": 19
+        },
+        {
+          "number": 576,
+          "title": "[RCA-14381] Update pediatric column label to include age qualifier",
+          "author": "jeremy-friesen-qs",
+          "merged_at": "2026-02-11T19:51:30Z",
+          "had_approving_review": true,
+          "review_count": 5
+        },
+        {
+          "number": 587,
+          "title": "[RCA-14393] Add quick-connect minimum platform version FAQ to README",
+          "author": "laeciomorais-coder",
+          "merged_at": "2026-02-11T14:47:17Z",
+          "had_approving_review": false,
+          "review_count": 0
+        },
+        {
+          "number": 578,
+          "title": "[RCA-14065] feat(file-upload): Add incident file upload support",
+          "author": "jlt-castells",
+          "merged_at": "2026-02-10T20:29:50Z",
+          "had_approving_review": true,
+          "review_count": 5
+        },
+        {
+          "number": 583,
+          "title": "[RCA-0] Add previous updates and diff popup specs to command center cards",
+          "author": "justinledoux-web",
+          "merged_at": "2026-02-10T17:44:23Z",
+          "had_approving_review": false,
+          "review_count": 0
+        },
+        {
+          "number": 579,
+          "title": "[RCA-14387] Add CodeQL security analysis workflow",
+          "author": "laeciomorais-coder",
+          "merged_at": "2026-02-10T16:15:48Z",
+          "had_approving_review": true,
+          "review_count": 2
+        },
+        {
+          "number": 574,
+          "title": "[RCA-14287] Fix toolbar button blue flash in incident context",
+          "author": "jeremy-friesen-qs",
+          "merged_at": "2026-02-10T20:42:30Z",
+          "had_approving_review": true,
+          "review_count": 2
+        },
+        {
+          "number": 581,
+          "title": "[RCA-14387] Add actions read permission to CodeQL workflow",
+          "author": "laeciomorais-coder",
+          "merged_at": "2026-02-10T16:43:07Z",
+          "had_approving_review": false,
+          "review_count": 0
+        },
+        {
+          "number": 577,
+          "title": "[RCA-14351] Rename env templates and update PowerSync config",
+          "author": "laeciomorais-coder",
+          "merged_at": "2026-02-10T18:25:42Z",
+          "had_approving_review": true,
+          "review_count": 2
+        },
+        {
+          "number": 567,
+          "title": "[RCA-14246] Active incidents side menu with real-time updates",
+          "author": "patrickroy07",
+          "merged_at": "2026-02-10T19:11:51Z",
+          "had_approving_review": true,
+          "review_count": 9
+        },
+        {
+          "number": 582,
+          "title": "[RCA-14387] Update dev dependencies",
+          "author": "laeciomorais-coder",
+          "merged_at": "2026-02-10T17:43:57Z",
+          "had_approving_review": false,
+          "review_count": 0
+        },
+        {
+          "number": 573,
+          "title": "Feature/rca 0 specs",
+          "author": "justinledoux-web",
+          "merged_at": "2026-02-09T03:27:54Z",
+          "had_approving_review": false,
+          "review_count": 0
+        },
+        {
+          "number": 564,
+          "title": "[RCA-14373] - feat(incident-report): add application_module_eid for a…",
+          "author": "QsOresti",
+          "merged_at": "2026-02-09T13:51:50Z",
+          "had_approving_review": true,
+          "review_count": 7
+        }
+      ]
+    }
+  }
+}
